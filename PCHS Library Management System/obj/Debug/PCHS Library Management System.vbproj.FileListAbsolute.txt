@@ -1,0 +1,16 @@
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\bin\Debug\PCHS Library Management System.exe.config
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\bin\Debug\PCHS Library Management System.exe
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\bin\Debug\PCHS Library Management System.pdb
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\bin\Debug\PCHS Library Management System.xml
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.vbprojAssemblyReference.cache
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form1.resources
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Resources.resources
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.vbproj.GenerateResource.cache
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.vbproj.CoreCompileInputs.cache
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.exe
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.xml
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.pdb
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Login.resources
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Books.resources
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UserControl_Books.resources
+C:\Users\Jukebox\source\repos\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Login2.resources
