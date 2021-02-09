@@ -3,4 +3,4 @@ An ICT4D Donation Project being created for The Pangantucan Community High Schoo
 
 ![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/PCHS%20Logo-Name.png?raw=true)
 
-[![Watch the video](https://img.youtube.com/vi/CxMa-aqhhDs/maxresdefault.jpg)](https://youtu.be/CxMa-aqhhDs)
+[![Watch the video](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/pchs%20video.jpg?raw=true)](https://youtu.be/CxMa-aqhhDs)
