@@ -21,7 +21,7 @@ LOGIN 1:<br/>
 
 <space>
 
-LOGIN 1:<br/>
+LOGIN 2:<br/>
 ![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Login%20Prototype%202.jpg?raw=true)
 
 
