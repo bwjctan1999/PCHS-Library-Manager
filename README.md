@@ -8,3 +8,11 @@ PCHS is a Filipino Catholic Jesuit Mission School. It aims to become a leading A
 
 
 [![Watch the video](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/pchs%20video.jpg?raw=true)](https://youtu.be/CxMa-aqhhDs)
+
+DESIGN PROTOTYPES: 
+LOGIN 1:
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Login%20Prototype%201.jpg?raw=true)
+
+LOGIN 2:
+
+
