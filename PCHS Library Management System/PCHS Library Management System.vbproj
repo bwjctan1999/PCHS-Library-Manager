@@ -116,6 +116,12 @@
     <Compile Include="Form_Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form_Student.Designer.vb">
+      <DependentUpon>Form_Student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Student.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -138,6 +144,12 @@
     <Compile Include="UserControl_Books.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UserControl_FeaturedBooks.Designer.vb">
+      <DependentUpon>UserControl_FeaturedBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_FeaturedBooks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form_Books.resx">
@@ -152,6 +164,9 @@
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_Student.resx">
+      <DependentUpon>Form_Student.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -160,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Books.resx">
       <DependentUpon>UserControl_Books.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_FeaturedBooks.resx">
+      <DependentUpon>UserControl_FeaturedBooks.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -281,6 +299,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Background_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PCHS Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cd4a096b2096ebb4f460c171cf0f913e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchbar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

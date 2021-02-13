@@ -1,7 +1,7 @@
 ﻿Public Class Form_Login
     Private Sub Btn_Login_Click(sender As Object, e As EventArgs) Handles Btn_Login.Click
         Me.Hide()
-        Form1.Show()
+        Form_Main.Show()
     End Sub
 
     'TEXTBOX FUNCTIONS:'

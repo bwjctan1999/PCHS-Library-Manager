@@ -4,12 +4,16 @@
         Me.WindowState = 2
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Do Until Panel2.Size.Height = 361
-            Panel2.Size = New Size(Panel2.Width, Panel2.Height + 10)
-            Refresh()
-            System.Threading.Thread.Sleep(20)
-        Loop
+    Private Sub Lbl_ForgetPass_MouseEnter(sender As Object, e As EventArgs) Handles Lbl_ForgetPass.MouseEnter
+        Me.Lbl_ForgetPass.ForeColor = Color.DodgerBlue
+    End Sub
 
+    Private Sub Lbl_ForgetPass_MouseLeave(sender As Object, e As EventArgs) Handles Lbl_ForgetPass.MouseLeave
+        Me.Lbl_ForgetPass.ForeColor = Color.White
+    End Sub
+
+    Private Sub Lbl_ForgetPass_Click(sender As Object, e As EventArgs) Handles Btn_Login.Click
+        Me.Hide()
+        Form_Main.Show()
     End Sub
 End Class

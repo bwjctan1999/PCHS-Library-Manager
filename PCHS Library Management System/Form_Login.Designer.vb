@@ -29,12 +29,12 @@ Partial Class Form_Login
         Me.Txtbox_Password = New System.Windows.Forms.TextBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Btn_Minimize = New System.Windows.Forms.Button()
         Me.Btn_Close = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Lbl_Click = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,6 +43,7 @@ Partial Class Form_Login
         'Btn_Login
         '
         Me.Btn_Login.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(202, Byte), Integer))
+        Me.Btn_Login.FlatAppearance.BorderSize = 0
         Me.Btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Login.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Login.ForeColor = System.Drawing.SystemColors.InactiveBorder
@@ -58,7 +59,7 @@ Partial Class Form_Login
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(12, 135)
+        Me.Label1.Location = New System.Drawing.Point(12, 144)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(391, 119)
         Me.Label1.TabIndex = 6
@@ -90,6 +91,7 @@ Partial Class Form_Login
         '
         'PictureBox3
         '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(454, 234)
         Me.PictureBox3.Name = "PictureBox3"
@@ -100,6 +102,7 @@ Partial Class Form_Login
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(454, 181)
         Me.PictureBox1.Name = "PictureBox1"
@@ -108,18 +111,9 @@ Partial Class Form_Login
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.PCHS_Library_Management_System.My.Resources.Resources._506_5064686_light_clipart_blue_blue_circle_hd_png_download
-        Me.PictureBox2.Location = New System.Drawing.Point(-179, -97)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(627, 626)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 5
-        Me.PictureBox2.TabStop = False
-        '
         'Btn_Minimize
         '
+        Me.Btn_Minimize.BackColor = System.Drawing.Color.Transparent
         Me.Btn_Minimize.FlatAppearance.BorderSize = 0
         Me.Btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Minimize.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon___
@@ -127,10 +121,11 @@ Partial Class Form_Login
         Me.Btn_Minimize.Name = "Btn_Minimize"
         Me.Btn_Minimize.Size = New System.Drawing.Size(25, 23)
         Me.Btn_Minimize.TabIndex = 1
-        Me.Btn_Minimize.UseVisualStyleBackColor = True
+        Me.Btn_Minimize.UseVisualStyleBackColor = False
         '
         'Btn_Close
         '
+        Me.Btn_Close.BackColor = System.Drawing.Color.Transparent
         Me.Btn_Close.FlatAppearance.BorderSize = 0
         Me.Btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Close.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_X
@@ -138,11 +133,12 @@ Partial Class Form_Login
         Me.Btn_Close.Name = "Btn_Close"
         Me.Btn_Close.Size = New System.Drawing.Size(25, 23)
         Me.Btn_Close.TabIndex = 1
-        Me.Btn_Close.UseVisualStyleBackColor = True
+        Me.Btn_Close.UseVisualStyleBackColor = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.SlateGray
         Me.Label2.Location = New System.Drawing.Point(478, 331)
@@ -154,6 +150,7 @@ Partial Class Form_Login
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.SlateGray
         Me.Label3.Location = New System.Drawing.Point(630, 331)
@@ -164,6 +161,7 @@ Partial Class Form_Login
         '
         'Lbl_Click
         '
+        Me.Lbl_Click.BackColor = System.Drawing.Color.Transparent
         Me.Lbl_Click.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lbl_Click.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(202, Byte), Integer))
         Me.Lbl_Click.Location = New System.Drawing.Point(598, 331)
@@ -172,7 +170,18 @@ Partial Class Form_Login
         Me.Lbl_Click.TabIndex = 10
         Me.Lbl_Click.Text = "Click"
         '
-        'Form2
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.PCHS_Library_Management_System.My.Resources.Resources._506_5064686_light_clipart_blue_blue_circle_hd_png_download
+        Me.PictureBox2.Location = New System.Drawing.Point(-179, -97)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(627, 626)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.TabStop = False
+        '
+        'Form_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -192,7 +201,7 @@ Partial Class Form_Login
         Me.Controls.Add(Me.Btn_Minimize)
         Me.Controls.Add(Me.Btn_Close)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form2"
+        Me.Name = "Form_Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -203,7 +212,6 @@ Partial Class Form_Login
 
     End Sub
     Friend WithEvents Btn_Login As Button
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Txtbox_Username As TextBox
@@ -214,4 +222,5 @@ Partial Class Form_Login
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Lbl_Click As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
