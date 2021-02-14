@@ -31,4 +31,4 @@ E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\o
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.pdb
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Main.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Student.resources
-E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UserControl_FeaturedBooks.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UserControl_BookShowcase.resources

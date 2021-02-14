@@ -144,10 +144,10 @@
     <Compile Include="UserControl_Books.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl_FeaturedBooks.Designer.vb">
-      <DependentUpon>UserControl_FeaturedBooks.vb</DependentUpon>
+    <Compile Include="UserControl_BookShowcase.Designer.vb">
+      <DependentUpon>UserControl_BookShowcase.vb</DependentUpon>
     </Compile>
-    <Compile Include="UserControl_FeaturedBooks.vb">
+    <Compile Include="UserControl_BookShowcase.vb">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
@@ -176,8 +176,8 @@
     <EmbeddedResource Include="UserControl_Books.resx">
       <DependentUpon>UserControl_Books.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl_FeaturedBooks.resx">
-      <DependentUpon>UserControl_FeaturedBooks.vb</DependentUpon>
+    <EmbeddedResource Include="UserControl_BookShowcase.resx">
+      <DependentUpon>UserControl_BookShowcase.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

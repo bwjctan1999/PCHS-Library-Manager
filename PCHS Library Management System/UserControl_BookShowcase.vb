@@ -2,9 +2,7 @@
 Imports System.Windows.Forms.VisualStyles
 Imports Microsoft.VisualBasic.ApplicationServices
 
-Public Class UserControl_FeaturedBooks
-
-
+Public Class UserControl_BookShowcase
     Private Sub Change_Size(sender As Object, e As EventArgs) Handles Me.SizeChanged
         Dim picboxes = New PictureBox() {PictureBox1, PictureBox2, PictureBox3, PictureBox4, PictureBox5}
         Dim labels = New Label() {Label1, Label2, Label3, Label4, Label5}

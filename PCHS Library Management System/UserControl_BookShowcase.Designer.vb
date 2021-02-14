@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class UserControl_FeaturedBooks
+Partial Class UserControl_BookShowcase
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
@@ -157,7 +157,7 @@ Partial Class UserControl_FeaturedBooks
         Me.PictureBox5.TabIndex = 0
         Me.PictureBox5.TabStop = False
         '
-        'UserControl_FeaturedBooks
+        'UserControl_BookShowcase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -172,7 +172,7 @@ Partial Class UserControl_FeaturedBooks
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Name = "UserControl_FeaturedBooks"
+        Me.Name = "UserControl_BookShowcase"
         Me.Size = New System.Drawing.Size(775, 160)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
