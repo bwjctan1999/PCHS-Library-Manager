@@ -97,6 +97,11 @@ PCHS Library Management System
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Search2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Settings">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -123,6 +128,11 @@ PCHS Library Management System
 </summary>
 </member>
 <member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icons_Books">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icons_Settings2">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

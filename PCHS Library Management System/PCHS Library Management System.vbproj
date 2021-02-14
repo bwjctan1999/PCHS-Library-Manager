@@ -330,5 +330,11 @@
   <ItemGroup>
     <None Include="Resources\Screenshot_3.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-Search21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons-Settings2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

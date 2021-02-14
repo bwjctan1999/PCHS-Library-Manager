@@ -29,6 +29,8 @@ Partial Class Form_Student
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.UserControl_NewBooks = New PCHS_Library_Management_System.UserControl_BookShowcase()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Btn_SearchSettings = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -51,7 +53,7 @@ Partial Class Form_Student
         Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(197, 81)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(547, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(536, 20)
         Me.TextBox1.TabIndex = 1
         '
         'Btn_LogIn
@@ -113,6 +115,32 @@ Partial Class Form_Student
         Me.UserControl_NewBooks.Size = New System.Drawing.Size(772, 160)
         Me.UserControl_NewBooks.TabIndex = 5
         '
+        'Button1
+        '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Search2
+        Me.Button1.Location = New System.Drawing.Point(768, 76)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(30, 30)
+        Me.Button1.TabIndex = 7
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Btn_SearchSettings
+        '
+        Me.Btn_SearchSettings.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Btn_SearchSettings.BackColor = System.Drawing.Color.White
+        Me.Btn_SearchSettings.FlatAppearance.BorderSize = 0
+        Me.Btn_SearchSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_SearchSettings.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icons_Settings2
+        Me.Btn_SearchSettings.Location = New System.Drawing.Point(739, 76)
+        Me.Btn_SearchSettings.Name = "Btn_SearchSettings"
+        Me.Btn_SearchSettings.Size = New System.Drawing.Size(29, 30)
+        Me.Btn_SearchSettings.TabIndex = 8
+        Me.Btn_SearchSettings.UseVisualStyleBackColor = False
+        '
         'Form_Student
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -121,6 +149,8 @@ Partial Class Form_Student
         Me.BackgroundImage = Global.PCHS_Library_Management_System.My.Resources.Resources.Background_7
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1008, 561)
+        Me.Controls.Add(Me.Btn_SearchSettings)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.UserControl_NewBooks)
         Me.Controls.Add(Me.Label1)
@@ -144,4 +174,6 @@ Partial Class Form_Student
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents UserControl_NewBooks As UserControl_BookShowcase
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Btn_SearchSettings As Button
 End Class
