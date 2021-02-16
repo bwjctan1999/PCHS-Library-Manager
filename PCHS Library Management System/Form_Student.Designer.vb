@@ -31,6 +31,8 @@ Partial Class Form_Student
         Me.UserControl_NewBooks = New PCHS_Library_Management_System.UserControl_BookShowcase()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Btn_SearchSettings = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -141,6 +143,34 @@ Partial Class Form_Student
         Me.Btn_SearchSettings.TabIndex = 8
         Me.Btn_SearchSettings.UseVisualStyleBackColor = False
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(12, 12)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 29)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Borrow"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Transparent
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.Location = New System.Drawing.Point(82, 12)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 29)
+        Me.Button3.TabIndex = 9
+        Me.Button3.Text = "Return"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'Form_Student
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -149,6 +179,8 @@ Partial Class Form_Student
         Me.BackgroundImage = Global.PCHS_Library_Management_System.My.Resources.Resources.Background_7
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1008, 561)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Btn_SearchSettings)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
@@ -176,4 +208,6 @@ Partial Class Form_Student
     Friend WithEvents UserControl_NewBooks As UserControl_BookShowcase
     Friend WithEvents Button1 As Button
     Friend WithEvents Btn_SearchSettings As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
