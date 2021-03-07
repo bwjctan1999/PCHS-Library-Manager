@@ -14,6 +14,6 @@
 
     Private Sub Lbl_ForgetPass_Click(sender As Object, e As EventArgs) Handles Btn_Login.Click
         Me.Hide()
-        Form_Main.Show()
+        Form_Manager.Show()
     End Sub
 End Class

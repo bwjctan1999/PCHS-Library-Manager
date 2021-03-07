@@ -117,57 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
-    <value>PictureBox1</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
-    <value>Panel2</value>
-  </data>
-  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
-    <value>Label1</value>
-  </data>
-  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
-    <value>Panel2</value>
-  </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 49</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
-    <value>Panel2</value>
-  </data>
-  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 6</value>
   </data>
@@ -177,6 +131,7 @@
   <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
@@ -192,41 +147,62 @@
   <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Lbl_mode.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
-  <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Lbl_mode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Lbl_mode.Location" type="System.Drawing.Point, System.Drawing">
     <value>63, 14</value>
   </data>
-  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 21</value>
+  <data name="Lbl_mode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 21</value>
   </data>
-  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="Lbl_mode.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="Label1.Text" xml:space="preserve">
+  <data name="Lbl_mode.Text" xml:space="preserve">
     <value>ADD BOOK</value>
   </data>
-  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
-    <value>Label1</value>
+  <data name="&gt;&gt;Lbl_mode.Name" xml:space="preserve">
+    <value>Lbl_mode</value>
   </data>
-  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;Lbl_mode.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Lbl_mode.Parent" xml:space="preserve">
     <value>Panel2</value>
   </data>
-  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Lbl_mode.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="Panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 49</value>
+  </data>
+  <data name="Panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Name" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="Panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 149</value>
+    <value>220, 150</value>
   </data>
   <data name="Panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 2</value>
+    <value>300, 2</value>
   </data>
   <data name="Panel3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -241,10 +217,10 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Panel3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>8</value>
   </data>
   <data name="Panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 149</value>
+    <value>543, 150</value>
   </data>
   <data name="Panel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>318, 2</value>
@@ -262,7 +238,7 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Panel4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>10</value>
   </data>
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -274,7 +250,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 103</value>
+    <value>218, 104</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 18</value>
@@ -295,7 +271,7 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -307,7 +283,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>430, 103</value>
+    <value>540, 104</value>
   </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 18</value>
@@ -328,7 +304,7 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>20</value>
   </data>
   <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -340,7 +316,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>430, 182</value>
+    <value>540, 183</value>
   </data>
   <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 18</value>
@@ -361,13 +337,13 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>24</value>
   </data>
   <data name="Panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 229</value>
+    <value>543, 230</value>
   </data>
   <data name="Panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>318, 2</value>
+    <value>150, 2</value>
   </data>
   <data name="Panel5.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -382,27 +358,6 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Panel5.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="Panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 229</value>
-  </data>
-  <data name="Panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 2</value>
-  </data>
-  <data name="Panel6.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;Panel6.Name" xml:space="preserve">
-    <value>Panel6</value>
-  </data>
-  <data name="&gt;&gt;Panel6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel6.Parent" xml:space="preserve">
-    <value>Panel10</value>
-  </data>
-  <data name="&gt;&gt;Panel6.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
   <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
@@ -415,7 +370,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 179</value>
+    <value>217, 180</value>
   </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 18</value>
@@ -436,13 +391,13 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>18</value>
   </data>
   <data name="Panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 299</value>
+    <value>221, 300</value>
   </data>
   <data name="Panel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 2</value>
+    <value>300, 2</value>
   </data>
   <data name="Panel7.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -457,7 +412,7 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Panel7.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
   </data>
   <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -469,7 +424,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 253</value>
+    <value>217, 254</value>
   </data>
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 18</value>
@@ -490,109 +445,109 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>15</value>
   </data>
-  <data name="TextBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Txtbox_Title.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
   </data>
-  <data name="TextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 128</value>
+  <data name="Txtbox_Title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 129</value>
   </data>
-  <data name="TextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 19</value>
+  <data name="Txtbox_Title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 19</value>
   </data>
-  <data name="TextBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="Txtbox_Title.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;TextBox1.Name" xml:space="preserve">
-    <value>TextBox1</value>
+  <data name="&gt;&gt;Txtbox_Title.Name" xml:space="preserve">
+    <value>Txtbox_Title</value>
   </data>
-  <data name="&gt;&gt;TextBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;Txtbox_Title.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Txtbox_Title.Parent" xml:space="preserve">
     <value>Panel10</value>
   </data>
-  <data name="&gt;&gt;TextBox1.ZOrder" xml:space="preserve">
-    <value>20</value>
+  <data name="&gt;&gt;Txtbox_Title.ZOrder" xml:space="preserve">
+    <value>25</value>
   </data>
-  <data name="TextBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Txtbox_Author.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
   </data>
-  <data name="TextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 128</value>
+  <data name="Txtbox_Author.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 129</value>
   </data>
-  <data name="TextBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Txtbox_Author.Size" type="System.Drawing.Size, System.Drawing">
     <value>318, 19</value>
   </data>
-  <data name="TextBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="Txtbox_Author.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;TextBox2.Name" xml:space="preserve">
-    <value>TextBox2</value>
+  <data name="&gt;&gt;Txtbox_Author.Name" xml:space="preserve">
+    <value>Txtbox_Author</value>
   </data>
-  <data name="&gt;&gt;TextBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;Txtbox_Author.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Txtbox_Author.Parent" xml:space="preserve">
     <value>Panel10</value>
   </data>
-  <data name="&gt;&gt;TextBox2.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="&gt;&gt;Txtbox_Author.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
-  <data name="TextBox3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Txtbox_ISBNNo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
   </data>
-  <data name="TextBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 207</value>
+  <data name="Txtbox_ISBNNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 208</value>
   </data>
-  <data name="TextBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 19</value>
+  <data name="Txtbox_ISBNNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 19</value>
   </data>
-  <data name="TextBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="Txtbox_ISBNNo.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;TextBox3.Name" xml:space="preserve">
-    <value>TextBox3</value>
+  <data name="&gt;&gt;Txtbox_ISBNNo.Name" xml:space="preserve">
+    <value>Txtbox_ISBNNo</value>
   </data>
-  <data name="&gt;&gt;TextBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;Txtbox_ISBNNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Txtbox_ISBNNo.Parent" xml:space="preserve">
     <value>Panel10</value>
   </data>
-  <data name="&gt;&gt;TextBox3.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="&gt;&gt;Txtbox_ISBNNo.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="TextBox4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Txtbox_PubDate.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
   </data>
-  <data name="TextBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 277</value>
+  <data name="Txtbox_PubDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 278</value>
   </data>
-  <data name="TextBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 19</value>
+  <data name="Txtbox_PubDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 19</value>
   </data>
-  <data name="TextBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="Txtbox_PubDate.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="TextBox4.Text" xml:space="preserve">
-    <value>00/00/000</value>
+  <data name="Txtbox_PubDate.Text" xml:space="preserve">
+    <value>00/00/0000</value>
   </data>
-  <data name="&gt;&gt;TextBox4.Name" xml:space="preserve">
-    <value>TextBox4</value>
+  <data name="&gt;&gt;Txtbox_PubDate.Name" xml:space="preserve">
+    <value>Txtbox_PubDate</value>
   </data>
-  <data name="&gt;&gt;TextBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;Txtbox_PubDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Txtbox_PubDate.Parent" xml:space="preserve">
     <value>Panel10</value>
   </data>
-  <data name="&gt;&gt;TextBox4.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="&gt;&gt;Txtbox_PubDate.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
   <data name="Panel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 299</value>
+    <value>543, 300</value>
   </data>
   <data name="Panel8.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 2</value>
@@ -610,7 +565,7 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Panel8.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>26</value>
   </data>
   <data name="Label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -622,7 +577,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>430, 253</value>
+    <value>540, 254</value>
   </data>
   <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 18</value>
@@ -643,34 +598,34 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>17</value>
   </data>
-  <data name="TextBox6.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Txtbox_ShelfNo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
   </data>
-  <data name="TextBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 277</value>
+  <data name="Txtbox_ShelfNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>713, 278</value>
   </data>
-  <data name="TextBox6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Txtbox_ShelfNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 19</value>
   </data>
-  <data name="TextBox6.TabIndex" type="System.Int32, mscorlib">
+  <data name="Txtbox_ShelfNo.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;TextBox6.Name" xml:space="preserve">
-    <value>TextBox6</value>
+  <data name="&gt;&gt;Txtbox_ShelfNo.Name" xml:space="preserve">
+    <value>Txtbox_ShelfNo</value>
   </data>
-  <data name="&gt;&gt;TextBox6.Type" xml:space="preserve">
+  <data name="&gt;&gt;Txtbox_ShelfNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Txtbox_ShelfNo.Parent" xml:space="preserve">
     <value>Panel10</value>
   </data>
-  <data name="&gt;&gt;TextBox6.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;Txtbox_ShelfNo.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="Panel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 299</value>
+    <value>713, 300</value>
   </data>
   <data name="Panel9.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 2</value>
@@ -688,7 +643,7 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Panel9.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -700,16 +655,16 @@
     <value>NoControl</value>
   </data>
   <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>600, 253</value>
+    <value>710, 254</value>
   </data>
   <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 18</value>
+    <value>72, 18</value>
   </data>
   <data name="Label8.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="Label8.Text" xml:space="preserve">
-    <value>Shelve No.</value>
+    <value>Shelf No.</value>
   </data>
   <data name="&gt;&gt;Label8.Name" xml:space="preserve">
     <value>Label8</value>
@@ -721,64 +676,64 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>16</value>
   </data>
-  <data name="ComboBox1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Cbox_Category.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="ComboBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Cbox_Category.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
   </data>
-  <data name="ComboBox1.Items" xml:space="preserve">
+  <data name="Cbox_Category.Items" xml:space="preserve">
     <value>000 – Computer science, information &amp; general works</value>
   </data>
-  <data name="ComboBox1.Items1" xml:space="preserve">
+  <data name="Cbox_Category.Items1" xml:space="preserve">
     <value>100 – Philosophy &amp; psychology</value>
   </data>
-  <data name="ComboBox1.Items2" xml:space="preserve">
+  <data name="Cbox_Category.Items2" xml:space="preserve">
     <value>200 – Religion</value>
   </data>
-  <data name="ComboBox1.Items3" xml:space="preserve">
+  <data name="Cbox_Category.Items3" xml:space="preserve">
     <value>300 – Social sciences</value>
   </data>
-  <data name="ComboBox1.Items4" xml:space="preserve">
+  <data name="Cbox_Category.Items4" xml:space="preserve">
     <value>400 – Language</value>
   </data>
-  <data name="ComboBox1.Items5" xml:space="preserve">
+  <data name="Cbox_Category.Items5" xml:space="preserve">
     <value>500 – Pure Science</value>
   </data>
-  <data name="ComboBox1.Items6" xml:space="preserve">
+  <data name="Cbox_Category.Items6" xml:space="preserve">
     <value>600 – Technology</value>
   </data>
-  <data name="ComboBox1.Items7" xml:space="preserve">
+  <data name="Cbox_Category.Items7" xml:space="preserve">
     <value>700 – Arts &amp; recreation</value>
   </data>
-  <data name="ComboBox1.Items8" xml:space="preserve">
+  <data name="Cbox_Category.Items8" xml:space="preserve">
     <value>800 – Literature</value>
   </data>
-  <data name="ComboBox1.Items9" xml:space="preserve">
+  <data name="Cbox_Category.Items9" xml:space="preserve">
     <value>900 – History &amp; geography</value>
   </data>
-  <data name="ComboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 202</value>
+  <data name="Cbox_Category.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 203</value>
   </data>
-  <data name="ComboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 28</value>
+  <data name="Cbox_Category.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 28</value>
   </data>
-  <data name="ComboBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="Cbox_Category.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;ComboBox1.Name" xml:space="preserve">
-    <value>ComboBox1</value>
+  <data name="&gt;&gt;Cbox_Category.Name" xml:space="preserve">
+    <value>Cbox_Category</value>
   </data>
-  <data name="&gt;&gt;ComboBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;Cbox_Category.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ComboBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Cbox_Category.Parent" xml:space="preserve">
     <value>Panel10</value>
   </data>
-  <data name="&gt;&gt;ComboBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;Cbox_Category.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="Btn_AddBook.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -790,7 +745,7 @@
     <value>NoControl</value>
   </data>
   <data name="Btn_AddBook.Location" type="System.Drawing.Point, System.Drawing">
-    <value>642, 391</value>
+    <value>747, 382</value>
   </data>
   <data name="Btn_AddBook.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 29</value>
@@ -800,6 +755,9 @@
   </data>
   <data name="Btn_AddBook.Text" xml:space="preserve">
     <value>Add</value>
+  </data>
+  <data name="Btn_AddBook.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;Btn_AddBook.Name" xml:space="preserve">
     <value>Btn_AddBook</value>
@@ -811,70 +769,270 @@
     <value>Panel10</value>
   </data>
   <data name="&gt;&gt;Btn_AddBook.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>7</value>
   </data>
-  <data name="Button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Btn_Cancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="Button1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Btn_Cancel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9pt, style=Bold</value>
   </data>
-  <data name="Button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Btn_Cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>520, 391</value>
+  <data name="Btn_Cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>625, 382</value>
   </data>
-  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Btn_Cancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 29</value>
   </data>
-  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="Btn_Cancel.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="Button1.Text" xml:space="preserve">
+  <data name="Btn_Cancel.Text" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
-    <value>Button1</value>
+  <data name="&gt;&gt;Btn_Cancel.Name" xml:space="preserve">
+    <value>Btn_Cancel</value>
   </data>
-  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;Btn_Cancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Btn_Cancel.Parent" xml:space="preserve">
     <value>Panel10</value>
   </data>
-  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="TextBox5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="TextBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 277</value>
-  </data>
-  <data name="TextBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 19</value>
-  </data>
-  <data name="TextBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;Btn_Cancel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;TextBox5.Name" xml:space="preserve">
-    <value>TextBox5</value>
+  <data name="Panel_Image.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;TextBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Lbl_ChangeImage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;TextBox5.Parent" xml:space="preserve">
+  <data name="Lbl_ChangeImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Lbl_ChangeImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 240</value>
+  </data>
+  <data name="Lbl_ChangeImage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Lbl_ChangeImage.Text" xml:space="preserve">
+    <value>
+
+
+Change
+Image
+
+
+
+</value>
+  </data>
+  <data name="Lbl_ChangeImage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="Lbl_ChangeImage.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Lbl_ChangeImage.Name" xml:space="preserve">
+    <value>Lbl_ChangeImage</value>
+  </data>
+  <data name="&gt;&gt;Lbl_ChangeImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Lbl_ChangeImage.Parent" xml:space="preserve">
+    <value>Panel_Image</value>
+  </data>
+  <data name="&gt;&gt;Lbl_ChangeImage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Panel_Image.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="Panel_Image.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 240</value>
+  </data>
+  <data name="Panel_Image.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;Panel_Image.Name" xml:space="preserve">
+    <value>Panel_Image</value>
+  </data>
+  <data name="&gt;&gt;Panel_Image.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel_Image.Parent" xml:space="preserve">
+    <value>Panel6</value>
+  </data>
+  <data name="&gt;&gt;Panel_Image.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 85</value>
+  </data>
+  <data name="Panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 244</value>
+  </data>
+  <data name="Panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;Panel6.Name" xml:space="preserve">
+    <value>Panel6</value>
+  </data>
+  <data name="&gt;&gt;Panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel6.Parent" xml:space="preserve">
     <value>Panel10</value>
   </data>
-  <data name="&gt;&gt;TextBox5.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;Panel6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Txtbox_Quantity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="Txtbox_Quantity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>713, 208</value>
+  </data>
+  <data name="Txtbox_Quantity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 19</value>
+  </data>
+  <data name="Txtbox_Quantity.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;Txtbox_Quantity.Name" xml:space="preserve">
+    <value>Txtbox_Quantity</value>
+  </data>
+  <data name="&gt;&gt;Txtbox_Quantity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Txtbox_Quantity.Parent" xml:space="preserve">
+    <value>Panel10</value>
+  </data>
+  <data name="&gt;&gt;Txtbox_Quantity.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>713, 230</value>
+  </data>
+  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 2</value>
+  </data>
+  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
+    <value>Panel10</value>
+  </data>
+  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="Label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>710, 183</value>
+  </data>
+  <data name="Label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 18</value>
+  </data>
+  <data name="Label9.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="Label9.Text" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="&gt;&gt;Label9.Name" xml:space="preserve">
+    <value>Label9</value>
+  </data>
+  <data name="&gt;&gt;Label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label9.Parent" xml:space="preserve">
+    <value>Panel10</value>
+  </data>
+  <data name="&gt;&gt;Label9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Btn_UpdateBook.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Btn_UpdateBook.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="Btn_UpdateBook.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Btn_UpdateBook.Location" type="System.Drawing.Point, System.Drawing">
+    <value>747, 382</value>
+  </data>
+  <data name="Btn_UpdateBook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 29</value>
+  </data>
+  <data name="Btn_UpdateBook.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Btn_UpdateBook.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Btn_UpdateBook.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Btn_UpdateBook.Name" xml:space="preserve">
+    <value>Btn_UpdateBook</value>
+  </data>
+  <data name="&gt;&gt;Btn_UpdateBook.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Btn_UpdateBook.Parent" xml:space="preserve">
+    <value>Panel10</value>
+  </data>
+  <data name="&gt;&gt;Btn_UpdateBook.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Txtbox_CodeNo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="Txtbox_CodeNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 280</value>
+  </data>
+  <data name="Txtbox_CodeNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 19</value>
+  </data>
+  <data name="Txtbox_CodeNo.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Txtbox_CodeNo.Name" xml:space="preserve">
+    <value>Txtbox_CodeNo</value>
+  </data>
+  <data name="&gt;&gt;Txtbox_CodeNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Txtbox_CodeNo.Parent" xml:space="preserve">
+    <value>Panel10</value>
+  </data>
+  <data name="&gt;&gt;Txtbox_CodeNo.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="Panel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>3, 0</value>
   </data>
   <data name="Panel10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>794, 444</value>
+    <value>883, 438</value>
   </data>
   <data name="Panel10.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -898,13 +1056,16 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
+    <value>885, 437</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PCHS Library Manager</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form_Books</value>
+    <value>Form_Add_Edit_Book</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

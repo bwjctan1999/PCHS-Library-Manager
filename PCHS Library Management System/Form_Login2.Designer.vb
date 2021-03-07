@@ -65,6 +65,7 @@ Partial Class Form_Login2
         '
         Me.Txtbox_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Txtbox_Password.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txtbox_Password.ForeColor = System.Drawing.Color.DimGray
         Me.Txtbox_Password.Location = New System.Drawing.Point(50, 175)
         Me.Txtbox_Password.Name = "Txtbox_Password"
         Me.Txtbox_Password.Size = New System.Drawing.Size(311, 27)
@@ -75,6 +76,7 @@ Partial Class Form_Login2
         '
         Me.Txtbox_Username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Txtbox_Username.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txtbox_Username.ForeColor = System.Drawing.Color.DimGray
         Me.Txtbox_Username.Location = New System.Drawing.Point(50, 125)
         Me.Txtbox_Username.Name = "Txtbox_Username"
         Me.Txtbox_Username.Size = New System.Drawing.Size(311, 27)
@@ -124,9 +126,9 @@ Partial Class Form_Login2
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.PCHS_Logo
-        Me.PictureBox1.Location = New System.Drawing.Point(417, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(413, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(166, 175)
+        Me.PictureBox1.Size = New System.Drawing.Size(156, 175)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -143,7 +145,7 @@ Partial Class Form_Login2
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form_Login2"
-        Me.Text = "Form2"
+        Me.Text = "PCHS Library Manager"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

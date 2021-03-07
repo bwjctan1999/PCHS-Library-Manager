@@ -67,6 +67,26 @@ PCHS Library Management System
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_4">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_5">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PCHS_Library_Management_System.My.Resources.Resources.cd4a096b2096ebb4f460c171cf0f913e">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -78,6 +98,21 @@ PCHS Library Management System
 </summary>
 </member>
 <member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Accounts">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Borrow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Check_Out">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_CheckOut">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

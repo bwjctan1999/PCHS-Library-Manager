@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class UserControl_Books
+Partial Class UC_DataViewer
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
@@ -22,6 +22,8 @@ Partial Class UserControl_Books
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.ListViewer = New System.Windows.Forms.ListView()
+        Me.Btn_ListSettings = New System.Windows.Forms.Button()
         Me.Panel_BookSettings = New System.Windows.Forms.Panel()
         Me.Lbl_GridSettings = New System.Windows.Forms.Label()
         Me.Lbl_FontSettings = New System.Windows.Forms.Label()
@@ -33,22 +35,38 @@ Partial Class UserControl_Books
         Me.Cbox_GridSettings = New System.Windows.Forms.ComboBox()
         Me.Cbox_ArrangeSettings = New System.Windows.Forms.ComboBox()
         Me.Cbox_ViewSettings = New System.Windows.Forms.ComboBox()
-        Me.Btn_BookSettings = New System.Windows.Forms.Button()
-        Me.Btn_UpdateBook = New System.Windows.Forms.Button()
-        Me.Btn_Delete = New System.Windows.Forms.Button()
-        Me.Btn_AddBook = New System.Windows.Forms.Button()
-        Me.Btn_BookSearch = New System.Windows.Forms.Button()
-        Me.Txtbox_InvSearchBar = New System.Windows.Forms.TextBox()
-        Me.ListView_Books = New System.Windows.Forms.ListView()
-        Me.CH_Title = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.CH_Author = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.CH_ISBN = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.CH_YearPublished = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.CH_Code = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.CH_Category = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.CH_ShelveNo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Panel_BookSettings.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'ListViewer
+        '
+        Me.ListViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ListViewer.BackColor = System.Drawing.SystemColors.Window
+        Me.ListViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ListViewer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListViewer.FullRowSelect = True
+        Me.ListViewer.HideSelection = False
+        Me.ListViewer.Location = New System.Drawing.Point(2, 31)
+        Me.ListViewer.Name = "ListViewer"
+        Me.ListViewer.Size = New System.Drawing.Size(762, 382)
+        Me.ListViewer.TabIndex = 1
+        Me.ListViewer.UseCompatibleStateImageBehavior = False
+        Me.ListViewer.View = System.Windows.Forms.View.Details
+        '
+        'Btn_ListSettings
+        '
+        Me.Btn_ListSettings.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Btn_ListSettings.BackgroundImage = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Settings
+        Me.Btn_ListSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Btn_ListSettings.FlatAppearance.BorderSize = 0
+        Me.Btn_ListSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_ListSettings.Location = New System.Drawing.Point(739, 3)
+        Me.Btn_ListSettings.Name = "Btn_ListSettings"
+        Me.Btn_ListSettings.Size = New System.Drawing.Size(24, 24)
+        Me.Btn_ListSettings.TabIndex = 5
+        Me.Btn_ListSettings.UseVisualStyleBackColor = True
         '
         'Panel_BookSettings
         '
@@ -64,10 +82,10 @@ Partial Class UserControl_Books
         Me.Panel_BookSettings.Controls.Add(Me.Cbox_GridSettings)
         Me.Panel_BookSettings.Controls.Add(Me.Cbox_ArrangeSettings)
         Me.Panel_BookSettings.Controls.Add(Me.Cbox_ViewSettings)
-        Me.Panel_BookSettings.Location = New System.Drawing.Point(508, 33)
+        Me.Panel_BookSettings.Location = New System.Drawing.Point(487, 3)
         Me.Panel_BookSettings.Name = "Panel_BookSettings"
         Me.Panel_BookSettings.Size = New System.Drawing.Size(252, 272)
-        Me.Panel_BookSettings.TabIndex = 5
+        Me.Panel_BookSettings.TabIndex = 6
         Me.Panel_BookSettings.Visible = False
         '
         'Lbl_GridSettings
@@ -163,158 +181,30 @@ Partial Class UserControl_Books
         '
         Me.Cbox_ViewSettings.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbox_ViewSettings.FormattingEnabled = True
-        Me.Cbox_ViewSettings.Items.AddRange(New Object() {"Details", "List", "Large Icons", "Small Icons", "Tile"})
+        Me.Cbox_ViewSettings.Items.AddRange(New Object() {"Details", "Large Icons", "Tile"})
         Me.Cbox_ViewSettings.Location = New System.Drawing.Point(7, 32)
         Me.Cbox_ViewSettings.Name = "Cbox_ViewSettings"
         Me.Cbox_ViewSettings.Size = New System.Drawing.Size(237, 21)
         Me.Cbox_ViewSettings.TabIndex = 0
         '
-        'Btn_BookSettings
-        '
-        Me.Btn_BookSettings.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_BookSettings.BackgroundImage = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Settings
-        Me.Btn_BookSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Btn_BookSettings.FlatAppearance.BorderSize = 0
-        Me.Btn_BookSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_BookSettings.Location = New System.Drawing.Point(760, 33)
-        Me.Btn_BookSettings.Name = "Btn_BookSettings"
-        Me.Btn_BookSettings.Size = New System.Drawing.Size(24, 24)
-        Me.Btn_BookSettings.TabIndex = 4
-        Me.Btn_BookSettings.UseVisualStyleBackColor = True
-        '
-        'Btn_UpdateBook
-        '
-        Me.Btn_UpdateBook.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_UpdateBook.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Btn_UpdateBook.FlatAppearance.BorderSize = 0
-        Me.Btn_UpdateBook.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_UpdateBook.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_UpdateBook.Location = New System.Drawing.Point(546, 463)
-        Me.Btn_UpdateBook.Name = "Btn_UpdateBook"
-        Me.Btn_UpdateBook.Size = New System.Drawing.Size(114, 26)
-        Me.Btn_UpdateBook.TabIndex = 3
-        Me.Btn_UpdateBook.Text = "Update"
-        Me.Btn_UpdateBook.UseVisualStyleBackColor = False
-        '
-        'Btn_Delete
-        '
-        Me.Btn_Delete.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_Delete.BackColor = System.Drawing.Color.IndianRed
-        Me.Btn_Delete.FlatAppearance.BorderSize = 0
-        Me.Btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_Delete.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Delete.Location = New System.Drawing.Point(422, 463)
-        Me.Btn_Delete.Name = "Btn_Delete"
-        Me.Btn_Delete.Size = New System.Drawing.Size(114, 26)
-        Me.Btn_Delete.TabIndex = 3
-        Me.Btn_Delete.Text = "Delete"
-        Me.Btn_Delete.UseVisualStyleBackColor = False
-        '
-        'Btn_AddBook
-        '
-        Me.Btn_AddBook.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_AddBook.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Btn_AddBook.FlatAppearance.BorderSize = 0
-        Me.Btn_AddBook.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_AddBook.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_AddBook.Location = New System.Drawing.Point(669, 463)
-        Me.Btn_AddBook.Name = "Btn_AddBook"
-        Me.Btn_AddBook.Size = New System.Drawing.Size(114, 26)
-        Me.Btn_AddBook.TabIndex = 3
-        Me.Btn_AddBook.Text = "Add"
-        Me.Btn_AddBook.UseVisualStyleBackColor = False
-        '
-        'Btn_BookSearch
-        '
-        Me.Btn_BookSearch.Location = New System.Drawing.Point(294, 23)
-        Me.Btn_BookSearch.Name = "Btn_BookSearch"
-        Me.Btn_BookSearch.Size = New System.Drawing.Size(75, 23)
-        Me.Btn_BookSearch.TabIndex = 2
-        Me.Btn_BookSearch.Text = "Search"
-        Me.Btn_BookSearch.UseVisualStyleBackColor = True
-        '
-        'Txtbox_InvSearchBar
-        '
-        Me.Txtbox_InvSearchBar.Location = New System.Drawing.Point(21, 25)
-        Me.Txtbox_InvSearchBar.Name = "Txtbox_InvSearchBar"
-        Me.Txtbox_InvSearchBar.Size = New System.Drawing.Size(267, 20)
-        Me.Txtbox_InvSearchBar.TabIndex = 1
-        '
-        'ListView_Books
-        '
-        Me.ListView_Books.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ListView_Books.BackColor = System.Drawing.SystemColors.Window
-        Me.ListView_Books.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ListView_Books.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.CH_Title, Me.CH_Author, Me.CH_ISBN, Me.CH_YearPublished, Me.CH_Code, Me.CH_Category, Me.CH_ShelveNo})
-        Me.ListView_Books.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListView_Books.FullRowSelect = True
-        Me.ListView_Books.HideSelection = False
-        Me.ListView_Books.Location = New System.Drawing.Point(21, 62)
-        Me.ListView_Books.Name = "ListView_Books"
-        Me.ListView_Books.Size = New System.Drawing.Size(762, 382)
-        Me.ListView_Books.TabIndex = 0
-        Me.ListView_Books.UseCompatibleStateImageBehavior = False
-        Me.ListView_Books.View = System.Windows.Forms.View.Details
-        '
-        'CH_Title
-        '
-        Me.CH_Title.Text = "Name"
-        Me.CH_Title.Width = 200
-        '
-        'CH_Author
-        '
-        Me.CH_Author.Text = "Author"
-        Me.CH_Author.Width = 200
-        '
-        'CH_ISBN
-        '
-        Me.CH_ISBN.Text = "ISBN No"
-        Me.CH_ISBN.Width = 150
-        '
-        'CH_YearPublished
-        '
-        Me.CH_YearPublished.Text = "Year Published"
-        Me.CH_YearPublished.Width = 130
-        '
-        'CH_Code
-        '
-        Me.CH_Code.Text = "Code No"
-        Me.CH_Code.Width = 100
-        '
-        'CH_Category
-        '
-        Me.CH_Category.Text = "Category"
-        Me.CH_Category.Width = 100
-        '
-        'CH_ShelveNo
-        '
-        Me.CH_ShelveNo.Text = "Shelve No"
-        Me.CH_ShelveNo.Width = 100
-        '
-        'UserControl_Books
+        'UC_DataViewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Transparent
         Me.Controls.Add(Me.Panel_BookSettings)
-        Me.Controls.Add(Me.ListView_Books)
-        Me.Controls.Add(Me.Btn_AddBook)
-        Me.Controls.Add(Me.Btn_Delete)
-        Me.Controls.Add(Me.Btn_UpdateBook)
-        Me.Controls.Add(Me.Btn_BookSettings)
-        Me.Controls.Add(Me.Txtbox_InvSearchBar)
-        Me.Controls.Add(Me.Btn_BookSearch)
-        Me.Name = "UserControl_Books"
-        Me.Size = New System.Drawing.Size(804, 508)
+        Me.Controls.Add(Me.Btn_ListSettings)
+        Me.Controls.Add(Me.ListViewer)
+        Me.Name = "UC_DataViewer"
+        Me.Size = New System.Drawing.Size(766, 415)
         Me.Panel_BookSettings.ResumeLayout(False)
         Me.Panel_BookSettings.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents ListViewer As ListView
+    Friend WithEvents Btn_ListSettings As Button
     Friend WithEvents Panel_BookSettings As Panel
     Friend WithEvents Lbl_GridSettings As Label
     Friend WithEvents Lbl_FontSettings As Label
@@ -326,18 +216,4 @@ Partial Class UserControl_Books
     Friend WithEvents Cbox_GridSettings As ComboBox
     Friend WithEvents Cbox_ArrangeSettings As ComboBox
     Friend WithEvents Cbox_ViewSettings As ComboBox
-    Friend WithEvents Btn_BookSettings As Button
-    Friend WithEvents Btn_UpdateBook As Button
-    Friend WithEvents Btn_Delete As Button
-    Friend WithEvents Btn_AddBook As Button
-    Friend WithEvents Btn_BookSearch As Button
-    Friend WithEvents Txtbox_InvSearchBar As TextBox
-    Friend WithEvents ListView_Books As ListView
-    Friend WithEvents CH_Title As ColumnHeader
-    Friend WithEvents CH_Author As ColumnHeader
-    Protected Friend WithEvents CH_ISBN As ColumnHeader
-    Friend WithEvents CH_YearPublished As ColumnHeader
-    Friend WithEvents CH_Code As ColumnHeader
-    Friend WithEvents CH_Category As ColumnHeader
-    Friend WithEvents CH_ShelveNo As ColumnHeader
 End Class

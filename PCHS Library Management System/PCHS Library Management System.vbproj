@@ -91,23 +91,35 @@
     <Compile Include="Classes\BorderedLabel.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Form_Borrow.Designer.vb">
+      <DependentUpon>Form_Borrow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Borrow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CheckOut.Designer.vb">
+      <DependentUpon>Form_CheckOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CheckOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_Login2.Designer.vb">
       <DependentUpon>Form_Login2.vb</DependentUpon>
     </Compile>
     <Compile Include="Form_Login2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Books.Designer.vb">
-      <DependentUpon>Form_Books.vb</DependentUpon>
+    <Compile Include="Form_Add_Edit_Book.Designer.vb">
+      <DependentUpon>Form_Add_Edit_Book.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_Books.vb">
+    <Compile Include="Form_Add_Edit_Book.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Main.vb">
+    <Compile Include="Form_Manager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Main.Designer.vb">
-      <DependentUpon>Form_Main.vb</DependentUpon>
+    <Compile Include="Form_Manager.Designer.vb">
+      <DependentUpon>Form_Manager.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Login.Designer.vb">
@@ -138,28 +150,70 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="UserControl_Books.Designer.vb">
-      <DependentUpon>UserControl_Books.vb</DependentUpon>
+    <Compile Include="UserControls\UC_Book.Designer.vb">
+      <DependentUpon>UC_Book.vb</DependentUpon>
     </Compile>
-    <Compile Include="UserControl_Books.vb">
+    <Compile Include="UserControls\UC_Book.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl_BookShowcase.Designer.vb">
-      <DependentUpon>UserControl_BookShowcase.vb</DependentUpon>
+    <Compile Include="UserControls\UC_Borrowed.Designer.vb">
+      <DependentUpon>UC_Borrowed.vb</DependentUpon>
     </Compile>
-    <Compile Include="UserControl_BookShowcase.vb">
+    <Compile Include="UserControls\UC_Borrowed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Inventory.Designer.vb">
+      <DependentUpon>UC_Inventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Inventory.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_DataViewer.Designer.vb">
+      <DependentUpon>UC_DataViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_DataViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_SearchResults.Designer.vb">
+      <DependentUpon>UC_SearchResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_SearchResults.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Borrows.Designer.vb">
+      <DependentUpon>UC_Borrows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Borrows.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_BookShelf.Designer.vb">
+      <DependentUpon>UC_BookShelf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_BookShelf.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_ShowCase.Designer.vb">
+      <DependentUpon>UC_ShowCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_ShowCase.vb">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form_Books.resx">
-      <DependentUpon>Form_Books.vb</DependentUpon>
+    <EmbeddedResource Include="Form_Add_Edit_Book.resx">
+      <DependentUpon>Form_Add_Edit_Book.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Borrow.resx">
+      <DependentUpon>Form_Borrow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CheckOut.resx">
+      <DependentUpon>Form_CheckOut.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Login2.resx">
       <DependentUpon>Form_Login2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Main.resx">
-      <DependentUpon>Form_Main.vb</DependentUpon>
+    <EmbeddedResource Include="Form_Manager.resx">
+      <DependentUpon>Form_Manager.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.vb</DependentUpon>
@@ -173,11 +227,29 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl_Books.resx">
-      <DependentUpon>UserControl_Books.vb</DependentUpon>
+    <EmbeddedResource Include="UserControls\UC_Book.resx">
+      <DependentUpon>UC_Book.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl_BookShowcase.resx">
-      <DependentUpon>UserControl_BookShowcase.vb</DependentUpon>
+    <EmbeddedResource Include="UserControls\UC_Borrowed.resx">
+      <DependentUpon>UC_Borrowed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Inventory.resx">
+      <DependentUpon>UC_Inventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_DataViewer.resx">
+      <DependentUpon>UC_DataViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_SearchResults.resx">
+      <DependentUpon>UC_SearchResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Borrows.resx">
+      <DependentUpon>UC_Borrows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_BookShelf.resx">
+      <DependentUpon>UC_BookShelf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_ShowCase.resx">
+      <DependentUpon>UC_ShowCase.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -335,6 +407,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icons-Settings2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOOK 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOOK 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOOK 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOOK 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-CheckOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-Check Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-Borrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

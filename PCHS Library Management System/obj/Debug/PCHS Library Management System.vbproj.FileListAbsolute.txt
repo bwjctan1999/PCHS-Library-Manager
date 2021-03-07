@@ -19,16 +19,24 @@ E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\b
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\PCHS Library Management System.pdb
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\PCHS Library Management System.xml
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.vbprojAssemblyReference.cache
-E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Books.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Login2.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Login.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Resources.resources
-E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UserControl_Books.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.vbproj.GenerateResource.cache
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.vbproj.CoreCompileInputs.cache
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.exe
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.xml
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.pdb
-E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Main.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Student.resources
-E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UserControl_BookShowcase.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Borrow.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_CheckOut.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_Book.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_SearchResults.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_Inventory.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_DataViewer.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Manager.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_ShowCase.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_BookShelf.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_Borrows.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_Borrowed.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Add_Edit_Book.resources
