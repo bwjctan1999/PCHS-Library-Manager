@@ -1,7 +1,6 @@
 ﻿Public Class Form_Login
     Private Sub Btn_Login_Click(sender As Object, e As EventArgs) Handles Btn_Login.Click
         Me.Hide()
-        Form_Manager.Show()
     End Sub
 
     'TEXTBOX FUNCTIONS:'
@@ -26,5 +25,9 @@
 
     Private Sub Btn_Minimize_Click(sender As Object, e As EventArgs) Handles Btn_Minimize.Click
         Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub Form_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

@@ -12,8 +12,8 @@
         Me.Lbl_ForgetPass.ForeColor = Color.White
     End Sub
 
-    Private Sub Lbl_ForgetPass_Click(sender As Object, e As EventArgs) Handles Btn_Login.Click
+    Private Sub Btn_Login_Click(sender As Object, e As EventArgs) Handles Btn_Login.Click
         Me.Hide()
-        Form_Manager.Show()
+        Form_SplashScreen.Show()
     End Sub
 End Class

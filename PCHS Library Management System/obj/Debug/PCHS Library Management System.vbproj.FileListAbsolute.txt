@@ -40,3 +40,7 @@ E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\o
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_Borrows.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_Borrowed.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Add_Edit_Book.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_SplashScreen.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_Reports.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_StickyNote.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_SNHolder.resources

@@ -124,6 +124,12 @@
   <data name="Background_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background_8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PCHS Logo-Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PCHS Logo-Name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SplashScreen_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SplashScreen_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icons-Books" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icons-Books.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,29 +139,32 @@
   <data name="Background_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon-Inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-Inventory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon-Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_CheckOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-CheckOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon-More" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-More.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Background_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icon_CheckOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-CheckOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icon-Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon-Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Background_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background_7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_Check_Out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-Check Out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon-Borrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-Borrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon-Library" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon-Library.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PCHS Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PCHS Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_Check_Out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-Check Out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon-Accounts" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon-Accounts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,14 +196,17 @@
   <data name="506-5064686_light-clipart-blue-blue-circle-hd-png-download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\506-5064686_light-clipart-blue-blue-circle-hd-png-download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BOOK 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BOOK 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon-Inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-Inventory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BOOK 5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BOOK 5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon-Search2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-Search21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Background_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background_7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BOOK 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BOOK 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BOOK 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BOOK 4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -204,6 +216,9 @@
   </data>
   <data name="Textbox_Rounded-export" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Textbox_Rounded-export1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon-Bullet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-Bullet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Background 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background 3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,10 +232,10 @@
   <data name="Background_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background_9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PCHS Logo-Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PCHS Logo-Name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon-Search2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-Search21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon-Borrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-Borrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon-AddNote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-AddNote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

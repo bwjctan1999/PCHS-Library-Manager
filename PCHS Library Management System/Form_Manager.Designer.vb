@@ -24,29 +24,30 @@ Partial Class Form_Manager
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Manager))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Btn_Admin = New System.Windows.Forms.Button()
+        Me.Btn_LogOut = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel_MainTaskBar = New System.Windows.Forms.Panel()
         Me.Panel_Highlight = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Btn_Borrowed = New System.Windows.Forms.Button()
         Me.Btn_Staffs = New System.Windows.Forms.Button()
         Me.Btn_Inventory = New System.Windows.Forms.Button()
         Me.Btn_Suppliers = New System.Windows.Forms.Button()
         Me.Btn_BookShowcase = New System.Windows.Forms.Button()
         Me.Btn_Borrows = New System.Windows.Forms.Button()
-        Me.UserControl_Borrows = New PCHS_Library_Management_System.UC_Borrows()
+        Me.UserControl_Reports = New PCHS_Library_Management_System.UC_Reports()
         Me.UserControl_Inventory = New PCHS_Library_Management_System.UC_Inventory()
         Me.UserControl_Borrowed = New PCHS_Library_Management_System.UC_Borrowed()
         Me.UserControl_ShowCase = New PCHS_Library_Management_System.UC_ShowCase()
+        Me.UserControl_Borrows = New PCHS_Library_Management_System.UC_Borrows()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_MainTaskBar.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -54,27 +55,27 @@ Partial Class Form_Manager
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.Btn_Admin)
+        Me.Panel1.Controls.Add(Me.Btn_LogOut)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Location = New System.Drawing.Point(0, -1)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1009, 56)
         Me.Panel1.TabIndex = 0
         '
-        'Btn_Admin
+        'Btn_LogOut
         '
-        Me.Btn_Admin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_Admin.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.Btn_Admin.FlatAppearance.BorderSize = 0
-        Me.Btn_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Admin.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Admin.ForeColor = System.Drawing.Color.White
-        Me.Btn_Admin.Location = New System.Drawing.Point(922, 13)
-        Me.Btn_Admin.Name = "Btn_Admin"
-        Me.Btn_Admin.Size = New System.Drawing.Size(75, 29)
-        Me.Btn_Admin.TabIndex = 3
-        Me.Btn_Admin.Text = "Logout"
-        Me.Btn_Admin.UseVisualStyleBackColor = False
+        Me.Btn_LogOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Btn_LogOut.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.Btn_LogOut.FlatAppearance.BorderSize = 0
+        Me.Btn_LogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_LogOut.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_LogOut.ForeColor = System.Drawing.Color.White
+        Me.Btn_LogOut.Location = New System.Drawing.Point(922, 13)
+        Me.Btn_LogOut.Name = "Btn_LogOut"
+        Me.Btn_LogOut.Size = New System.Drawing.Size(75, 29)
+        Me.Btn_LogOut.TabIndex = 3
+        Me.Btn_LogOut.Text = "Logout"
+        Me.Btn_LogOut.UseVisualStyleBackColor = False
         '
         'Panel2
         '
@@ -85,16 +86,6 @@ Partial Class Form_Manager
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(207, 56)
         Me.Panel2.TabIndex = 5
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.PCHS_Logo
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 1)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(52, 57)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
@@ -110,7 +101,7 @@ Partial Class Form_Manager
         '
         Me.Panel_MainTaskBar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Panel_MainTaskBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(63, Byte), Integer))
+        Me.Panel_MainTaskBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.Panel_MainTaskBar.Controls.Add(Me.Panel_Highlight)
         Me.Panel_MainTaskBar.Controls.Add(Me.Panel4)
         Me.Panel_MainTaskBar.Controls.Add(Me.Btn_Borrowed)
@@ -135,7 +126,7 @@ Partial Class Form_Manager
         'Panel4
         '
         Me.Panel4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(27, Byte), Integer))
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Location = New System.Drawing.Point(-3, 455)
         Me.Panel4.Name = "Panel4"
@@ -152,9 +143,19 @@ Partial Class Form_Manager
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Pangantucan Community High School"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.PCHS_Logo
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(52, 57)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Btn_Borrowed
         '
-        Me.Btn_Borrowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(63, Byte), Integer))
+        Me.Btn_Borrowed.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.Btn_Borrowed.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Btn_Borrowed.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.Btn_Borrowed.FlatAppearance.BorderSize = 0
@@ -174,7 +175,7 @@ Partial Class Form_Manager
         '
         'Btn_Staffs
         '
-        Me.Btn_Staffs.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(63, Byte), Integer))
+        Me.Btn_Staffs.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.Btn_Staffs.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Btn_Staffs.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.Btn_Staffs.FlatAppearance.BorderSize = 0
@@ -194,7 +195,7 @@ Partial Class Form_Manager
         '
         'Btn_Inventory
         '
-        Me.Btn_Inventory.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(63, Byte), Integer))
+        Me.Btn_Inventory.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.Btn_Inventory.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Btn_Inventory.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(63, Byte), Integer))
         Me.Btn_Inventory.FlatAppearance.BorderSize = 0
@@ -214,7 +215,7 @@ Partial Class Form_Manager
         '
         'Btn_Suppliers
         '
-        Me.Btn_Suppliers.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(63, Byte), Integer))
+        Me.Btn_Suppliers.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.Btn_Suppliers.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Btn_Suppliers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.Btn_Suppliers.FlatAppearance.BorderSize = 0
@@ -234,7 +235,7 @@ Partial Class Form_Manager
         '
         'Btn_BookShowcase
         '
-        Me.Btn_BookShowcase.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(63, Byte), Integer))
+        Me.Btn_BookShowcase.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.Btn_BookShowcase.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Btn_BookShowcase.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.Btn_BookShowcase.FlatAppearance.BorderSize = 0
@@ -254,7 +255,7 @@ Partial Class Form_Manager
         '
         'Btn_Borrows
         '
-        Me.Btn_Borrows.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(63, Byte), Integer))
+        Me.Btn_Borrows.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.Btn_Borrows.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Btn_Borrows.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.Btn_Borrows.FlatAppearance.BorderSize = 0
@@ -272,16 +273,16 @@ Partial Class Form_Manager
         Me.Btn_Borrows.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Btn_Borrows.UseVisualStyleBackColor = False
         '
-        'UserControl_Borrows
+        'UserControl_Reports
         '
-        Me.UserControl_Borrows.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.UserControl_Reports.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.UserControl_Borrows.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.UserControl_Borrows.Location = New System.Drawing.Point(205, 55)
-        Me.UserControl_Borrows.Name = "UserControl_Borrows"
-        Me.UserControl_Borrows.Size = New System.Drawing.Size(804, 508)
-        Me.UserControl_Borrows.TabIndex = 2
+        Me.UserControl_Reports.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.UserControl_Reports.Location = New System.Drawing.Point(205, 55)
+        Me.UserControl_Reports.Name = "UserControl_Reports"
+        Me.UserControl_Reports.Size = New System.Drawing.Size(804, 508)
+        Me.UserControl_Reports.TabIndex = 6
         '
         'UserControl_Inventory
         '
@@ -317,12 +318,24 @@ Partial Class Form_Manager
         Me.UserControl_ShowCase.Size = New System.Drawing.Size(804, 508)
         Me.UserControl_ShowCase.TabIndex = 3
         '
+        'UserControl_Borrows
+        '
+        Me.UserControl_Borrows.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.UserControl_Borrows.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.UserControl_Borrows.Location = New System.Drawing.Point(205, 55)
+        Me.UserControl_Borrows.Name = "UserControl_Borrows"
+        Me.UserControl_Borrows.Size = New System.Drawing.Size(804, 508)
+        Me.UserControl_Borrows.TabIndex = 2
+        '
         'Form_Manager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(1008, 561)
+        Me.Controls.Add(Me.UserControl_Reports)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel_MainTaskBar)
         Me.Controls.Add(Me.UserControl_Inventory)
@@ -336,10 +349,10 @@ Partial Class Form_Manager
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_MainTaskBar.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -358,9 +371,10 @@ Partial Class Form_Manager
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents UserControl_Borrows As UC_Borrows
-    Friend WithEvents Btn_Admin As Button
+    Friend WithEvents Btn_LogOut As Button
     Friend WithEvents Panel_Highlight As Panel
     Friend WithEvents UserControl_ShowCase As UC_ShowCase
     Friend WithEvents UserControl_Inventory As UC_Inventory
     Friend WithEvents UserControl_Borrowed As UC_Borrowed
+    Friend WithEvents UserControl_Reports As UC_Reports
 End Class

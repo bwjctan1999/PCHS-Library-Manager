@@ -1,10 +1,10 @@
 ﻿Public Class UC_DataViewer
     Private datatype As String
-    Private parentform
+    Private parent_form
 
     Public Sub Load_DataViewer(type, parent)
         Me.datatype = type
-        Me.parentform = parent
+        Me.parent_form = parent
 
         Create_Column_Header()
         Fill_Data()
@@ -72,23 +72,23 @@
         Dim category As String = "Literature"
         Dim shelveNo As String = "001"
 
-        'fix to i = 4 to i = 0
-        For i = 0 To 3
-            Dim files As String() = New String() {}
-            files = System.IO.Directory.GetFiles("C:/Users/Jukebox/Desktop/Images")
+        ListViewer.BeginUpdate()
+        For i = 0 To 30
+            Dim file As String = "C:\Users\Jukebox\Desktop\Images\BOOK 2.jpg"
             Try
-                For Each f In files
-                    Large_imgs.Images.Add(Image.FromFile(f))
-                    Small_imgs.Images.Add(Image.FromFile(f))
-                Next
+                Large_imgs.Images.Add(Image.FromFile(file))
+                Small_imgs.Images.Add(Image.FromFile(file))
             Catch ex As Exception
 
             End Try
 
             codeNo = i
+
+            'replace with visual basic-addrange
             Dim book As String() = {author, isbn, year, codeNo, category, shelveNo}
             Me.ListViewer.Items.Add(title, i).SubItems.AddRange(book)
         Next
+        ListViewer.EndUpdate()
     End Sub
 
     'Search Function (To be edited...)
@@ -157,10 +157,6 @@
                         ListViewer.Columns(5).Width = 100
                         ListViewer.Columns(6).Width = 100
                 End Select
-
-
-
-
             Case "Header Length"
                 Me.ListViewer.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize)
                 ListViewer.Columns(6).Width = 100
@@ -225,6 +221,6 @@
     End Sub
 
     Private Sub ListViewer_DoubleClick(sender As Object, e As EventArgs) Handles ListViewer.DoubleClick
-        parentform.Double_Click_Event()
+        parent_form.Double_Click_Event()
     End Sub
 End Class

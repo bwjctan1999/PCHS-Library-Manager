@@ -68,6 +68,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -128,6 +129,12 @@
     <Compile Include="Form_Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form_SplashScreen.Designer.vb">
+      <DependentUpon>Form_SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_Student.Designer.vb">
       <DependentUpon>Form_Student.vb</DependentUpon>
     </Compile>
@@ -156,16 +163,16 @@
     <Compile Include="UserControls\UC_Book.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_Borrowed.Designer.vb">
+    <Compile Include="Navigation Controls\UC_Borrowed.Designer.vb">
       <DependentUpon>UC_Borrowed.vb</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_Borrowed.vb">
+    <Compile Include="Navigation Controls\UC_Borrowed.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_Inventory.Designer.vb">
+    <Compile Include="Navigation Controls\UC_Inventory.Designer.vb">
       <DependentUpon>UC_Inventory.vb</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_Inventory.vb">
+    <Compile Include="Navigation Controls\UC_Inventory.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\UC_DataViewer.Designer.vb">
@@ -174,16 +181,22 @@
     <Compile Include="UserControls\UC_DataViewer.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Navigation Controls\UC_Reports.Designer.vb">
+      <DependentUpon>UC_Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation Controls\UC_Reports.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UserControls\UC_SearchResults.Designer.vb">
       <DependentUpon>UC_SearchResults.vb</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UC_SearchResults.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_Borrows.Designer.vb">
+    <Compile Include="Navigation Controls\UC_Borrows.Designer.vb">
       <DependentUpon>UC_Borrows.vb</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_Borrows.vb">
+    <Compile Include="Navigation Controls\UC_Borrows.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\UC_BookShelf.Designer.vb">
@@ -196,6 +209,18 @@
       <DependentUpon>UC_ShowCase.vb</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UC_ShowCase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_SNHolder.Designer.vb">
+      <DependentUpon>UC_SNHolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_SNHolder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_StickyNote.Designer.vb">
+      <DependentUpon>UC_StickyNote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_StickyNote.vb">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
@@ -218,6 +243,9 @@
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_SplashScreen.resx">
+      <DependentUpon>Form_SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Student.resx">
       <DependentUpon>Form_Student.vb</DependentUpon>
     </EmbeddedResource>
@@ -230,19 +258,22 @@
     <EmbeddedResource Include="UserControls\UC_Book.resx">
       <DependentUpon>UC_Book.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_Borrowed.resx">
+    <EmbeddedResource Include="Navigation Controls\UC_Borrowed.resx">
       <DependentUpon>UC_Borrowed.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_Inventory.resx">
+    <EmbeddedResource Include="Navigation Controls\UC_Inventory.resx">
       <DependentUpon>UC_Inventory.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_DataViewer.resx">
       <DependentUpon>UC_DataViewer.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Navigation Controls\UC_Reports.resx">
+      <DependentUpon>UC_Reports.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_SearchResults.resx">
       <DependentUpon>UC_SearchResults.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_Borrows.resx">
+    <EmbeddedResource Include="Navigation Controls\UC_Borrows.resx">
       <DependentUpon>UC_Borrows.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_BookShelf.resx">
@@ -250,6 +281,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_ShowCase.resx">
       <DependentUpon>UC_ShowCase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_SNHolder.resx">
+      <DependentUpon>UC_SNHolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_StickyNote.resx">
+      <DependentUpon>UC_StickyNote.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -428,6 +465,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon-Borrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashScreen_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-More.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-Bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-AddNote.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
