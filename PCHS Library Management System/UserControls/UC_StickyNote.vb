@@ -246,7 +246,7 @@
 
                 Me.Location = New Point(Me.Location.X + e.X - myCoolPoint.X, Me.Location.Y + e.Y - myCoolPoint.Y)
 
-                'If StickyNote is touches left or right borders = Allow Up and Down - Left or Right dragging
+                'If StickyNote touches left or right borders = Allow Up and Down - Left or Right dragging
             ElseIf (Me.Location.X + e.X - myCoolPoint.X) < 0 Or ((Me.Location.X + e.X - myCoolPoint.X) + Me.Width) > containersize.Width Then
 
                 'If StickyNote touches Top and Bottom Borders = Stop Up or Down Dragging
@@ -257,7 +257,7 @@
                 'If StickyNote is whithin Top or Bottom borders = Allow Left and Right - Top or Bottom dragging
             ElseIf (Me.Location.Y + e.Y - myCoolPoint.Y) < 25 Or (Me.Location.Y + e.Y - myCoolPoint.Y) + Me.Height > containersize.Height Then
 
-                'If StickyNote touches Left or Right Borders = Stop Left and Right  dragging
+                'If StickyNote touches Left or Right Borders = Stop Left and Right dragging
                 If (Me.Location.X + e.X - myCoolPoint.X) > 0 And ((Me.Location.X + e.X - myCoolPoint.X) + Me.Width) < containersize.Width Then
                     Me.Location = New Point(Me.Location.X + e.X - myCoolPoint.X, Me.Location.Y)
                 End If
@@ -267,7 +267,6 @@
 
     'STICKY NOTE RESIZE FUNCTIONS
     Private allowResize As Boolean = False
-
     Private Sub Edges_MouseEnter(sender As Object, e As EventArgs) Handles Me.MouseEnter
         Me.Cursor = Cursors.SizeNWSE
     End Sub

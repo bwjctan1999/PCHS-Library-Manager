@@ -22,23 +22,23 @@ Partial Class UC_Borrowed
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Btn_Confirm = New System.Windows.Forms.Button()
+        Me.Btn_Return = New System.Windows.Forms.Button()
         Me.UserControl_DataViewer = New PCHS_Library_Management_System.UC_DataViewer()
         Me.SuspendLayout()
         '
-        'Btn_Confirm
+        'Btn_Return
         '
-        Me.Btn_Confirm.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_Confirm.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Btn_Confirm.FlatAppearance.BorderSize = 0
-        Me.Btn_Confirm.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_Confirm.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Confirm.Location = New System.Drawing.Point(670, 467)
-        Me.Btn_Confirm.Name = "Btn_Confirm"
-        Me.Btn_Confirm.Size = New System.Drawing.Size(114, 26)
-        Me.Btn_Confirm.TabIndex = 5
-        Me.Btn_Confirm.Text = "Return"
-        Me.Btn_Confirm.UseVisualStyleBackColor = False
+        Me.Btn_Return.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Btn_Return.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.Btn_Return.FlatAppearance.BorderSize = 0
+        Me.Btn_Return.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Return.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Return.Location = New System.Drawing.Point(670, 467)
+        Me.Btn_Return.Name = "Btn_Return"
+        Me.Btn_Return.Size = New System.Drawing.Size(114, 26)
+        Me.Btn_Return.TabIndex = 5
+        Me.Btn_Return.Text = "Return"
+        Me.Btn_Return.UseVisualStyleBackColor = False
         '
         'UserControl_DataViewer
         '
@@ -57,7 +57,7 @@ Partial Class UC_Borrowed
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.Controls.Add(Me.UserControl_DataViewer)
-        Me.Controls.Add(Me.Btn_Confirm)
+        Me.Controls.Add(Me.Btn_Return)
         Me.Name = "UC_Borrowed"
         Me.Size = New System.Drawing.Size(804, 508)
         Me.ResumeLayout(False)
@@ -65,5 +65,5 @@ Partial Class UC_Borrowed
     End Sub
 
     Friend WithEvents UserControl_DataViewer As UC_DataViewer
-    Friend WithEvents Btn_Confirm As Button
+    Friend WithEvents Btn_Return As Button
 End Class

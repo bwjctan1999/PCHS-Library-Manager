@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class UC_DataViewer
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class UC_DataViewer
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ListViewer = New System.Windows.Forms.ListView()
         Me.Btn_ListSettings = New System.Windows.Forms.Button()
@@ -35,6 +35,8 @@ Partial Class UC_DataViewer
         Me.Cbox_GridSettings = New System.Windows.Forms.ComboBox()
         Me.Cbox_ArrangeSettings = New System.Windows.Forms.ComboBox()
         Me.Cbox_ViewSettings = New System.Windows.Forms.ComboBox()
+        Me.Txtbox_Searchbar = New System.Windows.Forms.TextBox()
+        Me.Btn_Search = New System.Windows.Forms.Button()
         Me.Panel_BookSettings.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -187,11 +189,35 @@ Partial Class UC_DataViewer
         Me.Cbox_ViewSettings.Size = New System.Drawing.Size(237, 21)
         Me.Cbox_ViewSettings.TabIndex = 0
         '
+        'Txtbox_Searchbar
+        '
+        Me.Txtbox_Searchbar.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txtbox_Searchbar.Location = New System.Drawing.Point(3, 0)
+        Me.Txtbox_Searchbar.Name = "Txtbox_Searchbar"
+        Me.Txtbox_Searchbar.Size = New System.Drawing.Size(283, 23)
+        Me.Txtbox_Searchbar.TabIndex = 7
+        '
+        'Btn_Search
+        '
+        Me.Btn_Search.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.Btn_Search.FlatAppearance.BorderSize = 0
+        Me.Btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Search.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Search.ForeColor = System.Drawing.Color.White
+        Me.Btn_Search.Location = New System.Drawing.Point(292, -1)
+        Me.Btn_Search.Name = "Btn_Search"
+        Me.Btn_Search.Size = New System.Drawing.Size(75, 24)
+        Me.Btn_Search.TabIndex = 8
+        Me.Btn_Search.Text = "Search"
+        Me.Btn_Search.UseVisualStyleBackColor = False
+        '
         'UC_DataViewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
+        Me.Controls.Add(Me.Btn_Search)
+        Me.Controls.Add(Me.Txtbox_Searchbar)
         Me.Controls.Add(Me.Panel_BookSettings)
         Me.Controls.Add(Me.Btn_ListSettings)
         Me.Controls.Add(Me.ListViewer)
@@ -200,6 +226,7 @@ Partial Class UC_DataViewer
         Me.Panel_BookSettings.ResumeLayout(False)
         Me.Panel_BookSettings.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -216,4 +243,6 @@ Partial Class UC_DataViewer
     Friend WithEvents Cbox_GridSettings As ComboBox
     Friend WithEvents Cbox_ArrangeSettings As ComboBox
     Friend WithEvents Cbox_ViewSettings As ComboBox
+    Friend WithEvents Txtbox_Searchbar As TextBox
+    Friend WithEvents Btn_Search As Button
 End Class

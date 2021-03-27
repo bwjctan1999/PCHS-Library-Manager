@@ -27,7 +27,6 @@ E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\o
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.exe
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.xml
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.pdb
-E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Student.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Borrow.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_CheckOut.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_Book.resources
@@ -44,3 +43,41 @@ E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\o
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_Reports.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_StickyNote.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_SNHolder.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_SCBook.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_SCBookShelf.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\BouncyCastle.Crypto.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\Google.Protobuf.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\K4os.Compression.LZ4.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\K4os.Hash.xxHash.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\Renci.SshNet.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\System.Buffers.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\System.Memory.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\System.Numerics.Vectors.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\Google.Protobuf.pdb
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\Google.Protobuf.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\K4os.Compression.LZ4.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\K4os.Hash.xxHash.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\MySql.Data.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\Renci.SshNet.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\System.Buffers.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\System.Memory.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\System.Numerics.Vectors.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.vbproj.CopyComplete
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_AddLibrarian.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.UC_Staff.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_Main.resources
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\zxing.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\zxing.presentation.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\zxing.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\zxing.presentation.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\AForge.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\AForge.Video.DirectShow.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\AForge.Video.dll
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\AForge.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\AForge.Video.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\AForge.Video.DirectShow.xml
+E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Form_QRReader.resources

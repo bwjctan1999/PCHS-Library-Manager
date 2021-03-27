@@ -59,6 +59,7 @@ Partial Class UC_Book
         Me.BackColor = System.Drawing.Color.Transparent
         Me.Controls.Add(Me.PicBox_Cover)
         Me.Controls.Add(Me.Lbl_Title)
+        Me.DoubleBuffered = True
         Me.ForeColor = System.Drawing.Color.Transparent
         Me.Name = "UC_Book"
         CType(Me.PicBox_Cover, System.ComponentModel.ISupportInitialize).EndInit()

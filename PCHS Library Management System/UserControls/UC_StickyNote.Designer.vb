@@ -23,6 +23,7 @@ Partial Class UC_StickyNote
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TaskBar = New System.Windows.Forms.Panel()
+        Me.Btn_More = New System.Windows.Forms.Panel()
         Me.Btn_Close = New System.Windows.Forms.Button()
         Me.Panel_Body = New System.Windows.Forms.Panel()
         Me.RTBox = New System.Windows.Forms.RichTextBox()
@@ -30,6 +31,8 @@ Partial Class UC_StickyNote
         Me.Panel_Right = New System.Windows.Forms.Panel()
         Me.Panel_Bottom = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Btn_Bullets = New System.Windows.Forms.Button()
+        Me.Btn_Picture = New System.Windows.Forms.Button()
         Me.Btn_StrikeOut = New System.Windows.Forms.Button()
         Me.Btn_Underline = New System.Windows.Forms.Button()
         Me.Btn_Italic = New System.Windows.Forms.Button()
@@ -38,9 +41,6 @@ Partial Class UC_StickyNote
         Me.Btn_Green = New System.Windows.Forms.Button()
         Me.Btn_Blue = New System.Windows.Forms.Button()
         Me.Btn_Yellow = New System.Windows.Forms.Button()
-        Me.Btn_More = New System.Windows.Forms.Panel()
-        Me.Btn_Bullets = New System.Windows.Forms.Button()
-        Me.Btn_Picture = New System.Windows.Forms.Button()
         Me.TaskBar.SuspendLayout()
         Me.Panel_Body.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -58,6 +58,18 @@ Partial Class UC_StickyNote
         Me.TaskBar.Name = "TaskBar"
         Me.TaskBar.Size = New System.Drawing.Size(223, 22)
         Me.TaskBar.TabIndex = 2
+        '
+        'Btn_More
+        '
+        Me.Btn_More.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Btn_More.BackColor = System.Drawing.Color.Khaki
+        Me.Btn_More.BackgroundImage = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_More
+        Me.Btn_More.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Btn_More.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_More.Location = New System.Drawing.Point(178, 1)
+        Me.Btn_More.Name = "Btn_More"
+        Me.Btn_More.Size = New System.Drawing.Size(20, 20)
+        Me.Btn_More.TabIndex = 4
         '
         'Btn_Close
         '
@@ -153,6 +165,36 @@ Partial Class UC_StickyNote
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(223, 22)
         Me.Panel1.TabIndex = 2
+        '
+        'Btn_Bullets
+        '
+        Me.Btn_Bullets.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.Btn_Bullets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Btn_Bullets.FlatAppearance.BorderSize = 0
+        Me.Btn_Bullets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Bullets.Font = New System.Drawing.Font("Times New Roman", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Bullets.ForeColor = System.Drawing.Color.White
+        Me.Btn_Bullets.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Bullet
+        Me.Btn_Bullets.Location = New System.Drawing.Point(84, 1)
+        Me.Btn_Bullets.Name = "Btn_Bullets"
+        Me.Btn_Bullets.Size = New System.Drawing.Size(20, 20)
+        Me.Btn_Bullets.TabIndex = 0
+        Me.Btn_Bullets.UseVisualStyleBackColor = False
+        '
+        'Btn_Picture
+        '
+        Me.Btn_Picture.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
+        Me.Btn_Picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Btn_Picture.FlatAppearance.BorderSize = 0
+        Me.Btn_Picture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Picture.Font = New System.Drawing.Font("Times New Roman", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Picture.ForeColor = System.Drawing.Color.White
+        Me.Btn_Picture.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Image
+        Me.Btn_Picture.Location = New System.Drawing.Point(105, 1)
+        Me.Btn_Picture.Name = "Btn_Picture"
+        Me.Btn_Picture.Size = New System.Drawing.Size(20, 20)
+        Me.Btn_Picture.TabIndex = 0
+        Me.Btn_Picture.UseVisualStyleBackColor = False
         '
         'Btn_StrikeOut
         '
@@ -265,48 +307,6 @@ Partial Class UC_StickyNote
         Me.Btn_Yellow.Size = New System.Drawing.Size(20, 20)
         Me.Btn_Yellow.TabIndex = 0
         Me.Btn_Yellow.UseVisualStyleBackColor = False
-        '
-        'Btn_More
-        '
-        Me.Btn_More.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_More.BackColor = System.Drawing.Color.Khaki
-        Me.Btn_More.BackgroundImage = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_More
-        Me.Btn_More.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Btn_More.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Btn_More.Location = New System.Drawing.Point(178, 1)
-        Me.Btn_More.Name = "Btn_More"
-        Me.Btn_More.Size = New System.Drawing.Size(20, 20)
-        Me.Btn_More.TabIndex = 4
-        '
-        'Btn_Bullets
-        '
-        Me.Btn_Bullets.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.Btn_Bullets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Btn_Bullets.FlatAppearance.BorderSize = 0
-        Me.Btn_Bullets.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Bullets.Font = New System.Drawing.Font("Times New Roman", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Bullets.ForeColor = System.Drawing.Color.White
-        Me.Btn_Bullets.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Bullet
-        Me.Btn_Bullets.Location = New System.Drawing.Point(84, 1)
-        Me.Btn_Bullets.Name = "Btn_Bullets"
-        Me.Btn_Bullets.Size = New System.Drawing.Size(20, 20)
-        Me.Btn_Bullets.TabIndex = 0
-        Me.Btn_Bullets.UseVisualStyleBackColor = False
-        '
-        'Btn_Picture
-        '
-        Me.Btn_Picture.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.Btn_Picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Btn_Picture.FlatAppearance.BorderSize = 0
-        Me.Btn_Picture.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Picture.Font = New System.Drawing.Font("Times New Roman", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Picture.ForeColor = System.Drawing.Color.White
-        Me.Btn_Picture.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Image
-        Me.Btn_Picture.Location = New System.Drawing.Point(105, 1)
-        Me.Btn_Picture.Name = "Btn_Picture"
-        Me.Btn_Picture.Size = New System.Drawing.Size(20, 20)
-        Me.Btn_Picture.TabIndex = 0
-        Me.Btn_Picture.UseVisualStyleBackColor = False
         '
         'UC_StickyNote
         '

@@ -63,10 +63,58 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Renci.SshNet, Version=2020.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2020.0.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
@@ -74,6 +122,12 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -92,55 +146,68 @@
     <Compile Include="Classes\BorderedLabel.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form_Borrow.Designer.vb">
+    <Compile Include="Forms\Form_AddLibrarian.Designer.vb">
+      <DependentUpon>Form_AddLibrarian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_AddLibrarian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Borrow.Designer.vb">
       <DependentUpon>Form_Borrow.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_Borrow.vb">
+    <Compile Include="Forms\Form_Borrow.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_CheckOut.Designer.vb">
+    <Compile Include="Forms\Form_CheckOut.Designer.vb">
       <DependentUpon>Form_CheckOut.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_CheckOut.vb">
+    <Compile Include="Forms\Form_CheckOut.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Login2.Designer.vb">
+    <Compile Include="Forms\Form_Login2.Designer.vb">
       <DependentUpon>Form_Login2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_Login2.vb">
+    <Compile Include="Forms\Form_Login2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Add_Edit_Book.Designer.vb">
+    <Compile Include="Forms\Form_Add_Edit_Book.Designer.vb">
       <DependentUpon>Form_Add_Edit_Book.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_Add_Edit_Book.vb">
+    <Compile Include="Forms\Form_Add_Edit_Book.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Manager.vb">
+    <Compile Include="Forms\Form_Manager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Manager.Designer.vb">
+    <Compile Include="Forms\Form_Manager.Designer.vb">
       <DependentUpon>Form_Manager.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Login.Designer.vb">
+    <Compile Include="Forms\Form_Login.Designer.vb">
       <DependentUpon>Form_Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_Login.vb">
+    <Compile Include="Forms\Form_Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_SplashScreen.Designer.vb">
+    <Compile Include="Forms\Form_QRReader.Designer.vb">
+      <DependentUpon>Form_QRReader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_QRReader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_SplashScreen.Designer.vb">
       <DependentUpon>Form_SplashScreen.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_SplashScreen.vb">
+    <Compile Include="Forms\Form_SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Student.Designer.vb">
-      <DependentUpon>Form_Student.vb</DependentUpon>
+    <Compile Include="Forms\Form_Main.Designer.vb">
+      <DependentUpon>Form_Main.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form_Student.vb">
+    <Compile Include="Forms\Form_Main.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -156,6 +223,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Navigation Controls\UC_Staff.Designer.vb">
+      <DependentUpon>UC_Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation Controls\UC_Staff.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\UC_Book.Designer.vb">
       <DependentUpon>UC_Book.vb</DependentUpon>
@@ -187,6 +260,18 @@
     <Compile Include="Navigation Controls\UC_Reports.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UserControls\UC_SCBook.Designer.vb">
+      <DependentUpon>UC_SCBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_SCBook.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_SCBookShelf.Designer.vb">
+      <DependentUpon>UC_SCBookShelf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_SCBookShelf.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UserControls\UC_SearchResults.Designer.vb">
       <DependentUpon>UC_SearchResults.vb</DependentUpon>
     </Compile>
@@ -205,10 +290,10 @@
     <Compile Include="UserControls\UC_BookShelf.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_ShowCase.Designer.vb">
+    <Compile Include="Navigation Controls\UC_ShowCase.Designer.vb">
       <DependentUpon>UC_ShowCase.vb</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_ShowCase.vb">
+    <Compile Include="Navigation Controls\UC_ShowCase.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\UC_SNHolder.Designer.vb">
@@ -225,35 +310,44 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form_Add_Edit_Book.resx">
+    <EmbeddedResource Include="Forms\Form_AddLibrarian.resx">
+      <DependentUpon>Form_AddLibrarian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Add_Edit_Book.resx">
       <DependentUpon>Form_Add_Edit_Book.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Borrow.resx">
+    <EmbeddedResource Include="Forms\Form_Borrow.resx">
       <DependentUpon>Form_Borrow.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_CheckOut.resx">
+    <EmbeddedResource Include="Forms\Form_CheckOut.resx">
       <DependentUpon>Form_CheckOut.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Login2.resx">
+    <EmbeddedResource Include="Forms\Form_Login2.resx">
       <DependentUpon>Form_Login2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Manager.resx">
+    <EmbeddedResource Include="Forms\Form_Manager.resx">
       <DependentUpon>Form_Manager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Login.resx">
+    <EmbeddedResource Include="Forms\Form_Login.resx">
       <DependentUpon>Form_Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_SplashScreen.resx">
+    <EmbeddedResource Include="Forms\Form_QRReader.resx">
+      <DependentUpon>Form_QRReader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_SplashScreen.resx">
       <DependentUpon>Form_SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Student.resx">
-      <DependentUpon>Form_Student.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Form_Main.resx">
+      <DependentUpon>Form_Main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation Controls\UC_Staff.resx">
+      <DependentUpon>UC_Staff.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Book.resx">
       <DependentUpon>UC_Book.vb</DependentUpon>
@@ -270,6 +364,12 @@
     <EmbeddedResource Include="Navigation Controls\UC_Reports.resx">
       <DependentUpon>UC_Reports.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_SCBook.resx">
+      <DependentUpon>UC_SCBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_SCBookShelf.resx">
+      <DependentUpon>UC_SCBookShelf.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_SearchResults.resx">
       <DependentUpon>UC_SearchResults.vb</DependentUpon>
     </EmbeddedResource>
@@ -279,7 +379,7 @@
     <EmbeddedResource Include="UserControls\UC_BookShelf.resx">
       <DependentUpon>UC_BookShelf.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_ShowCase.resx">
+    <EmbeddedResource Include="Navigation Controls\UC_ShowCase.resx">
       <DependentUpon>UC_ShowCase.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_SNHolder.resx">
@@ -302,6 +402,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\PCHS Logo-Name.png" />
   </ItemGroup>
   <ItemGroup>
@@ -480,6 +581,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon-AddNote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-DashBoard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-AddStaff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profavat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-guide-to-qr-codes-and-how-to-scan-qr-codes-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\160957889_1011381092726597_1040702949177513212_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-QR.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

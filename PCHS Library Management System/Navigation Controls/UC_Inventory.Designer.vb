@@ -24,7 +24,7 @@ Partial Class UC_Inventory
     Private Sub InitializeComponent()
         Me.UserControl_DataViewer = New PCHS_Library_Management_System.UC_DataViewer()
         Me.Btn_AddBook = New System.Windows.Forms.Button()
-        Me.Btn_Delete = New System.Windows.Forms.Button()
+        Me.Btn_DeleteBook = New System.Windows.Forms.Button()
         Me.Btn_UpdateBook = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -53,19 +53,19 @@ Partial Class UC_Inventory
         Me.Btn_AddBook.Text = "Add"
         Me.Btn_AddBook.UseVisualStyleBackColor = False
         '
-        'Btn_Delete
+        'Btn_DeleteBook
         '
-        Me.Btn_Delete.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_Delete.BackColor = System.Drawing.Color.IndianRed
-        Me.Btn_Delete.FlatAppearance.BorderSize = 0
-        Me.Btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_Delete.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Delete.Location = New System.Drawing.Point(423, 467)
-        Me.Btn_Delete.Name = "Btn_Delete"
-        Me.Btn_Delete.Size = New System.Drawing.Size(114, 26)
-        Me.Btn_Delete.TabIndex = 5
-        Me.Btn_Delete.Text = "Delete"
-        Me.Btn_Delete.UseVisualStyleBackColor = False
+        Me.Btn_DeleteBook.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Btn_DeleteBook.BackColor = System.Drawing.Color.IndianRed
+        Me.Btn_DeleteBook.FlatAppearance.BorderSize = 0
+        Me.Btn_DeleteBook.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_DeleteBook.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_DeleteBook.Location = New System.Drawing.Point(423, 467)
+        Me.Btn_DeleteBook.Name = "Btn_DeleteBook"
+        Me.Btn_DeleteBook.Size = New System.Drawing.Size(114, 26)
+        Me.Btn_DeleteBook.TabIndex = 5
+        Me.Btn_DeleteBook.Text = "Delete"
+        Me.Btn_DeleteBook.UseVisualStyleBackColor = False
         '
         'Btn_UpdateBook
         '
@@ -87,7 +87,7 @@ Partial Class UC_Inventory
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.Controls.Add(Me.Btn_AddBook)
-        Me.Controls.Add(Me.Btn_Delete)
+        Me.Controls.Add(Me.Btn_DeleteBook)
         Me.Controls.Add(Me.Btn_UpdateBook)
         Me.Controls.Add(Me.UserControl_DataViewer)
         Me.Name = "UC_Inventory"
@@ -98,6 +98,6 @@ Partial Class UC_Inventory
 
     Friend WithEvents UserControl_DataViewer As UC_DataViewer
     Friend WithEvents Btn_AddBook As Button
-    Friend WithEvents Btn_Delete As Button
+    Friend WithEvents Btn_DeleteBook As Button
     Friend WithEvents Btn_UpdateBook As Button
 End Class

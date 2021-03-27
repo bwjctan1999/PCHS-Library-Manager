@@ -22,20 +22,27 @@ Partial Class UC_Reports
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Chart1_LegendText3 = New System.Windows.Forms.Label()
         Me.Chart1_LegendText2 = New System.Windows.Forms.Label()
+        Me.Chart1_LegendColor3 = New System.Windows.Forms.Panel()
         Me.Chart1_LegendText1 = New System.Windows.Forms.Label()
         Me.Chart1_LegendColor2 = New System.Windows.Forms.Panel()
         Me.Chart1_LegendColor1 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Chart1_LegendNum1 = New System.Windows.Forms.Label()
+        Me.Chart1_LegendNum2 = New System.Windows.Forms.Label()
+        Me.Chart1_LegendNum3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Chart2_LegendTotal = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -73,6 +80,7 @@ Partial Class UC_Reports
         Me.Chart2_LegendColor2 = New System.Windows.Forms.Panel()
         Me.Chart2_LegendColor1 = New System.Windows.Forms.Panel()
         Me.UC_SNHolder1 = New PCHS_Library_Management_System.UC_SNHolder()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,22 +96,22 @@ Partial Class UC_Reports
         Me.Chart2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Chart2.BackColor = System.Drawing.SystemColors.Window
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend1)
+        ChartArea3.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea3)
+        Legend3.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend3)
         Me.Chart2.Location = New System.Drawing.Point(3, 6)
         Me.Chart2.Name = "Chart2"
         Me.Chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None
         Me.Chart2.PaletteCustomColors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(92, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(124, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(145, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(149, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(135, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(106, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(124, Byte), Integer), CType(CType(67, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(0, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(166, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(154, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(125, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(84, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(28, Byte), Integer))}
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
-        Series1.CustomProperties = "PieLabelStyle=Disabled"
-        Series1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series1.Legend = "Legend1"
-        Series1.MarkerBorderColor = System.Drawing.Color.White
-        Series1.Name = "s1"
-        Me.Chart2.Series.Add(Series1)
+        Series3.ChartArea = "ChartArea1"
+        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
+        Series3.CustomProperties = "PieLabelStyle=Disabled"
+        Series3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series3.Legend = "Legend1"
+        Series3.MarkerBorderColor = System.Drawing.Color.White
+        Series3.Name = "s1"
+        Me.Chart2.Series.Add(Series3)
         Me.Chart2.Size = New System.Drawing.Size(275, 240)
         Me.Chart2.TabIndex = 0
         Me.Chart2.Text = "Chart"
@@ -113,22 +121,22 @@ Partial Class UC_Reports
         Me.Chart1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Chart1.BackColor = System.Drawing.SystemColors.Window
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend2)
+        ChartArea4.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea4)
+        Legend4.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend4)
         Me.Chart1.Location = New System.Drawing.Point(3, 3)
         Me.Chart1.Name = "Chart1"
         Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None
-        Me.Chart1.PaletteCustomColors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(163, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(133, Byte), Integer))}
-        Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
-        Series2.CustomProperties = "PieLabelStyle=Disabled"
-        Series2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Series2.Legend = "Legend1"
-        Series2.MarkerBorderColor = System.Drawing.Color.White
-        Series2.Name = "s1"
-        Me.Chart1.Series.Add(Series2)
+        Me.Chart1.PaletteCustomColors = New System.Drawing.Color() {System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(163, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(133, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(135, Byte), Integer))}
+        Series4.ChartArea = "ChartArea1"
+        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
+        Series4.CustomProperties = "PieLabelStyle=Disabled"
+        Series4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Series4.Legend = "Legend1"
+        Series4.MarkerBorderColor = System.Drawing.Color.White
+        Series4.Name = "s1"
+        Me.Chart1.Series.Add(Series4)
         Me.Chart1.Size = New System.Drawing.Size(275, 240)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart"
@@ -162,28 +170,52 @@ Partial Class UC_Reports
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.Chart1_LegendText3)
         Me.Panel1.Controls.Add(Me.Chart1_LegendText2)
+        Me.Panel1.Controls.Add(Me.Chart1_LegendColor3)
         Me.Panel1.Controls.Add(Me.Chart1_LegendText1)
         Me.Panel1.Controls.Add(Me.Chart1_LegendColor2)
         Me.Panel1.Controls.Add(Me.Chart1_LegendColor1)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Controls.Add(Me.Chart1_LegendNum1)
+        Me.Panel1.Controls.Add(Me.Chart1_LegendNum2)
+        Me.Panel1.Controls.Add(Me.Chart1_LegendNum3)
         Me.Panel1.Location = New System.Drawing.Point(278, 3)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(275, 240)
         Me.Panel1.TabIndex = 1
         '
+        'Chart1_LegendText3
+        '
+        Me.Chart1_LegendText3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Chart1_LegendText3.Location = New System.Drawing.Point(42, 59)
+        Me.Chart1_LegendText3.Name = "Chart1_LegendText3"
+        Me.Chart1_LegendText3.Size = New System.Drawing.Size(125, 17)
+        Me.Chart1_LegendText3.TabIndex = 1
+        Me.Chart1_LegendText3.Text = "Label2"
+        '
         'Chart1_LegendText2
         '
         Me.Chart1_LegendText2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Chart1_LegendText2.Location = New System.Drawing.Point(42, 27)
+        Me.Chart1_LegendText2.Location = New System.Drawing.Point(42, 42)
         Me.Chart1_LegendText2.Name = "Chart1_LegendText2"
         Me.Chart1_LegendText2.Size = New System.Drawing.Size(125, 17)
         Me.Chart1_LegendText2.TabIndex = 1
         Me.Chart1_LegendText2.Text = "Label2"
         '
+        'Chart1_LegendColor3
+        '
+        Me.Chart1_LegendColor3.BackColor = System.Drawing.Color.DimGray
+        Me.Chart1_LegendColor3.Location = New System.Drawing.Point(16, 61)
+        Me.Chart1_LegendColor3.Name = "Chart1_LegendColor3"
+        Me.Chart1_LegendColor3.Size = New System.Drawing.Size(20, 10)
+        Me.Chart1_LegendColor3.TabIndex = 0
+        '
         'Chart1_LegendText1
         '
         Me.Chart1_LegendText1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Chart1_LegendText1.Location = New System.Drawing.Point(42, 10)
+        Me.Chart1_LegendText1.Location = New System.Drawing.Point(42, 22)
         Me.Chart1_LegendText1.Name = "Chart1_LegendText1"
         Me.Chart1_LegendText1.Size = New System.Drawing.Size(125, 17)
         Me.Chart1_LegendText1.TabIndex = 1
@@ -192,7 +224,7 @@ Partial Class UC_Reports
         'Chart1_LegendColor2
         '
         Me.Chart1_LegendColor2.BackColor = System.Drawing.Color.DimGray
-        Me.Chart1_LegendColor2.Location = New System.Drawing.Point(16, 32)
+        Me.Chart1_LegendColor2.Location = New System.Drawing.Point(16, 44)
         Me.Chart1_LegendColor2.Name = "Chart1_LegendColor2"
         Me.Chart1_LegendColor2.Size = New System.Drawing.Size(20, 10)
         Me.Chart1_LegendColor2.TabIndex = 0
@@ -200,10 +232,64 @@ Partial Class UC_Reports
         'Chart1_LegendColor1
         '
         Me.Chart1_LegendColor1.BackColor = System.Drawing.Color.Gray
-        Me.Chart1_LegendColor1.Location = New System.Drawing.Point(16, 14)
+        Me.Chart1_LegendColor1.Location = New System.Drawing.Point(16, 26)
         Me.Chart1_LegendColor1.Name = "Chart1_LegendColor1"
         Me.Chart1_LegendColor1.Size = New System.Drawing.Size(20, 10)
         Me.Chart1_LegendColor1.TabIndex = 0
+        '
+        'Label4
+        '
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(6, 7)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(57, 18)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Books"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label7
+        '
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Label7.Location = New System.Drawing.Point(185, 7)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(57, 18)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Quantity"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Chart1_LegendNum1
+        '
+        Me.Chart1_LegendNum1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Chart1_LegendNum1.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Chart1_LegendNum1.Location = New System.Drawing.Point(189, 22)
+        Me.Chart1_LegendNum1.Name = "Chart1_LegendNum1"
+        Me.Chart1_LegendNum1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Chart1_LegendNum1.Size = New System.Drawing.Size(50, 17)
+        Me.Chart1_LegendNum1.TabIndex = 1
+        Me.Chart1_LegendNum1.Text = "Label1"
+        '
+        'Chart1_LegendNum2
+        '
+        Me.Chart1_LegendNum2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Chart1_LegendNum2.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Chart1_LegendNum2.Location = New System.Drawing.Point(189, 42)
+        Me.Chart1_LegendNum2.Name = "Chart1_LegendNum2"
+        Me.Chart1_LegendNum2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Chart1_LegendNum2.Size = New System.Drawing.Size(50, 17)
+        Me.Chart1_LegendNum2.TabIndex = 1
+        Me.Chart1_LegendNum2.Text = "Label2"
+        '
+        'Chart1_LegendNum3
+        '
+        Me.Chart1_LegendNum3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Chart1_LegendNum3.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Chart1_LegendNum3.Location = New System.Drawing.Point(189, 59)
+        Me.Chart1_LegendNum3.Name = "Chart1_LegendNum3"
+        Me.Chart1_LegendNum3.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Chart1_LegendNum3.Size = New System.Drawing.Size(50, 17)
+        Me.Chart1_LegendNum3.TabIndex = 5
+        Me.Chart1_LegendNum3.Text = "Label1"
         '
         'Panel2
         '
@@ -211,6 +297,7 @@ Partial Class UC_Reports
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.Chart2_LegendTotal)
         Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Controls.Add(Me.Label3)
@@ -255,12 +342,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendTotal.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendTotal.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendTotal.Location = New System.Drawing.Point(185, 209)
+        Me.Chart2_LegendTotal.Location = New System.Drawing.Point(189, 209)
         Me.Chart2_LegendTotal.Name = "Chart2_LegendTotal"
+        Me.Chart2_LegendTotal.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendTotal.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendTotal.TabIndex = 17
         Me.Chart2_LegendTotal.Text = "Label2"
-        Me.Chart2_LegendTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel3
         '
@@ -285,12 +372,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendNum10.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendNum10.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendNum10.Location = New System.Drawing.Point(185, 183)
+        Me.Chart2_LegendNum10.Location = New System.Drawing.Point(189, 183)
         Me.Chart2_LegendNum10.Name = "Chart2_LegendNum10"
+        Me.Chart2_LegendNum10.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendNum10.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendNum10.TabIndex = 17
         Me.Chart2_LegendNum10.Text = "Label2"
-        Me.Chart2_LegendNum10.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Chart2_LegendText10
         '
@@ -313,12 +400,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendNum9.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendNum9.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendNum9.Location = New System.Drawing.Point(185, 166)
+        Me.Chart2_LegendNum9.Location = New System.Drawing.Point(189, 166)
         Me.Chart2_LegendNum9.Name = "Chart2_LegendNum9"
+        Me.Chart2_LegendNum9.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendNum9.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendNum9.TabIndex = 14
         Me.Chart2_LegendNum9.Text = "Label2"
-        Me.Chart2_LegendNum9.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Chart2_LegendText9
         '
@@ -333,12 +420,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendNum8.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendNum8.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendNum8.Location = New System.Drawing.Point(185, 149)
+        Me.Chart2_LegendNum8.Location = New System.Drawing.Point(189, 149)
         Me.Chart2_LegendNum8.Name = "Chart2_LegendNum8"
+        Me.Chart2_LegendNum8.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendNum8.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendNum8.TabIndex = 15
         Me.Chart2_LegendNum8.Text = "Label1"
-        Me.Chart2_LegendNum8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Chart2_LegendText8
         '
@@ -369,12 +456,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendNum7.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendNum7.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendNum7.Location = New System.Drawing.Point(185, 130)
+        Me.Chart2_LegendNum7.Location = New System.Drawing.Point(189, 130)
         Me.Chart2_LegendNum7.Name = "Chart2_LegendNum7"
+        Me.Chart2_LegendNum7.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendNum7.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendNum7.TabIndex = 10
         Me.Chart2_LegendNum7.Text = "Label2"
-        Me.Chart2_LegendNum7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Chart2_LegendText7
         '
@@ -389,12 +476,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendNum6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendNum6.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendNum6.Location = New System.Drawing.Point(185, 113)
+        Me.Chart2_LegendNum6.Location = New System.Drawing.Point(189, 113)
         Me.Chart2_LegendNum6.Name = "Chart2_LegendNum6"
+        Me.Chart2_LegendNum6.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendNum6.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendNum6.TabIndex = 11
         Me.Chart2_LegendNum6.Text = "Label1"
-        Me.Chart2_LegendNum6.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Chart2_LegendText6
         '
@@ -425,12 +512,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendNum5.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendNum5.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendNum5.Location = New System.Drawing.Point(185, 95)
+        Me.Chart2_LegendNum5.Location = New System.Drawing.Point(189, 95)
         Me.Chart2_LegendNum5.Name = "Chart2_LegendNum5"
+        Me.Chart2_LegendNum5.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendNum5.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendNum5.TabIndex = 7
         Me.Chart2_LegendNum5.Text = "Label2"
-        Me.Chart2_LegendNum5.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Chart2_LegendText5
         '
@@ -453,12 +540,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendNum4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendNum4.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendNum4.Location = New System.Drawing.Point(185, 78)
+        Me.Chart2_LegendNum4.Location = New System.Drawing.Point(189, 78)
         Me.Chart2_LegendNum4.Name = "Chart2_LegendNum4"
+        Me.Chart2_LegendNum4.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendNum4.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendNum4.TabIndex = 4
         Me.Chart2_LegendNum4.Text = "Label2"
-        Me.Chart2_LegendNum4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Chart2_LegendText4
         '
@@ -473,12 +560,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendNum3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendNum3.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendNum3.Location = New System.Drawing.Point(185, 61)
+        Me.Chart2_LegendNum3.Location = New System.Drawing.Point(189, 61)
         Me.Chart2_LegendNum3.Name = "Chart2_LegendNum3"
+        Me.Chart2_LegendNum3.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendNum3.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendNum3.TabIndex = 5
         Me.Chart2_LegendNum3.Text = "Label1"
-        Me.Chart2_LegendNum3.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Chart2_LegendText3
         '
@@ -509,12 +596,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendNum2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendNum2.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendNum2.Location = New System.Drawing.Point(185, 42)
+        Me.Chart2_LegendNum2.Location = New System.Drawing.Point(189, 42)
         Me.Chart2_LegendNum2.Name = "Chart2_LegendNum2"
+        Me.Chart2_LegendNum2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendNum2.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendNum2.TabIndex = 1
         Me.Chart2_LegendNum2.Text = "Label2"
-        Me.Chart2_LegendNum2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Chart2_LegendText2
         '
@@ -550,12 +637,12 @@ Partial Class UC_Reports
         '
         Me.Chart2_LegendNum1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Chart2_LegendNum1.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Chart2_LegendNum1.Location = New System.Drawing.Point(185, 25)
+        Me.Chart2_LegendNum1.Location = New System.Drawing.Point(189, 25)
         Me.Chart2_LegendNum1.Name = "Chart2_LegendNum1"
+        Me.Chart2_LegendNum1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Chart2_LegendNum1.Size = New System.Drawing.Size(50, 17)
         Me.Chart2_LegendNum1.TabIndex = 1
         Me.Chart2_LegendNum1.Text = "Label1"
-        Me.Chart2_LegendNum1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Chart2_LegendText1
         '
@@ -592,6 +679,21 @@ Partial Class UC_Reports
         Me.UC_SNHolder1.Name = "UC_SNHolder1"
         Me.UC_SNHolder1.Size = New System.Drawing.Size(230, 489)
         Me.UC_SNHolder1.TabIndex = 2
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(186, 210)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 19
+        Me.Button1.Text = "More"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'UC_Reports
         '
@@ -659,4 +761,12 @@ Partial Class UC_Reports
     Friend WithEvents Label3 As Label
     Friend WithEvents Chart2_LegendTotal As Label
     Friend WithEvents UC_SNHolder1 As UC_SNHolder
+    Friend WithEvents Chart1_LegendText3 As Label
+    Friend WithEvents Chart1_LegendColor3 As Panel
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Chart1_LegendNum1 As Label
+    Friend WithEvents Chart1_LegendNum2 As Label
+    Friend WithEvents Chart1_LegendNum3 As Label
+    Friend WithEvents Button1 As Button
 End Class

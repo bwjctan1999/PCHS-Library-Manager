@@ -1,5 +1,6 @@
 ﻿Public Class UC_Book
-    Private Title As String
+    Public Picture As String
+    Public Title As String
     Private Author As String
     Private ISBN_No As String
     Private Year_Published As String
@@ -7,18 +8,23 @@
     Private Category As String
     Private Shelve_No As String
 
-    Private Sub UC_Book_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Title = "Insert Title"
-        Me.Author = "Insert Author"
-        Me.ISBN_No = "Insert ISBN No"
-        Me.Year_Published = "Insert Year Published"
-        Me.Code_No = "Insert Code No"
-        Me.Category = "Insert Category"
-        Me.Shelve_No = "Insert Shelve No"
+    Public Sub Set_Data(pic, title, author, isbn_no, yearpub, code_no, category, shelve_no)
+        Me.Picture = pic
+        Me.Title = title
+        Me.Author = author
+        Me.ISBN_No = isbn_no
+        Me.Year_Published = yearpub
+        Me.Code_No = code_no
+        Me.Category = category
+        Me.Shelve_No = shelve_no
+
+
+        PicBox_Cover.Image = Image.FromFile(pic)
+        Lbl_Title.Text = title
     End Sub
 
     Private Sub Items_Click(sender As Object, e As EventArgs) Handles PicBox_Cover.Click, Lbl_Title.Click
-        'Form_Borrow.Set_Content(Title, Author, ISBN_No, Year_Published, Code_No, Category, Shelve_No)
+        Form_Borrow.Set_Content(Me, Picture, Title, Author, ISBN_No, Year_Published, Code_No, Category, Shelve_No)
         Form_Borrow.ShowDialog()
     End Sub
 
@@ -42,11 +48,5 @@
         Lbl_Title.ForeColor = Color.White
     End Sub
 
-    Protected Overrides ReadOnly Property CreateParams() As CreateParams
-        Get
-            Dim cp As CreateParams = MyBase.CreateParams
-            cp.ExStyle = cp.ExStyle Or &H2000000
-            Return cp
-        End Get
-    End Property 'CreateParams
+
 End Class

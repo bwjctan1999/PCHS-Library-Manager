@@ -1,24 +1,20 @@
 ﻿Public Class UC_DataViewer
     Private datatype As String
+    Private database
     Private parent_form
 
-    Public Sub Load_DataViewer(type, parent)
+    Public Large_imgs As New ImageList
+    Public Small_imgs As New ImageList
+
+    Public Sub Load_DataViewer(database, type, parent)
+        Me.database = database
         Me.datatype = type
         Me.parent_form = parent
 
         Create_Column_Header()
-        Fill_Data()
+        Fill_Data(database)
+        Set_Default_Settings()
 
-        For Each oFont As FontFamily In FontFamily.Families
-            Cbox_FontSettings.Items.Add(oFont.Name)
-        Next
-
-        'Loads Book Viewer Default Settings'
-        Cbox_ViewSettings.SelectedIndex = 0
-        Cbox_ArrangeSettings.SelectedIndex = 0
-        Cbox_FontSize.SelectedIndex = 2
-        Cbox_FontSettings.SelectedIndex = 134
-        Cbox_GridSettings.SelectedIndex = 2
     End Sub
 
     'Create Column Headers of Data List
@@ -26,14 +22,14 @@
         Select Case datatype
             Case "Borrows"
                 Dim HeaderText = New String() {"Name", "Sections", "Books"}
-                Dim HeaderWidth = New Integer() {550, 250, 250}
+                Dim HeaderWidth = New Integer() {250, 150, 650}
 
                 For i As Integer = 0 To HeaderText.Length - 1
                     ListViewer.Columns.Add(HeaderText(i), HeaderWidth(i), HorizontalAlignment.Left)
                 Next
             Case "Borrowed"
                 Dim HeaderText = New String() {"Name", "Sections", "Books"}
-                Dim HeaderWidth = New Integer() {550, 250, 250}
+                Dim HeaderWidth = New Integer() {250, 150, 650}
 
                 For i As Integer = 0 To HeaderText.Length - 1
                     ListViewer.Columns.Add(HeaderText(i), HeaderWidth(i), HorizontalAlignment.Left)
@@ -46,69 +42,134 @@
                 For i As Integer = 0 To HeaderText.Length - 1
                     ListViewer.Columns.Add(HeaderText(i), HeaderWidth(i), HorizontalAlignment.Left)
                 Next
+            Case "Main"
+                Dim HeaderText = New String() {"Title", "Author", "ISBN Number", "Year Published",
+                                               "Code Number", "Category", "Shelf Number"}
+                Dim HeaderWidth = New Integer() {250, 250, 150, 130, 100, 100, 100}
+
+                For i As Integer = 0 To HeaderText.Length - 1
+                    ListViewer.Columns.Add(HeaderText(i), HeaderWidth(i), HorizontalAlignment.Left)
+                Next
+            Case "Staff"
+                Dim HeaderText = New String() {"Name", "Gender", "Type", "Email Address",
+                                               "Home Address", "Contact Number"}
+                Dim HeaderWidth = New Integer() {300, 100, 100, 250, 200, 150}
+
+                For i As Integer = 0 To HeaderText.Length - 1
+                    ListViewer.Columns.Add(HeaderText(i), HeaderWidth(i), HorizontalAlignment.Left)
+                Next
         End Select
     End Sub
 
     'Fill Data Function (To be edited...)
-    Private Sub Fill_Data()
+    Private Sub Fill_Data(database As String(,))
         Me.ListViewer.View = View.Details
 
-        Dim Large_imgs As ImageList = New ImageList()
-        Large_imgs.ImageSize = New Size(66, 100)
-        Large_imgs.ColorDepth = ColorDepth.Depth32Bit
 
-        Dim Small_imgs As ImageList = New ImageList()
-        Small_imgs.ImageSize = New Size(33, 50)
+        'Dim Small_imgs As ImageList = New ImageList()
+
+        Large_imgs.ColorDepth = ColorDepth.Depth32Bit
         Small_imgs.ColorDepth = ColorDepth.Depth32Bit
+
+        If datatype = "Main" Or datatype = "Inventory" Then
+            Large_imgs.ImageSize = New Size(66, 100)
+            Small_imgs.ImageSize = New Size(33, 50)
+        Else
+            Large_imgs.ImageSize = New Size(100, 100)
+            Small_imgs.ImageSize = New Size(50, 50)
+        End If
 
         ListViewer.LargeImageList = Large_imgs
         ListViewer.SmallImageList = Small_imgs
 
-        Dim title As String = "Some Book I've Never Read Some Book I've Never Read"
-        Dim author As String = "J. R. R. Someone"
-        Dim isbn As String = "9780048231536"
-        Dim year As String = "9/15/1977"
-        Dim codeNo As String = ""
-        Dim category As String = "Literature"
-        Dim shelveNo As String = "001"
+        Dim itemcollection(database.GetLength(0) - 1) As ListViewItem
 
         ListViewer.BeginUpdate()
-        For i = 0 To 30
-            Dim file As String = "C:\Users\Jukebox\Desktop\Images\BOOK 2.jpg"
+        For i = 0 To database.GetLength(0) - 1
             Try
-                Large_imgs.Images.Add(Image.FromFile(file))
-                Small_imgs.Images.Add(Image.FromFile(file))
+                Large_imgs.Images.Add(Image.FromFile(database(i, 0)))
+                Small_imgs.Images.Add(Image.FromFile(database(i, 0)))
             Catch ex As Exception
 
             End Try
 
-            codeNo = i
+            Dim item As New ListViewItem(database(i, 1), i)
 
-            'replace with visual basic-addrange
-            Dim book As String() = {author, isbn, year, codeNo, category, shelveNo}
-            Me.ListViewer.Items.Add(title, i).SubItems.AddRange(book)
+            For j As Integer = 2 To database.GetLength(1) - 1
+                item.SubItems.Add(database(i, j))
+            Next
+
+            itemcollection(i) = item
         Next
+
+        ListViewer.Items.AddRange(itemcollection)
         ListViewer.EndUpdate()
     End Sub
 
+    Private Sub Set_Default_Settings()
+        For Each oFont As FontFamily In FontFamily.Families
+            Cbox_FontSettings.Items.Add(oFont.Name)
+        Next
+
+        'Loads Book Viewer Default Settings'
+        Cbox_ViewSettings.SelectedIndex = 0
+        Cbox_ArrangeSettings.SelectedIndex = 0
+        Cbox_FontSize.SelectedIndex = 2
+        Cbox_FontSettings.SelectedIndex = 134
+
+        If datatype = "Main" Then
+            Cbox_ViewSettings.SelectedIndex = 2
+            Cbox_GridSettings.SelectedIndex = 0
+            Btn_Search.Hide()
+            Txtbox_Searchbar.Hide()
+        Else
+            Cbox_GridSettings.SelectedIndex = 2
+        End If
+    End Sub
+
     'Search Function (To be edited...)
-    Private Sub SearchList(lstview As ListView, searchstring As String)
-        lstview.SelectedIndices.Clear()
-        For Each item As ListViewItem In lstview.Items
+    Public Sub Search(searchstring As String, filter As String)
+        ListViewer.SelectedIndices.Clear()
+        For Each item As ListViewItem In ListViewer.Items
+            Dim match As Boolean = False
+
             For Each subitem As ListViewItem.ListViewSubItem In item.SubItems
                 If subitem.Text = searchstring Then
-                    'UNFINISHED: change content of If statement'
-                    lstview.SelectedIndices.Add(item.Index)
+                    match = True
+
                     Exit For
                 End If
             Next
+
+            If match = False Then
+                'UNFINISHED: change content of If statement'
+                ListViewer.Items.Remove(item)
+            End If
         Next
     End Sub
 
     'Get Selected Item/s
-    Public Function Get_Selected()
+    Public Function Get_SelectedItems()
         Return ListViewer.SelectedItems
     End Function
+
+
+
+    'Remove Selected Item/s
+    Public Sub Remove_SelectedItems()
+        For Each i As ListViewItem In ListViewer.SelectedItems
+            ListViewer.Items.Remove(i)
+        Next
+    End Sub
+
+    'Add Item to the ListView, (items = ListViewItem of Pending, img = Assigned Image to ListViewItem of Pending)
+    Public Sub Add_Item(items, img)
+        Me.Large_imgs.Images.Add(img)
+        Me.Small_imgs.Images.Add(img)
+        ListViewer.Items.Add(items.Clone())
+        ListViewer.Items(ListViewer.Items.Count - 1).ImageIndex = Large_imgs.Images.Count - 1
+    End Sub
+
 
     'CONTROL COMPONENTS============================================================================================
 
@@ -141,13 +202,13 @@
             Case "Default Length"
                 Select Case datatype
                     Case "Borrows"
-                        ListViewer.Columns(0).Width = 550
-                        ListViewer.Columns(1).Width = 250
-                        ListViewer.Columns(2).Width = 250
+                        ListViewer.Columns(0).Width = 250
+                        ListViewer.Columns(1).Width = 150
+                        ListViewer.Columns(2).Width = 650
                     Case "Borrowed"
-                        ListViewer.Columns(0).Width = 550
-                        ListViewer.Columns(1).Width = 250
-                        ListViewer.Columns(2).Width = 250
+                        ListViewer.Columns(0).Width = 250
+                        ListViewer.Columns(1).Width = 150
+                        ListViewer.Columns(2).Width = 650
                     Case "Inventory"
                         ListViewer.Columns(0).Width = 250
                         ListViewer.Columns(1).Width = 250
@@ -156,10 +217,25 @@
                         ListViewer.Columns(4).Width = 100
                         ListViewer.Columns(5).Width = 100
                         ListViewer.Columns(6).Width = 100
+                    Case "Main"
+                        ListViewer.Columns(0).Width = 250
+                        ListViewer.Columns(1).Width = 250
+                        ListViewer.Columns(2).Width = 150
+                        ListViewer.Columns(3).Width = 130
+                        ListViewer.Columns(4).Width = 100
+                        ListViewer.Columns(5).Width = 100
+                        ListViewer.Columns(6).Width = 100
+                    Case "Staff"
+                        ListViewer.Columns(0).Width = 300
+                        ListViewer.Columns(1).Width = 100
+                        ListViewer.Columns(2).Width = 100
+                        ListViewer.Columns(3).Width = 250
+                        ListViewer.Columns(4).Width = 200
+                        ListViewer.Columns(5).Width = 150
                 End Select
             Case "Header Length"
                 Me.ListViewer.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize)
-                ListViewer.Columns(6).Width = 100
+                ListViewer.Columns(ListViewer.Columns.Count - 1).Width = ListViewer.Columns(ListViewer.Columns.Count - 1).Width - 30
             Case "Content Length"
                 Me.ListViewer.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent)
         End Select
@@ -222,5 +298,21 @@
 
     Private Sub ListViewer_DoubleClick(sender As Object, e As EventArgs) Handles ListViewer.DoubleClick
         parent_form.Double_Click_Event()
+    End Sub
+
+    Private Sub Btn_Search_Click(sender As Object, e As EventArgs) Handles Btn_Search.Click
+        ListViewer.Clear()
+        Load_DataViewer(database, datatype, parent_form)
+
+        If Txtbox_Searchbar.Text <> "" Then
+            Search(Txtbox_Searchbar.Text, "All")
+        End If
+    End Sub
+
+    Private Sub Txtbox_Searchbar_TextChanged(sender As Object, e As EventArgs) Handles Txtbox_Searchbar.TextChanged
+        If Txtbox_Searchbar.Text = "" Then
+            ListViewer.Clear()
+            Load_DataViewer(database, datatype, parent_form)
+        End If
     End Sub
 End Class
