@@ -23,8 +23,8 @@ Public Class Form_Manager
         Me.coverpanel.Controls.Add(shader)
 
         'Loads the database
-        UserControl_Borrows.Load_Data()
-        UserControl_Borrows.Set_Parent_Form(Me)
+        ss.UpdateStatus(10, "LOADING SHOWCASES...")
+        UserControl_ShowCase.LoadData()
         ss.UpdateStatus(20, "LOADING BORROWED DATA...")
         UserControl_Borrowed.Load_Data()
         ss.UpdateStatus(40, "LOADING INVENTORY DATA...")
@@ -35,55 +35,45 @@ Public Class Form_Manager
         UserControl_Reports.Load_Data()
     End Sub
 
-    Private Sub Form_Manager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        'openCon()
-        'MsgBox("Connected")
-        'con.Close()
-    End Sub
-
     'MAIN PANEL BUTTONS AND FUNCTIONS'
 
     'Logout button
     Private Sub Btn_LogOut_Click(sender As Object, e As EventArgs) Handles Btn_LogOut.Click
-        Form_Login2.Show()
+        Form_Login.Show()
         Me.Close()
     End Sub
 
     'Book Showcase Button
     Private Sub Btn_Dashboard_Click(sender As Object, e As EventArgs) Handles Btn_Dashboard.Click
         Select_MainPanel_Button(0, Btn_Dashboard, UserControl_Reports)
+        UserControl_Reports.Load_Data()
     End Sub
 
     Private Sub Btn_BookShowcase_Click(sender As Object, e As EventArgs) Handles Btn_BookShowcase.Click
         Select_MainPanel_Button(1, Btn_BookShowcase, UserControl_ShowCase)
     End Sub
 
-    'Borrows Button
-    Private Sub Btn_Borrows_Click(sender As Object, e As EventArgs) Handles Btn_Pending.Click
-        Select_MainPanel_Button(2, Btn_Pending, UserControl_Borrows)
-    End Sub
 
     'Borrowed Button
     Private Sub Btn_Borrowed_Click(sender As Object, e As EventArgs) Handles Btn_Borrowed.Click
-        Select_MainPanel_Button(3, Btn_Borrowed, UserControl_Borrowed)
+        Select_MainPanel_Button(2, Btn_Borrowed, UserControl_Borrowed)
     End Sub
 
     'Inventory Button
     Private Sub Btn_Inventory_Click(sender As Object, e As EventArgs) Handles Btn_Inventory.Click
-        Select_MainPanel_Button(4, Btn_Inventory, UserControl_Inventory)
+        Select_MainPanel_Button(3, Btn_Inventory, UserControl_Inventory)
     End Sub
 
     'Suppliers Button
-    Private Sub Btn_Suppliers_Click(sender As Object, e As EventArgs) Handles Btn_Staff.Click
-        Select_MainPanel_Button(5, Btn_Staff, UserControl_Staff)
+    Private Sub Btn_Staff_Click(sender As Object, e As EventArgs) Handles Btn_Staff.Click
+        Select_MainPanel_Button(4, Btn_Staff, UserControl_Staff)
     End Sub
 
     'Function for selecting a Panel Button
     Private Sub Select_MainPanel_Button(pos As Integer, btn As Button, usercontrol As UserControl)
-        Dim MainPanelBtns = New Button() {Btn_BookShowcase, Btn_Pending, Btn_Borrowed, Btn_Inventory, Btn_Dashboard, Btn_Staff}
+        Dim MainPanelBtns = New Button() {Btn_BookShowcase, Btn_Borrowed, Btn_Inventory, Btn_Dashboard, Btn_Staff}
         Dim highlights = New Point() {New Point(-3, 13), New Point(-3, 59), New Point(-3, 105), New Point(-3, 151),
-                                      New Point(-3, 197), New Point(-3, 243)}
+                                      New Point(-3, 197)}
 
         For Each button In MainPanelBtns
             button.BackColor = Color.FromArgb(0, 29, 38)
@@ -106,6 +96,10 @@ Public Class Form_Manager
 
     Private Sub Form_Activated() Handles Me.Activated
         coverpanel.SendToBack()
+    End Sub
+
+    Private Sub Form_Closing() Handles Me.FormClosing
+        UserControl_Reports.SaveNotes()
     End Sub
 
     Protected Overrides ReadOnly Property CreateParams() As CreateParams

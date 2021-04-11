@@ -24,6 +24,7 @@ Partial Class UC_Borrowed
     Private Sub InitializeComponent()
         Me.Btn_Return = New System.Windows.Forms.Button()
         Me.UserControl_DataViewer = New PCHS_Library_Management_System.UC_DataViewer()
+        Me.Btn_Borrow = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Btn_Return
@@ -51,12 +52,27 @@ Partial Class UC_Borrowed
         Me.UserControl_DataViewer.Size = New System.Drawing.Size(766, 415)
         Me.UserControl_DataViewer.TabIndex = 7
         '
+        'Btn_Borrow
+        '
+        Me.Btn_Borrow.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Btn_Borrow.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.Btn_Borrow.FlatAppearance.BorderSize = 0
+        Me.Btn_Borrow.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Borrow.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Borrow.Location = New System.Drawing.Point(550, 467)
+        Me.Btn_Borrow.Name = "Btn_Borrow"
+        Me.Btn_Borrow.Size = New System.Drawing.Size(114, 26)
+        Me.Btn_Borrow.TabIndex = 5
+        Me.Btn_Borrow.Text = "Borrow"
+        Me.Btn_Borrow.UseVisualStyleBackColor = False
+        '
         'UC_Borrowed
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.Controls.Add(Me.UserControl_DataViewer)
+        Me.Controls.Add(Me.Btn_Borrow)
         Me.Controls.Add(Me.Btn_Return)
         Me.Name = "UC_Borrowed"
         Me.Size = New System.Drawing.Size(804, 508)
@@ -66,4 +82,5 @@ Partial Class UC_Borrowed
 
     Friend WithEvents UserControl_DataViewer As UC_DataViewer
     Friend WithEvents Btn_Return As Button
+    Friend WithEvents Btn_Borrow As Button
 End Class

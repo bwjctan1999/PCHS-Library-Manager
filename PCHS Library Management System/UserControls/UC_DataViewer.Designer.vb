@@ -37,6 +37,7 @@ Partial Class UC_DataViewer
         Me.Cbox_ViewSettings = New System.Windows.Forms.ComboBox()
         Me.Txtbox_Searchbar = New System.Windows.Forms.TextBox()
         Me.Btn_Search = New System.Windows.Forms.Button()
+        Me.ListViewSearch = New System.Windows.Forms.ListView()
         Me.Panel_BookSettings.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -211,16 +212,35 @@ Partial Class UC_DataViewer
         Me.Btn_Search.Text = "Search"
         Me.Btn_Search.UseVisualStyleBackColor = False
         '
+        'ListViewSearch
+        '
+        Me.ListViewSearch.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ListViewSearch.BackColor = System.Drawing.SystemColors.Window
+        Me.ListViewSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ListViewSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListViewSearch.FullRowSelect = True
+        Me.ListViewSearch.HideSelection = False
+        Me.ListViewSearch.Location = New System.Drawing.Point(2, 31)
+        Me.ListViewSearch.Name = "ListViewSearch"
+        Me.ListViewSearch.Size = New System.Drawing.Size(762, 382)
+        Me.ListViewSearch.TabIndex = 9
+        Me.ListViewSearch.UseCompatibleStateImageBehavior = False
+        Me.ListViewSearch.View = System.Windows.Forms.View.Details
+        Me.ListViewSearch.Visible = False
+        '
         'UC_DataViewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Transparent
+        Me.Controls.Add(Me.Panel_BookSettings)
         Me.Controls.Add(Me.Btn_Search)
         Me.Controls.Add(Me.Txtbox_Searchbar)
-        Me.Controls.Add(Me.Panel_BookSettings)
         Me.Controls.Add(Me.Btn_ListSettings)
         Me.Controls.Add(Me.ListViewer)
+        Me.Controls.Add(Me.ListViewSearch)
         Me.Name = "UC_DataViewer"
         Me.Size = New System.Drawing.Size(766, 415)
         Me.Panel_BookSettings.ResumeLayout(False)
@@ -245,4 +265,5 @@ Partial Class UC_DataViewer
     Friend WithEvents Cbox_ViewSettings As ComboBox
     Friend WithEvents Txtbox_Searchbar As TextBox
     Friend WithEvents Btn_Search As Button
+    Friend WithEvents ListViewSearch As ListView
 End Class

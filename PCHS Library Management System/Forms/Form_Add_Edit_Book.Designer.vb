@@ -33,21 +33,21 @@ Partial Class Form_Add_Edit_Book
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Txtbox_Title = New System.Windows.Forms.TextBox()
         Me.Txtbox_Author = New System.Windows.Forms.TextBox()
         Me.Txtbox_ISBNNo = New System.Windows.Forms.TextBox()
-        Me.Txtbox_PubDate = New System.Windows.Forms.TextBox()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Txtbox_ShelfNo = New System.Windows.Forms.TextBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Cbox_Category = New System.Windows.Forms.ComboBox()
+        Me.Cbox_Subjects = New System.Windows.Forms.ComboBox()
         Me.Btn_AddBook = New System.Windows.Forms.Button()
         Me.Btn_Cancel = New System.Windows.Forms.Button()
         Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.DatePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Txtbox_Publisher = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Picbox_QRCode = New System.Windows.Forms.PictureBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -56,8 +56,10 @@ Partial Class Form_Add_Edit_Book
         Me.Txtbox_Quantity = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Btn_AddSub = New System.Windows.Forms.Button()
         Me.Btn_UpdateBook = New System.Windows.Forms.Button()
-        Me.Txtbox_CodeNo = New System.Windows.Forms.TextBox()
+        Me.Txtbox_Subject = New System.Windows.Forms.TextBox()
+        Me.Panel_Subject = New System.Windows.Forms.Panel()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel10.SuspendLayout()
@@ -130,12 +132,6 @@ Partial Class Form_Add_Edit_Book
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label5.Name = "Label5"
         '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.SystemColors.ControlDark
-        resources.ApplyResources(Me.Panel7, "Panel7")
-        Me.Panel7.Name = "Panel7"
-        '
         'Label6
         '
         resources.ApplyResources(Me.Label6, "Label6")
@@ -163,25 +159,6 @@ Partial Class Form_Add_Edit_Book
         resources.ApplyResources(Me.Txtbox_ISBNNo, "Txtbox_ISBNNo")
         Me.Txtbox_ISBNNo.Name = "Txtbox_ISBNNo"
         '
-        'Txtbox_PubDate
-        '
-        Me.Txtbox_PubDate.BackColor = System.Drawing.SystemColors.Control
-        Me.Txtbox_PubDate.BorderStyle = System.Windows.Forms.BorderStyle.None
-        resources.ApplyResources(Me.Txtbox_PubDate, "Txtbox_PubDate")
-        Me.Txtbox_PubDate.Name = "Txtbox_PubDate"
-        '
-        'Panel8
-        '
-        Me.Panel8.BackColor = System.Drawing.SystemColors.ControlDark
-        resources.ApplyResources(Me.Panel8, "Panel8")
-        Me.Panel8.Name = "Panel8"
-        '
-        'Label7
-        '
-        resources.ApplyResources(Me.Label7, "Label7")
-        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label7.Name = "Label7"
-        '
         'Txtbox_ShelfNo
         '
         Me.Txtbox_ShelfNo.BackColor = System.Drawing.SystemColors.Control
@@ -201,14 +178,13 @@ Partial Class Form_Add_Edit_Book
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label8.Name = "Label8"
         '
-        'Cbox_Category
+        'Cbox_Subjects
         '
-        Me.Cbox_Category.BackColor = System.Drawing.SystemColors.Control
-        Me.Cbox_Category.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        resources.ApplyResources(Me.Cbox_Category, "Cbox_Category")
-        Me.Cbox_Category.FormattingEnabled = True
-        Me.Cbox_Category.Items.AddRange(New Object() {resources.GetString("Cbox_Category.Items"), resources.GetString("Cbox_Category.Items1"), resources.GetString("Cbox_Category.Items2"), resources.GetString("Cbox_Category.Items3"), resources.GetString("Cbox_Category.Items4"), resources.GetString("Cbox_Category.Items5"), resources.GetString("Cbox_Category.Items6"), resources.GetString("Cbox_Category.Items7"), resources.GetString("Cbox_Category.Items8"), resources.GetString("Cbox_Category.Items9")})
-        Me.Cbox_Category.Name = "Cbox_Category"
+        Me.Cbox_Subjects.BackColor = System.Drawing.SystemColors.Control
+        Me.Cbox_Subjects.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        resources.ApplyResources(Me.Cbox_Subjects, "Cbox_Subjects")
+        Me.Cbox_Subjects.FormattingEnabled = True
+        Me.Cbox_Subjects.Name = "Cbox_Subjects"
         '
         'Btn_AddBook
         '
@@ -231,6 +207,12 @@ Partial Class Form_Add_Edit_Book
         'Panel10
         '
         Me.Panel10.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel10.Controls.Add(Me.Panel_Subject)
+        Me.Panel10.Controls.Add(Me.Txtbox_Subject)
+        Me.Panel10.Controls.Add(Me.DatePicker)
+        Me.Panel10.Controls.Add(Me.Txtbox_Publisher)
+        Me.Panel10.Controls.Add(Me.Label1)
+        Me.Panel10.Controls.Add(Me.Panel12)
         Me.Panel10.Controls.Add(Me.Panel11)
         Me.Panel10.Controls.Add(Me.Panel6)
         Me.Panel10.Controls.Add(Me.Txtbox_Quantity)
@@ -238,29 +220,50 @@ Partial Class Form_Add_Edit_Book
         Me.Panel10.Controls.Add(Me.Label9)
         Me.Panel10.Controls.Add(Me.Label2)
         Me.Panel10.Controls.Add(Me.Btn_Cancel)
-        Me.Panel10.Controls.Add(Me.Btn_UpdateBook)
+        Me.Panel10.Controls.Add(Me.Btn_AddSub)
         Me.Panel10.Controls.Add(Me.Btn_AddBook)
         Me.Panel10.Controls.Add(Me.Panel3)
-        Me.Panel10.Controls.Add(Me.Cbox_Category)
+        Me.Panel10.Controls.Add(Me.Cbox_Subjects)
         Me.Panel10.Controls.Add(Me.Panel4)
-        Me.Panel10.Controls.Add(Me.Txtbox_CodeNo)
         Me.Panel10.Controls.Add(Me.Txtbox_ShelfNo)
-        Me.Panel10.Controls.Add(Me.Panel7)
         Me.Panel10.Controls.Add(Me.Panel9)
         Me.Panel10.Controls.Add(Me.Label6)
         Me.Panel10.Controls.Add(Me.Label8)
-        Me.Panel10.Controls.Add(Me.Label7)
         Me.Panel10.Controls.Add(Me.Label5)
         Me.Panel10.Controls.Add(Me.Txtbox_ISBNNo)
         Me.Panel10.Controls.Add(Me.Label3)
         Me.Panel10.Controls.Add(Me.Txtbox_Author)
         Me.Panel10.Controls.Add(Me.Panel5)
-        Me.Panel10.Controls.Add(Me.Txtbox_PubDate)
         Me.Panel10.Controls.Add(Me.Label4)
         Me.Panel10.Controls.Add(Me.Txtbox_Title)
-        Me.Panel10.Controls.Add(Me.Panel8)
+        Me.Panel10.Controls.Add(Me.Btn_UpdateBook)
         resources.ApplyResources(Me.Panel10, "Panel10")
         Me.Panel10.Name = "Panel10"
+        '
+        'DatePicker
+        '
+        resources.ApplyResources(Me.DatePicker, "DatePicker")
+        Me.DatePicker.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DatePicker.Name = "DatePicker"
+        '
+        'Txtbox_Publisher
+        '
+        Me.Txtbox_Publisher.BackColor = System.Drawing.SystemColors.Control
+        Me.Txtbox_Publisher.BorderStyle = System.Windows.Forms.BorderStyle.None
+        resources.ApplyResources(Me.Txtbox_Publisher, "Txtbox_Publisher")
+        Me.Txtbox_Publisher.Name = "Txtbox_Publisher"
+        '
+        'Label1
+        '
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label1.Name = "Label1"
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.SystemColors.ControlDark
+        resources.ApplyResources(Me.Panel12, "Panel12")
+        Me.Panel12.Name = "Panel12"
         '
         'Panel11
         '
@@ -318,6 +321,16 @@ Partial Class Form_Add_Edit_Book
         Me.Label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label9.Name = "Label9"
         '
+        'Btn_AddSub
+        '
+        Me.Btn_AddSub.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Btn_AddSub.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_AddSub.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder
+        resources.ApplyResources(Me.Btn_AddSub, "Btn_AddSub")
+        Me.Btn_AddSub.ForeColor = System.Drawing.Color.Black
+        Me.Btn_AddSub.Name = "Btn_AddSub"
+        Me.Btn_AddSub.UseVisualStyleBackColor = False
+        '
         'Btn_UpdateBook
         '
         Me.Btn_UpdateBook.BackColor = System.Drawing.Color.CornflowerBlue
@@ -327,12 +340,18 @@ Partial Class Form_Add_Edit_Book
         Me.Btn_UpdateBook.Name = "Btn_UpdateBook"
         Me.Btn_UpdateBook.UseVisualStyleBackColor = False
         '
-        'Txtbox_CodeNo
+        'Txtbox_Subject
         '
-        Me.Txtbox_CodeNo.BackColor = System.Drawing.SystemColors.Control
-        Me.Txtbox_CodeNo.BorderStyle = System.Windows.Forms.BorderStyle.None
-        resources.ApplyResources(Me.Txtbox_CodeNo, "Txtbox_CodeNo")
-        Me.Txtbox_CodeNo.Name = "Txtbox_CodeNo"
+        Me.Txtbox_Subject.BackColor = System.Drawing.SystemColors.Control
+        Me.Txtbox_Subject.BorderStyle = System.Windows.Forms.BorderStyle.None
+        resources.ApplyResources(Me.Txtbox_Subject, "Txtbox_Subject")
+        Me.Txtbox_Subject.Name = "Txtbox_Subject"
+        '
+        'Panel_Subject
+        '
+        Me.Panel_Subject.BackColor = System.Drawing.SystemColors.ControlDark
+        resources.ApplyResources(Me.Panel_Subject, "Panel_Subject")
+        Me.Panel_Subject.Name = "Panel_Subject"
         '
         'Form_Add_Edit_Book
         '
@@ -364,18 +383,14 @@ Partial Class Form_Add_Edit_Book
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label5 As Label
-    Friend WithEvents Panel7 As Panel
     Friend WithEvents Label6 As Label
     Friend WithEvents Txtbox_Title As TextBox
     Friend WithEvents Txtbox_Author As TextBox
     Friend WithEvents Txtbox_ISBNNo As TextBox
-    Friend WithEvents Txtbox_PubDate As TextBox
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents Label7 As Label
     Friend WithEvents Txtbox_ShelfNo As TextBox
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Label8 As Label
-    Friend WithEvents Cbox_Category As ComboBox
+    Friend WithEvents Cbox_Subjects As ComboBox
     Friend WithEvents Btn_AddBook As Button
     Friend WithEvents Btn_Cancel As Button
     Friend WithEvents Panel10 As Panel
@@ -386,8 +401,14 @@ Partial Class Form_Add_Edit_Book
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel_Image As Panel
     Friend WithEvents Lbl_ChangeImage As Label
-    Friend WithEvents Txtbox_CodeNo As TextBox
     Friend WithEvents Btn_UpdateBook As Button
     Friend WithEvents Picbox_QRCode As PictureBox
     Friend WithEvents Panel11 As Panel
+    Friend WithEvents Txtbox_Publisher As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents DatePicker As DateTimePicker
+    Friend WithEvents Btn_AddSub As Button
+    Friend WithEvents Panel_Subject As Panel
+    Friend WithEvents Txtbox_Subject As TextBox
 End Class

@@ -146,10 +146,17 @@
     <Compile Include="Classes\BorderedLabel.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Emailer.vb" />
     <Compile Include="Forms\Form_AddLibrarian.Designer.vb">
       <DependentUpon>Form_AddLibrarian.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form_AddLibrarian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_BookList.Designer.vb">
+      <DependentUpon>Form_BookList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_BookList.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Form_Borrow.Designer.vb">
@@ -158,16 +165,22 @@
     <Compile Include="Forms\Form_Borrow.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Form_BorrowerList.Designer.vb">
+      <DependentUpon>Form_BorrowerList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_BorrowerList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Form_CheckOut.Designer.vb">
       <DependentUpon>Form_CheckOut.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form_CheckOut.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form_Login2.Designer.vb">
-      <DependentUpon>Form_Login2.vb</DependentUpon>
+    <Compile Include="Forms\Form_Login.Designer.vb">
+      <DependentUpon>Form_Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form_Login2.vb">
+    <Compile Include="Forms\Form_Login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Form_Add_Edit_Book.Designer.vb">
@@ -183,10 +196,10 @@
       <DependentUpon>Form_Manager.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form_Login.Designer.vb">
-      <DependentUpon>Form_Login.vb</DependentUpon>
+    <Compile Include="Forms\Msg.Designer.vb">
+      <DependentUpon>Msg.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form_Login.vb">
+    <Compile Include="Forms\Msg.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Form_QRReader.Designer.vb">
@@ -272,18 +285,6 @@
     <Compile Include="UserControls\UC_SCBookShelf.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_SearchResults.Designer.vb">
-      <DependentUpon>UC_SearchResults.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UC_SearchResults.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Navigation Controls\UC_Borrows.Designer.vb">
-      <DependentUpon>UC_Borrows.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Navigation Controls\UC_Borrows.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="UserControls\UC_BookShelf.Designer.vb">
       <DependentUpon>UC_BookShelf.vb</DependentUpon>
     </Compile>
@@ -316,20 +317,26 @@
     <EmbeddedResource Include="Forms\Form_Add_Edit_Book.resx">
       <DependentUpon>Form_Add_Edit_Book.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_BookList.resx">
+      <DependentUpon>Form_BookList.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Borrow.resx">
       <DependentUpon>Form_Borrow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_BorrowerList.resx">
+      <DependentUpon>Form_BorrowerList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_CheckOut.resx">
       <DependentUpon>Form_CheckOut.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form_Login2.resx">
-      <DependentUpon>Form_Login2.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Form_Login.resx">
+      <DependentUpon>Form_Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Manager.resx">
       <DependentUpon>Form_Manager.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form_Login.resx">
-      <DependentUpon>Form_Login.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Msg.resx">
+      <DependentUpon>Msg.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_QRReader.resx">
       <DependentUpon>Form_QRReader.vb</DependentUpon>
@@ -369,12 +376,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_SCBookShelf.resx">
       <DependentUpon>UC_SCBookShelf.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_SearchResults.resx">
-      <DependentUpon>UC_SearchResults.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Navigation Controls\UC_Borrows.resx">
-      <DependentUpon>UC_Borrows.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_BookShelf.resx">
       <DependentUpon>UC_BookShelf.vb</DependentUpon>
@@ -599,6 +600,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon-QR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOOK_IMAGE_NOT_AVAILABLE.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

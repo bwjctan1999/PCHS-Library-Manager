@@ -213,6 +213,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property BOOK_IMAGE_NOT_AVAILABLE() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("BOOK_IMAGE_NOT_AVAILABLE", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property cd4a096b2096ebb4f460c171cf0f913e() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("cd4a096b2096ebb4f460c171cf0f913e", resourceCulture)

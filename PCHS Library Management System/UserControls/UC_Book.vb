@@ -1,30 +1,65 @@
-﻿Public Class UC_Book
-    Public Picture As String
-    Public Title As String
-    Private Author As String
-    Private ISBN_No As String
-    Private Year_Published As String
-    Private Code_No As String
-    Private Category As String
-    Private Shelve_No As String
+﻿Imports System.IO
 
-    Public Sub Set_Data(pic, title, author, isbn_no, yearpub, code_no, category, shelve_no)
-        Me.Picture = pic
+Public Class UC_Book
+    Public Picture As Image
+    Public Title As String
+    Public Author As String
+    Public Subject As String
+    Public Shelf_No As String
+    Public Year_Published As String
+    Public Quantity As String
+    Public ISBN_No As String
+    Public BookID As String
+    Public Mode As String
+    'Modes: View - Remove
+
+    Public Sub Set_BookInfo(title, author, subject, shelfno, yearpub, quantity, isbn, bookid)
         Me.Title = title
         Me.Author = author
-        Me.ISBN_No = isbn_no
+        Me.Subject = subject
+        Me.Shelf_No = shelfno
         Me.Year_Published = yearpub
-        Me.Code_No = code_no
-        Me.Category = category
-        Me.Shelve_No = shelve_no
+        Me.Quantity = quantity
+        Me.ISBN_No = isbn
+        Me.BookID = bookid
 
-
-        PicBox_Cover.Image = Image.FromFile(pic)
+        Me.Picture = Get_DB_BookCover(bookid)
+        PicBox_Cover.Image = Picture
         Lbl_Title.Text = title
     End Sub
 
+    Public Sub Set_Mode(mode)
+        Me.Mode = mode
+    End Sub
+
+    Public Function Get_DB_BookCover(bookid)
+        Dim img As Image = My.Resources.BOOK_IMAGE_NOT_AVAILABLE
+
+        Try
+            openCon()
+            command("SELECT cover FROM tbl_book WHERE bookID = @bookID")
+            cmd.Parameters.Clear()
+            cmd.Parameters.AddWithValue("@bookID", bookid)
+
+            Dim bytes() As Byte
+            bytes = cmd.ExecuteScalar()
+
+            If bytes IsNot Nothing Then
+                Dim memStream As New MemoryStream(bytes)
+                img = Drawing.Image.FromStream(memStream)
+            End If
+
+            closeCon()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+        Return img
+    End Function
+
     Private Sub Items_Click(sender As Object, e As EventArgs) Handles PicBox_Cover.Click, Lbl_Title.Click
-        Form_Borrow.Set_Content(Me, Picture, Title, Author, ISBN_No, Year_Published, Code_No, Category, Shelve_No)
+        Form_Borrow.Set_Book(Me)
+        Form_Borrow.Set_Mode(Mode)
         Form_Borrow.ShowDialog()
     End Sub
 
@@ -47,6 +82,4 @@
     Private Sub Lbl_Title_MouseLeave(sender As Object, e As EventArgs) Handles Lbl_Title.MouseLeave
         Lbl_Title.ForeColor = Color.White
     End Sub
-
-
 End Class

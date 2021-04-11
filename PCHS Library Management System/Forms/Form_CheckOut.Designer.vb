@@ -27,23 +27,23 @@ Partial Class Form_CheckOut
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Txtbox_ID = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Lbl_BorrowDate = New System.Windows.Forms.Label()
+        Me.Lbl_DueDate = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Btn_Cancel = New System.Windows.Forms.Button()
         Me.Btn_CheckOut = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.UserControl_BookShelf = New PCHS_Library_Management_System.UC_BookShelf()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Btn_QRReader = New System.Windows.Forms.Button()
+        Me.Cbox_Duration = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.UserControl_BookShelf = New PCHS_Library_Management_System.UC_BookShelf()
+        Me.Btn_Select = New System.Windows.Forms.Button()
+        Me.Lbl_Name = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -100,25 +100,15 @@ Partial Class Form_CheckOut
         Me.Panel3.Size = New System.Drawing.Size(359, 2)
         Me.Panel3.TabIndex = 8
         '
-        'TextBox1
+        'Txtbox_ID
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.TextBox1.Location = New System.Drawing.Point(14, 95)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(356, 19)
-        Me.TextBox1.TabIndex = 7
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.TextBox2.Location = New System.Drawing.Point(14, 170)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(356, 19)
-        Me.TextBox2.TabIndex = 7
+        Me.Txtbox_ID.BackColor = System.Drawing.SystemColors.Control
+        Me.Txtbox_ID.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Txtbox_ID.Font = New System.Drawing.Font("Century Gothic", 11.25!)
+        Me.Txtbox_ID.Location = New System.Drawing.Point(14, 170)
+        Me.Txtbox_ID.Name = "Txtbox_ID"
+        Me.Txtbox_ID.Size = New System.Drawing.Size(272, 19)
+        Me.Txtbox_ID.TabIndex = 7
         '
         'Panel1
         '
@@ -151,27 +141,26 @@ Partial Class Form_CheckOut
         Me.Label11.TabIndex = 11
         Me.Label11.Text = "Duration"
         '
-        'Label10
+        'Lbl_BorrowDate
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.SeaGreen
-        Me.Label10.Location = New System.Drawing.Point(526, 93)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(96, 21)
-        Me.Label10.TabIndex = 12
-        Me.Label10.Text = "03/03/2021"
+        Me.Lbl_BorrowDate.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_BorrowDate.ForeColor = System.Drawing.Color.SeaGreen
+        Me.Lbl_BorrowDate.Location = New System.Drawing.Point(526, 93)
+        Me.Lbl_BorrowDate.Name = "Lbl_BorrowDate"
+        Me.Lbl_BorrowDate.Size = New System.Drawing.Size(96, 21)
+        Me.Lbl_BorrowDate.TabIndex = 12
+        Me.Lbl_BorrowDate.Text = "03/03/2021"
+        Me.Lbl_BorrowDate.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'Label4
+        'Lbl_DueDate
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Firebrick
-        Me.Label4.Location = New System.Drawing.Point(629, 92)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(96, 21)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "10/03/2021"
+        Me.Lbl_DueDate.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_DueDate.ForeColor = System.Drawing.Color.Firebrick
+        Me.Lbl_DueDate.Location = New System.Drawing.Point(645, 93)
+        Me.Lbl_DueDate.Name = "Lbl_DueDate"
+        Me.Lbl_DueDate.Size = New System.Drawing.Size(96, 21)
+        Me.Lbl_DueDate.TabIndex = 12
+        Me.Lbl_DueDate.Text = "10/03/2021"
         '
         'Label5
         '
@@ -201,7 +190,7 @@ Partial Class Form_CheckOut
         Me.Btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Btn_Cancel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Btn_Cancel.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Btn_Cancel.Location = New System.Drawing.Point(511, 430)
+        Me.Btn_Cancel.Location = New System.Drawing.Point(390, 433)
         Me.Btn_Cancel.Name = "Btn_Cancel"
         Me.Btn_Cancel.Size = New System.Drawing.Size(116, 29)
         Me.Btn_Cancel.TabIndex = 14
@@ -216,7 +205,7 @@ Partial Class Form_CheckOut
         Me.Btn_CheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Btn_CheckOut.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Btn_CheckOut.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Btn_CheckOut.Location = New System.Drawing.Point(638, 430)
+        Me.Btn_CheckOut.Location = New System.Drawing.Point(638, 433)
         Me.Btn_CheckOut.Name = "Btn_CheckOut"
         Me.Btn_CheckOut.Size = New System.Drawing.Size(116, 29)
         Me.Btn_CheckOut.TabIndex = 13
@@ -235,6 +224,44 @@ Partial Class Form_CheckOut
         Me.Label7.TabIndex = 9
         Me.Label7.Text = "Books to Borrow"
         '
+        'Btn_QRReader
+        '
+        Me.Btn_QRReader.BackColor = System.Drawing.Color.DarkGray
+        Me.Btn_QRReader.FlatAppearance.BorderSize = 0
+        Me.Btn_QRReader.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_QRReader.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Btn_QRReader.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Btn_QRReader.Location = New System.Drawing.Point(514, 433)
+        Me.Btn_QRReader.Name = "Btn_QRReader"
+        Me.Btn_QRReader.Size = New System.Drawing.Size(116, 29)
+        Me.Btn_QRReader.TabIndex = 14
+        Me.Btn_QRReader.Text = "Add Book"
+        Me.Btn_QRReader.UseVisualStyleBackColor = False
+        '
+        'Cbox_Duration
+        '
+        Me.Cbox_Duration.BackColor = System.Drawing.SystemColors.Control
+        Me.Cbox_Duration.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cbox_Duration.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Cbox_Duration.Font = New System.Drawing.Font("Century Gothic", 11.25!)
+        Me.Cbox_Duration.FormattingEnabled = True
+        Me.Cbox_Duration.Items.AddRange(New Object() {"1 - Day", "2 - Days", "3 - Days", "5 - Days", "10 - Days", "1 - Month"})
+        Me.Cbox_Duration.Location = New System.Drawing.Point(408, 92)
+        Me.Cbox_Duration.Name = "Cbox_Duration"
+        Me.Cbox_Duration.Size = New System.Drawing.Size(101, 28)
+        Me.Cbox_Duration.TabIndex = 15
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label4.Location = New System.Drawing.Point(625, 95)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(14, 18)
+        Me.Label4.TabIndex = 16
+        Me.Label4.Text = "-"
+        '
         'UserControl_BookShelf
         '
         Me.UserControl_BookShelf.BackColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -243,81 +270,62 @@ Partial Class Form_CheckOut
         Me.UserControl_BookShelf.Size = New System.Drawing.Size(775, 160)
         Me.UserControl_BookShelf.TabIndex = 10
         '
-        'TextBox3
+        'Btn_Select
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(417, 91)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(32, 27)
-        Me.TextBox3.TabIndex = 15
-        Me.TextBox3.Text = "5"
-        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Btn_Select.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.Btn_Select.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Btn_Select.FlatAppearance.BorderSize = 0
+        Me.Btn_Select.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Select.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Btn_Select.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Btn_Select.Location = New System.Drawing.Point(292, 165)
+        Me.Btn_Select.Name = "Btn_Select"
+        Me.Btn_Select.Size = New System.Drawing.Size(81, 25)
+        Me.Btn_Select.TabIndex = 13
+        Me.Btn_Select.Text = "Select"
+        Me.Btn_Select.UseVisualStyleBackColor = False
         '
-        'Label8
+        'Lbl_Name
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(452, 93)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(47, 21)
-        Me.Label8.TabIndex = 12
-        Me.Label8.Text = "Days"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.DimGray
-        Me.Label9.Location = New System.Drawing.Point(617, 93)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(16, 19)
-        Me.Label9.TabIndex = 12
-        Me.Label9.Text = "-"
-        '
-        'Btn_QRReader
-        '
-        Me.Btn_QRReader.BackColor = System.Drawing.Color.DarkGray
-        Me.Btn_QRReader.FlatAppearance.BorderSize = 0
-        Me.Btn_QRReader.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_QRReader.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Btn_QRReader.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Btn_QRReader.Location = New System.Drawing.Point(383, 430)
-        Me.Btn_QRReader.Name = "Btn_QRReader"
-        Me.Btn_QRReader.Size = New System.Drawing.Size(116, 29)
-        Me.Btn_QRReader.TabIndex = 14
-        Me.Btn_QRReader.Text = "QR Reader"
-        Me.Btn_QRReader.UseVisualStyleBackColor = False
+        Me.Lbl_Name.AutoSize = True
+        Me.Lbl_Name.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Name.ForeColor = System.Drawing.Color.Black
+        Me.Lbl_Name.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Lbl_Name.Location = New System.Drawing.Point(13, 94)
+        Me.Lbl_Name.Name = "Lbl_Name"
+        Me.Lbl_Name.Size = New System.Drawing.Size(193, 20)
+        Me.Lbl_Name.TabIndex = 9
+        Me.Lbl_Name.Text = "Please Select A Borrower"
         '
         'Form_CheckOut
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(774, 480)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Cbox_Duration)
         Me.Controls.Add(Me.Btn_QRReader)
         Me.Controls.Add(Me.Btn_Cancel)
+        Me.Controls.Add(Me.Btn_Select)
         Me.Controls.Add(Me.Btn_CheckOut)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Lbl_DueDate)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Lbl_BorrowDate)
         Me.Controls.Add(Me.UserControl_BookShelf)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Lbl_Name)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Txtbox_ID)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "Form_CheckOut"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Check Out"
         Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -331,21 +339,21 @@ Partial Class Form_CheckOut
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Txtbox_ID As TextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents UserControl_BookShelf As UC_BookShelf
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Lbl_BorrowDate As Label
+    Friend WithEvents Lbl_DueDate As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Btn_Cancel As Button
     Friend WithEvents Btn_CheckOut As Button
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
     Friend WithEvents Btn_QRReader As Button
+    Friend WithEvents Cbox_Duration As ComboBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Btn_Select As Button
+    Friend WithEvents Lbl_Name As Label
 End Class

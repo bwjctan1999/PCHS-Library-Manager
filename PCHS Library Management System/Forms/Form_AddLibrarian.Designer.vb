@@ -34,8 +34,6 @@ Partial Class Form_AddLibrarian
         Me.T = New System.Windows.Forms.Label()
         Me.Txtbox_Lname = New System.Windows.Forms.TextBox()
         Me.Txtbox_Fname = New System.Windows.Forms.TextBox()
-        Me.Cbox_Gender = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Cbox_Type = New System.Windows.Forms.ComboBox()
         Me.Txtbox_EmailAdd = New System.Windows.Forms.TextBox()
@@ -49,7 +47,12 @@ Partial Class Form_AddLibrarian
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Btn_Cancel = New System.Windows.Forms.Button()
         Me.Btn_AddStaff = New System.Windows.Forms.Button()
-        Me.Btn_UpdateStaff = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Txtbox_Password = New System.Windows.Forms.TextBox()
+        Me.Txtbox_Username = New System.Windows.Forms.TextBox()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
@@ -129,7 +132,7 @@ Partial Class Form_AddLibrarian
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label2.Location = New System.Drawing.Point(150, 129)
+        Me.Label2.Location = New System.Drawing.Point(147, 206)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(83, 18)
         Me.Label2.TabIndex = 23
@@ -138,7 +141,7 @@ Partial Class Form_AddLibrarian
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.Panel3.Location = New System.Drawing.Point(152, 175)
+        Me.Panel3.Location = New System.Drawing.Point(149, 252)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(300, 2)
         Me.Panel3.TabIndex = 21
@@ -146,7 +149,7 @@ Partial Class Form_AddLibrarian
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.Panel4.Location = New System.Drawing.Point(475, 175)
+        Me.Panel4.Location = New System.Drawing.Point(472, 252)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(318, 2)
         Me.Panel4.TabIndex = 22
@@ -157,7 +160,7 @@ Partial Class Form_AddLibrarian
         Me.T.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.T.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.T.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.T.Location = New System.Drawing.Point(472, 129)
+        Me.T.Location = New System.Drawing.Point(469, 206)
         Me.T.Name = "T"
         Me.T.Size = New System.Drawing.Size(84, 18)
         Me.T.TabIndex = 24
@@ -168,7 +171,7 @@ Partial Class Form_AddLibrarian
         Me.Txtbox_Lname.BackColor = System.Drawing.SystemColors.Control
         Me.Txtbox_Lname.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txtbox_Lname.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.Txtbox_Lname.Location = New System.Drawing.Point(475, 154)
+        Me.Txtbox_Lname.Location = New System.Drawing.Point(472, 231)
         Me.Txtbox_Lname.Name = "Txtbox_Lname"
         Me.Txtbox_Lname.Size = New System.Drawing.Size(318, 19)
         Me.Txtbox_Lname.TabIndex = 2
@@ -178,35 +181,10 @@ Partial Class Form_AddLibrarian
         Me.Txtbox_Fname.BackColor = System.Drawing.SystemColors.Control
         Me.Txtbox_Fname.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txtbox_Fname.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.Txtbox_Fname.Location = New System.Drawing.Point(152, 154)
+        Me.Txtbox_Fname.Location = New System.Drawing.Point(149, 231)
         Me.Txtbox_Fname.Name = "Txtbox_Fname"
         Me.Txtbox_Fname.Size = New System.Drawing.Size(300, 19)
         Me.Txtbox_Fname.TabIndex = 1
-        '
-        'Cbox_Gender
-        '
-        Me.Cbox_Gender.BackColor = System.Drawing.SystemColors.Control
-        Me.Cbox_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Cbox_Gender.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Cbox_Gender.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.Cbox_Gender.FormattingEnabled = True
-        Me.Cbox_Gender.Items.AddRange(New Object() {"Male", "Female", "Other"})
-        Me.Cbox_Gender.Location = New System.Drawing.Point(152, 233)
-        Me.Cbox_Gender.Name = "Cbox_Gender"
-        Me.Cbox_Gender.Size = New System.Drawing.Size(141, 28)
-        Me.Cbox_Gender.TabIndex = 3
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label5.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label5.Location = New System.Drawing.Point(150, 210)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(65, 18)
-        Me.Label5.TabIndex = 26
-        Me.Label5.Text = "Gender"
         '
         'Label1
         '
@@ -214,7 +192,7 @@ Partial Class Form_AddLibrarian
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label1.Location = New System.Drawing.Point(310, 210)
+        Me.Label1.Location = New System.Drawing.Point(147, 287)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 18)
         Me.Label1.TabIndex = 26
@@ -228,9 +206,9 @@ Partial Class Form_AddLibrarian
         Me.Cbox_Type.Font = New System.Drawing.Font("Century Gothic", 11.25!)
         Me.Cbox_Type.FormattingEnabled = True
         Me.Cbox_Type.Items.AddRange(New Object() {"Librarian", "Student Assistant"})
-        Me.Cbox_Type.Location = New System.Drawing.Point(312, 233)
+        Me.Cbox_Type.Location = New System.Drawing.Point(150, 310)
         Me.Cbox_Type.Name = "Cbox_Type"
-        Me.Cbox_Type.Size = New System.Drawing.Size(141, 28)
+        Me.Cbox_Type.Size = New System.Drawing.Size(300, 28)
         Me.Cbox_Type.TabIndex = 4
         '
         'Txtbox_EmailAdd
@@ -238,7 +216,7 @@ Partial Class Form_AddLibrarian
         Me.Txtbox_EmailAdd.BackColor = System.Drawing.SystemColors.Control
         Me.Txtbox_EmailAdd.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txtbox_EmailAdd.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.Txtbox_EmailAdd.Location = New System.Drawing.Point(475, 235)
+        Me.Txtbox_EmailAdd.Location = New System.Drawing.Point(472, 312)
         Me.Txtbox_EmailAdd.Name = "Txtbox_EmailAdd"
         Me.Txtbox_EmailAdd.Size = New System.Drawing.Size(318, 19)
         Me.Txtbox_EmailAdd.TabIndex = 5
@@ -249,7 +227,7 @@ Partial Class Form_AddLibrarian
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label4.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label4.Location = New System.Drawing.Point(472, 210)
+        Me.Label4.Location = New System.Drawing.Point(469, 287)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(110, 18)
         Me.Label4.TabIndex = 24
@@ -258,7 +236,7 @@ Partial Class Form_AddLibrarian
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.Panel1.Location = New System.Drawing.Point(475, 256)
+        Me.Panel1.Location = New System.Drawing.Point(472, 333)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(318, 2)
         Me.Panel1.TabIndex = 22
@@ -268,7 +246,7 @@ Partial Class Form_AddLibrarian
         Me.Txtbox_HomeAdd.BackColor = System.Drawing.SystemColors.Control
         Me.Txtbox_HomeAdd.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txtbox_HomeAdd.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.Txtbox_HomeAdd.Location = New System.Drawing.Point(152, 314)
+        Me.Txtbox_HomeAdd.Location = New System.Drawing.Point(149, 391)
         Me.Txtbox_HomeAdd.Name = "Txtbox_HomeAdd"
         Me.Txtbox_HomeAdd.Size = New System.Drawing.Size(300, 19)
         Me.Txtbox_HomeAdd.TabIndex = 6
@@ -278,7 +256,7 @@ Partial Class Form_AddLibrarian
         Me.Txtbox_ContactNum.BackColor = System.Drawing.SystemColors.Control
         Me.Txtbox_ContactNum.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Txtbox_ContactNum.Font = New System.Drawing.Font("Century Gothic", 11.25!)
-        Me.Txtbox_ContactNum.Location = New System.Drawing.Point(475, 314)
+        Me.Txtbox_ContactNum.Location = New System.Drawing.Point(472, 391)
         Me.Txtbox_ContactNum.Name = "Txtbox_ContactNum"
         Me.Txtbox_ContactNum.Size = New System.Drawing.Size(318, 19)
         Me.Txtbox_ContactNum.TabIndex = 7
@@ -289,7 +267,7 @@ Partial Class Form_AddLibrarian
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label6.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label6.Location = New System.Drawing.Point(472, 289)
+        Me.Label6.Location = New System.Drawing.Point(469, 366)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(130, 18)
         Me.Label6.TabIndex = 24
@@ -298,7 +276,7 @@ Partial Class Form_AddLibrarian
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.Panel5.Location = New System.Drawing.Point(475, 335)
+        Me.Panel5.Location = New System.Drawing.Point(472, 412)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(318, 2)
         Me.Panel5.TabIndex = 22
@@ -306,7 +284,7 @@ Partial Class Form_AddLibrarian
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.Panel7.Location = New System.Drawing.Point(152, 335)
+        Me.Panel7.Location = New System.Drawing.Point(149, 412)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(300, 2)
         Me.Panel7.TabIndex = 21
@@ -317,7 +295,7 @@ Partial Class Form_AddLibrarian
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label7.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label7.Location = New System.Drawing.Point(150, 289)
+        Me.Label7.Location = New System.Drawing.Point(147, 366)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(114, 18)
         Me.Label7.TabIndex = 23
@@ -331,7 +309,7 @@ Partial Class Form_AddLibrarian
         Me.Btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Btn_Cancel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Btn_Cancel.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Btn_Cancel.Location = New System.Drawing.Point(556, 389)
+        Me.Btn_Cancel.Location = New System.Drawing.Point(553, 466)
         Me.Btn_Cancel.Name = "Btn_Cancel"
         Me.Btn_Cancel.Size = New System.Drawing.Size(116, 29)
         Me.Btn_Cancel.TabIndex = 8
@@ -346,41 +324,89 @@ Partial Class Form_AddLibrarian
         Me.Btn_AddStaff.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Btn_AddStaff.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Btn_AddStaff.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Btn_AddStaff.Location = New System.Drawing.Point(678, 389)
+        Me.Btn_AddStaff.Location = New System.Drawing.Point(675, 466)
         Me.Btn_AddStaff.Name = "Btn_AddStaff"
         Me.Btn_AddStaff.Size = New System.Drawing.Size(116, 29)
         Me.Btn_AddStaff.TabIndex = 27
         Me.Btn_AddStaff.Text = "Add"
         Me.Btn_AddStaff.UseVisualStyleBackColor = False
         '
-        'Btn_UpdateStaff
+        'Label3
         '
-        Me.Btn_UpdateStaff.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Btn_UpdateStaff.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Btn_UpdateStaff.FlatAppearance.BorderSize = 0
-        Me.Btn_UpdateStaff.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_UpdateStaff.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Btn_UpdateStaff.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Btn_UpdateStaff.Location = New System.Drawing.Point(678, 389)
-        Me.Btn_UpdateStaff.Name = "Btn_UpdateStaff"
-        Me.Btn_UpdateStaff.Size = New System.Drawing.Size(116, 29)
-        Me.Btn_UpdateStaff.TabIndex = 9
-        Me.Btn_UpdateStaff.Text = "Edit"
-        Me.Btn_UpdateStaff.UseVisualStyleBackColor = False
-        Me.Btn_UpdateStaff.Visible = False
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label3.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label3.Location = New System.Drawing.Point(147, 129)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(88, 18)
+        Me.Label3.TabIndex = 32
+        Me.Label3.Text = "User Name"
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.Panel8.Location = New System.Drawing.Point(149, 175)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(300, 2)
+        Me.Panel8.TabIndex = 30
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.Panel9.Location = New System.Drawing.Point(472, 175)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(318, 2)
+        Me.Panel9.TabIndex = 31
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label8.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label8.Location = New System.Drawing.Point(469, 129)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(75, 18)
+        Me.Label8.TabIndex = 33
+        Me.Label8.Text = "Password"
+        '
+        'Txtbox_Password
+        '
+        Me.Txtbox_Password.BackColor = System.Drawing.SystemColors.Control
+        Me.Txtbox_Password.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Txtbox_Password.Font = New System.Drawing.Font("Century Gothic", 11.25!)
+        Me.Txtbox_Password.Location = New System.Drawing.Point(472, 154)
+        Me.Txtbox_Password.Name = "Txtbox_Password"
+        Me.Txtbox_Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.Txtbox_Password.Size = New System.Drawing.Size(318, 19)
+        Me.Txtbox_Password.TabIndex = 29
+        '
+        'Txtbox_Username
+        '
+        Me.Txtbox_Username.BackColor = System.Drawing.SystemColors.Control
+        Me.Txtbox_Username.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Txtbox_Username.Font = New System.Drawing.Font("Century Gothic", 11.25!)
+        Me.Txtbox_Username.Location = New System.Drawing.Point(149, 154)
+        Me.Txtbox_Username.Name = "Txtbox_Username"
+        Me.Txtbox_Username.Size = New System.Drawing.Size(300, 19)
+        Me.Txtbox_Username.TabIndex = 28
         '
         'Form_AddLibrarian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(815, 430)
-        Me.Controls.Add(Me.Btn_UpdateStaff)
+        Me.ClientSize = New System.Drawing.Size(815, 509)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Panel8)
+        Me.Controls.Add(Me.Panel9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Txtbox_Password)
+        Me.Controls.Add(Me.Txtbox_Username)
         Me.Controls.Add(Me.Btn_Cancel)
         Me.Controls.Add(Me.Btn_AddStaff)
         Me.Controls.Add(Me.Cbox_Type)
-        Me.Controls.Add(Me.Cbox_Gender)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Label2)
@@ -424,8 +450,6 @@ Partial Class Form_AddLibrarian
     Friend WithEvents T As Label
     Friend WithEvents Txtbox_Lname As TextBox
     Friend WithEvents Txtbox_Fname As TextBox
-    Friend WithEvents Cbox_Gender As ComboBox
-    Friend WithEvents Label5 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Cbox_Type As ComboBox
     Friend WithEvents Txtbox_EmailAdd As TextBox
@@ -439,5 +463,10 @@ Partial Class Form_AddLibrarian
     Friend WithEvents Label7 As Label
     Friend WithEvents Btn_Cancel As Button
     Friend WithEvents Btn_AddStaff As Button
-    Friend WithEvents Btn_UpdateStaff As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Txtbox_Password As TextBox
+    Friend WithEvents Txtbox_Username As TextBox
 End Class

@@ -37,12 +37,10 @@ Partial Class Form_Manager
         Me.Btn_Inventory = New System.Windows.Forms.Button()
         Me.Btn_Staff = New System.Windows.Forms.Button()
         Me.Btn_BookShowcase = New System.Windows.Forms.Button()
-        Me.Btn_Pending = New System.Windows.Forms.Button()
         Me.UserControl_Reports = New PCHS_Library_Management_System.UC_Reports()
         Me.UserControl_Inventory = New PCHS_Library_Management_System.UC_Inventory()
         Me.UserControl_Borrowed = New PCHS_Library_Management_System.UC_Borrowed()
         Me.UserControl_ShowCase = New PCHS_Library_Management_System.UC_ShowCase()
-        Me.UserControl_Borrows = New PCHS_Library_Management_System.UC_Borrows()
         Me.UserControl_Staff = New PCHS_Library_Management_System.UC_Staff()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -120,7 +118,6 @@ Partial Class Form_Manager
         Me.Panel_MainTaskBar.Controls.Add(Me.Btn_Inventory)
         Me.Panel_MainTaskBar.Controls.Add(Me.Btn_Staff)
         Me.Panel_MainTaskBar.Controls.Add(Me.Btn_BookShowcase)
-        Me.Panel_MainTaskBar.Controls.Add(Me.Btn_Pending)
         Me.Panel_MainTaskBar.Location = New System.Drawing.Point(0, 55)
         Me.Panel_MainTaskBar.Name = "Panel_MainTaskBar"
         Me.Panel_MainTaskBar.Size = New System.Drawing.Size(204, 508)
@@ -163,13 +160,13 @@ Partial Class Form_Manager
         Me.Btn_Borrowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Borrowed.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
         Me.Btn_Borrowed.ForeColor = System.Drawing.Color.White
-        Me.Btn_Borrowed.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Supplier
+        Me.Btn_Borrowed.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Borrow
         Me.Btn_Borrowed.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Borrowed.Location = New System.Drawing.Point(8, 151)
+        Me.Btn_Borrowed.Location = New System.Drawing.Point(8, 108)
         Me.Btn_Borrowed.Name = "Btn_Borrowed"
         Me.Btn_Borrowed.Size = New System.Drawing.Size(196, 46)
         Me.Btn_Borrowed.TabIndex = 5
-        Me.Btn_Borrowed.Text = "     Borrowed"
+        Me.Btn_Borrowed.Text = "     Borrows"
         Me.Btn_Borrowed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Btn_Borrowed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Btn_Borrowed.UseVisualStyleBackColor = False
@@ -205,7 +202,7 @@ Partial Class Form_Manager
         Me.Btn_Inventory.ForeColor = System.Drawing.Color.White
         Me.Btn_Inventory.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Inventory
         Me.Btn_Inventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Inventory.Location = New System.Drawing.Point(8, 197)
+        Me.Btn_Inventory.Location = New System.Drawing.Point(8, 154)
         Me.Btn_Inventory.Name = "Btn_Inventory"
         Me.Btn_Inventory.Size = New System.Drawing.Size(196, 46)
         Me.Btn_Inventory.TabIndex = 4
@@ -225,7 +222,7 @@ Partial Class Form_Manager
         Me.Btn_Staff.ForeColor = System.Drawing.Color.White
         Me.Btn_Staff.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Accounts
         Me.Btn_Staff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Staff.Location = New System.Drawing.Point(8, 243)
+        Me.Btn_Staff.Location = New System.Drawing.Point(8, 200)
         Me.Btn_Staff.Name = "Btn_Staff"
         Me.Btn_Staff.Size = New System.Drawing.Size(196, 46)
         Me.Btn_Staff.TabIndex = 4
@@ -253,26 +250,6 @@ Partial Class Form_Manager
         Me.Btn_BookShowcase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Btn_BookShowcase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Btn_BookShowcase.UseVisualStyleBackColor = False
-        '
-        'Btn_Pending
-        '
-        Me.Btn_Pending.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.Btn_Pending.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Btn_Pending.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.Btn_Pending.FlatAppearance.BorderSize = 0
-        Me.Btn_Pending.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_Pending.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.Btn_Pending.ForeColor = System.Drawing.Color.White
-        Me.Btn_Pending.Image = Global.PCHS_Library_Management_System.My.Resources.Resources.Icon_Borrow
-        Me.Btn_Pending.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Pending.Location = New System.Drawing.Point(8, 105)
-        Me.Btn_Pending.Name = "Btn_Pending"
-        Me.Btn_Pending.Size = New System.Drawing.Size(196, 46)
-        Me.Btn_Pending.TabIndex = 2
-        Me.Btn_Pending.Text = "     Pending"
-        Me.Btn_Pending.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Pending.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Btn_Pending.UseVisualStyleBackColor = False
         '
         'UserControl_Reports
         '
@@ -319,17 +296,6 @@ Partial Class Form_Manager
         Me.UserControl_ShowCase.Size = New System.Drawing.Size(804, 508)
         Me.UserControl_ShowCase.TabIndex = 3
         '
-        'UserControl_Borrows
-        '
-        Me.UserControl_Borrows.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.UserControl_Borrows.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.UserControl_Borrows.Location = New System.Drawing.Point(205, 55)
-        Me.UserControl_Borrows.Name = "UserControl_Borrows"
-        Me.UserControl_Borrows.Size = New System.Drawing.Size(804, 508)
-        Me.UserControl_Borrows.TabIndex = 2
-        '
         'UserControl_Staff
         '
         Me.UserControl_Staff.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -353,7 +319,6 @@ Partial Class Form_Manager
         Me.Controls.Add(Me.UserControl_Inventory)
         Me.Controls.Add(Me.UserControl_Borrowed)
         Me.Controls.Add(Me.UserControl_ShowCase)
-        Me.Controls.Add(Me.UserControl_Borrows)
         Me.Controls.Add(Me.UserControl_Staff)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -373,7 +338,6 @@ Partial Class Form_Manager
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel_MainTaskBar As Panel
-    Friend WithEvents Btn_Pending As Button
     Friend WithEvents Btn_BookShowcase As Button
     Friend WithEvents Btn_Staff As Button
     Friend WithEvents Btn_Borrowed As Button
@@ -384,7 +348,6 @@ Partial Class Form_Manager
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents UserControl_Borrows As UC_Borrows
     Friend WithEvents Btn_LogOut As Button
     Friend WithEvents Panel_Highlight As Panel
     Friend WithEvents UserControl_ShowCase As UC_ShowCase

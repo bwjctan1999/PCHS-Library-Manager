@@ -27,17 +27,20 @@ Partial Class Form_Borrow
         Me.Btn_Borrow = New System.Windows.Forms.Button()
         Me.Btn_Close = New System.Windows.Forms.Button()
         Me.Lbl_Author = New System.Windows.Forms.Label()
-        Me.Lbl_Category = New System.Windows.Forms.Label()
-        Me.Lbl_ShelveNo = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Lbl_Subject = New System.Windows.Forms.Label()
+        Me.Lbl_ShelfNo = New System.Windows.Forms.Label()
+        Me.Lbl_By = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Lbl_YearPub = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Lbl_ISBNNo = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Lbl_CodeNo = New System.Windows.Forms.Label()
+        Me.Lbl_Quantity = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Btn_Okay = New System.Windows.Forms.Button()
+        Me.Btn_Remove = New System.Windows.Forms.Button()
         CType(Me.Picbox_Cover, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -48,6 +51,7 @@ Partial Class Form_Borrow
         Me.Lbl_Title.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lbl_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.Lbl_Title.Location = New System.Drawing.Point(299, 55)
+        Me.Lbl_Title.MaximumSize = New System.Drawing.Size(334, 0)
         Me.Lbl_Title.Name = "Lbl_Title"
         Me.Lbl_Title.Size = New System.Drawing.Size(245, 32)
         Me.Lbl_Title.TabIndex = 0
@@ -102,56 +106,57 @@ Partial Class Form_Borrow
         Me.Lbl_Author.TabIndex = 0
         Me.Lbl_Author.Text = "F. Scott Fitzgerald"
         '
-        'Lbl_Category
+        'Lbl_Subject
         '
-        Me.Lbl_Category.AutoSize = True
-        Me.Lbl_Category.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_Category.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Lbl_Category.Location = New System.Drawing.Point(440, 172)
-        Me.Lbl_Category.Name = "Lbl_Category"
-        Me.Lbl_Category.Size = New System.Drawing.Size(95, 23)
-        Me.Lbl_Category.TabIndex = 0
-        Me.Lbl_Category.Text = "Literature"
+        Me.Lbl_Subject.AutoSize = True
+        Me.Lbl_Subject.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Subject.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Lbl_Subject.Location = New System.Drawing.Point(448, 204)
+        Me.Lbl_Subject.Name = "Lbl_Subject"
+        Me.Lbl_Subject.Size = New System.Drawing.Size(95, 23)
+        Me.Lbl_Subject.TabIndex = 0
+        Me.Lbl_Subject.Text = "Literature"
         '
-        'Lbl_ShelveNo
+        'Lbl_ShelfNo
         '
-        Me.Lbl_ShelveNo.AutoSize = True
-        Me.Lbl_ShelveNo.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_ShelveNo.ForeColor = System.Drawing.Color.White
-        Me.Lbl_ShelveNo.Location = New System.Drawing.Point(30, 35)
-        Me.Lbl_ShelveNo.Name = "Lbl_ShelveNo"
-        Me.Lbl_ShelveNo.Size = New System.Drawing.Size(105, 77)
-        Me.Lbl_ShelveNo.TabIndex = 0
-        Me.Lbl_ShelveNo.Text = "04"
+        Me.Lbl_ShelfNo.AutoSize = True
+        Me.Lbl_ShelfNo.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_ShelfNo.ForeColor = System.Drawing.Color.White
+        Me.Lbl_ShelfNo.Location = New System.Drawing.Point(30, 35)
+        Me.Lbl_ShelfNo.Name = "Lbl_ShelfNo"
+        Me.Lbl_ShelfNo.Size = New System.Drawing.Size(105, 77)
+        Me.Lbl_ShelfNo.TabIndex = 0
+        Me.Lbl_ShelfNo.Text = "04"
+        Me.Lbl_ShelfNo.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label7
+        'Lbl_By
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label7.Location = New System.Drawing.Point(301, 87)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(35, 24)
-        Me.Label7.TabIndex = 0
-        Me.Label7.Text = "by"
+        Me.Lbl_By.AutoSize = True
+        Me.Lbl_By.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_By.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Lbl_By.Location = New System.Drawing.Point(301, 87)
+        Me.Lbl_By.Name = "Lbl_By"
+        Me.Lbl_By.Size = New System.Drawing.Size(35, 24)
+        Me.Lbl_By.TabIndex = 0
+        Me.Lbl_By.Text = "by"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label6.Location = New System.Drawing.Point(301, 174)
+        Me.Label6.Location = New System.Drawing.Point(361, 206)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(89, 21)
+        Me.Label6.Size = New System.Drawing.Size(73, 21)
         Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Category:"
+        Me.Label6.Text = "Subject:"
         '
         'Lbl_YearPub
         '
         Me.Lbl_YearPub.AutoSize = True
         Me.Lbl_YearPub.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lbl_YearPub.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Lbl_YearPub.Location = New System.Drawing.Point(440, 201)
+        Me.Lbl_YearPub.Location = New System.Drawing.Point(448, 233)
         Me.Lbl_YearPub.Name = "Lbl_YearPub"
         Me.Lbl_YearPub.Size = New System.Drawing.Size(105, 23)
         Me.Lbl_YearPub.TabIndex = 0
@@ -162,7 +167,7 @@ Partial Class Form_Borrow
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label11.Location = New System.Drawing.Point(301, 201)
+        Me.Label11.Location = New System.Drawing.Point(306, 235)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(128, 21)
         Me.Label11.TabIndex = 0
@@ -173,7 +178,7 @@ Partial Class Form_Borrow
         Me.Lbl_ISBNNo.AutoSize = True
         Me.Lbl_ISBNNo.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lbl_ISBNNo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Lbl_ISBNNo.Location = New System.Drawing.Point(440, 232)
+        Me.Lbl_ISBNNo.Location = New System.Drawing.Point(448, 264)
         Me.Lbl_ISBNNo.Name = "Lbl_ISBNNo"
         Me.Lbl_ISBNNo.Size = New System.Drawing.Size(185, 23)
         Me.Lbl_ISBNNo.TabIndex = 0
@@ -193,34 +198,73 @@ Partial Class Form_Borrow
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(97, Byte), Integer), CType(CType(170, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Lbl_ShelveNo)
+        Me.Panel1.Controls.Add(Me.Lbl_ShelfNo)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Location = New System.Drawing.Point(650, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(150, 133)
         Me.Panel1.TabIndex = 10
         '
-        'Lbl_CodeNo
+        'Lbl_Quantity
         '
-        Me.Lbl_CodeNo.AutoSize = True
-        Me.Lbl_CodeNo.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_CodeNo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Lbl_CodeNo.Location = New System.Drawing.Point(440, 264)
-        Me.Lbl_CodeNo.Name = "Lbl_CodeNo"
-        Me.Lbl_CodeNo.Size = New System.Drawing.Size(32, 23)
-        Me.Lbl_CodeNo.TabIndex = 0
-        Me.Lbl_CodeNo.Text = "77"
+        Me.Lbl_Quantity.AutoSize = True
+        Me.Lbl_Quantity.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Quantity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Lbl_Quantity.Location = New System.Drawing.Point(448, 296)
+        Me.Lbl_Quantity.Name = "Lbl_Quantity"
+        Me.Lbl_Quantity.Size = New System.Drawing.Size(32, 23)
+        Me.Lbl_Quantity.TabIndex = 0
+        Me.Lbl_Quantity.Text = "77"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label2.Location = New System.Drawing.Point(301, 264)
+        Me.Label2.Location = New System.Drawing.Point(309, 296)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(125, 21)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Code Number:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label1.Location = New System.Drawing.Point(319, 266)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(115, 21)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "ISBN Number:"
+        '
+        'Btn_Okay
+        '
+        Me.Btn_Okay.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.Btn_Okay.FlatAppearance.BorderSize = 0
+        Me.Btn_Okay.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Okay.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Btn_Okay.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Btn_Okay.Location = New System.Drawing.Point(658, 394)
+        Me.Btn_Okay.Name = "Btn_Okay"
+        Me.Btn_Okay.Size = New System.Drawing.Size(116, 29)
+        Me.Btn_Okay.TabIndex = 8
+        Me.Btn_Okay.Text = "Ok"
+        Me.Btn_Okay.UseVisualStyleBackColor = False
+        '
+        'Btn_Remove
+        '
+        Me.Btn_Remove.BackColor = System.Drawing.Color.IndianRed
+        Me.Btn_Remove.FlatAppearance.BorderSize = 0
+        Me.Btn_Remove.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Btn_Remove.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Btn_Remove.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Btn_Remove.Location = New System.Drawing.Point(527, 394)
+        Me.Btn_Remove.Name = "Btn_Remove"
+        Me.Btn_Remove.Size = New System.Drawing.Size(116, 29)
+        Me.Btn_Remove.TabIndex = 9
+        Me.Btn_Remove.Text = "Remove"
+        Me.Btn_Remove.UseVisualStyleBackColor = False
         '
         'Form_Borrow
         '
@@ -229,18 +273,21 @@ Partial Class Form_Borrow
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Btn_Close)
+        Me.Controls.Add(Me.Btn_Okay)
         Me.Controls.Add(Me.Btn_Borrow)
         Me.Controls.Add(Me.Picbox_Cover)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Lbl_By)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Lbl_CodeNo)
+        Me.Controls.Add(Me.Lbl_Quantity)
         Me.Controls.Add(Me.Lbl_ISBNNo)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Lbl_YearPub)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Lbl_Category)
+        Me.Controls.Add(Me.Lbl_Subject)
         Me.Controls.Add(Me.Lbl_Author)
         Me.Controls.Add(Me.Lbl_Title)
+        Me.Controls.Add(Me.Btn_Remove)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "Form_Borrow"
@@ -259,15 +306,18 @@ Partial Class Form_Borrow
     Friend WithEvents Btn_Borrow As Button
     Friend WithEvents Btn_Close As Button
     Friend WithEvents Lbl_Author As Label
-    Friend WithEvents Lbl_Category As Label
-    Friend WithEvents Lbl_ShelveNo As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents Lbl_Subject As Label
+    Friend WithEvents Lbl_ShelfNo As Label
+    Friend WithEvents Lbl_By As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Lbl_YearPub As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Lbl_ISBNNo As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Lbl_CodeNo As Label
+    Friend WithEvents Lbl_Quantity As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Btn_Okay As Button
+    Friend WithEvents Btn_Remove As Button
 End Class

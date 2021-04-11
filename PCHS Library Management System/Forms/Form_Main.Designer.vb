@@ -29,12 +29,12 @@ Partial Class Form_Main
         Me.Lbl_BookShowcase_2 = New System.Windows.Forms.Label()
         Me.Btn_Search = New System.Windows.Forms.Button()
         Me.Btn_SearchSettings = New System.Windows.Forms.Button()
-        Me.Btn_CheckOut = New System.Windows.Forms.Button()
         Me.Cbox_SearchSettings = New System.Windows.Forms.ComboBox()
         Me.Cbox_Categories = New System.Windows.Forms.ComboBox()
-        Me.UserControl_DataViewer = New PCHS_Library_Management_System.UC_DataViewer()
+        Me.Btn_Back = New System.Windows.Forms.Button()
         Me.UserControl_BookShowcase_2 = New PCHS_Library_Management_System.UC_BookShelf()
         Me.UserControl_BookShowcase_1 = New PCHS_Library_Management_System.UC_BookShelf()
+        Me.UserControl_DataViewer = New PCHS_Library_Management_System.UC_DataViewer()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -62,12 +62,13 @@ Partial Class Form_Main
         '
         'Btn_Admin
         '
+        Me.Btn_Admin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Btn_Admin.BackColor = System.Drawing.SystemColors.HotTrack
         Me.Btn_Admin.FlatAppearance.BorderSize = 0
         Me.Btn_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Admin.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_Admin.ForeColor = System.Drawing.Color.White
-        Me.Btn_Admin.Location = New System.Drawing.Point(12, 12)
+        Me.Btn_Admin.Location = New System.Drawing.Point(921, 12)
         Me.Btn_Admin.Name = "Btn_Admin"
         Me.Btn_Admin.Size = New System.Drawing.Size(75, 29)
         Me.Btn_Admin.TabIndex = 2
@@ -83,9 +84,9 @@ Partial Class Form_Main
         Me.Lbl_BookShowcase_1.ForeColor = System.Drawing.Color.SandyBrown
         Me.Lbl_BookShowcase_1.Location = New System.Drawing.Point(117, 151)
         Me.Lbl_BookShowcase_1.Name = "Lbl_BookShowcase_1"
-        Me.Lbl_BookShowcase_1.Size = New System.Drawing.Size(82, 21)
+        Me.Lbl_BookShowcase_1.Size = New System.Drawing.Size(54, 21)
         Me.Lbl_BookShowcase_1.TabIndex = 4
-        Me.Lbl_BookShowcase_1.Text = "Featured"
+        Me.Lbl_BookShowcase_1.Text = "Title 1"
         '
         'Lbl_BookShowcase_2
         '
@@ -96,9 +97,9 @@ Partial Class Form_Main
         Me.Lbl_BookShowcase_2.ForeColor = System.Drawing.Color.SandyBrown
         Me.Lbl_BookShowcase_2.Location = New System.Drawing.Point(117, 366)
         Me.Lbl_BookShowcase_2.Name = "Lbl_BookShowcase_2"
-        Me.Lbl_BookShowcase_2.Size = New System.Drawing.Size(106, 21)
+        Me.Lbl_BookShowcase_2.Size = New System.Drawing.Size(54, 21)
         Me.Lbl_BookShowcase_2.TabIndex = 6
-        Me.Lbl_BookShowcase_2.Text = "New Arrivals"
+        Me.Lbl_BookShowcase_2.Text = "Title 2"
         '
         'Btn_Search
         '
@@ -125,21 +126,7 @@ Partial Class Form_Main
         Me.Btn_SearchSettings.Size = New System.Drawing.Size(29, 30)
         Me.Btn_SearchSettings.TabIndex = 8
         Me.Btn_SearchSettings.UseVisualStyleBackColor = False
-        '
-        'Btn_CheckOut
-        '
-        Me.Btn_CheckOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Btn_CheckOut.BackColor = System.Drawing.Color.Transparent
-        Me.Btn_CheckOut.FlatAppearance.BorderSize = 0
-        Me.Btn_CheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btn_CheckOut.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_CheckOut.ForeColor = System.Drawing.Color.White
-        Me.Btn_CheckOut.Location = New System.Drawing.Point(901, 12)
-        Me.Btn_CheckOut.Name = "Btn_CheckOut"
-        Me.Btn_CheckOut.Size = New System.Drawing.Size(95, 29)
-        Me.Btn_CheckOut.TabIndex = 9
-        Me.Btn_CheckOut.Text = "Check Out"
-        Me.Btn_CheckOut.UseVisualStyleBackColor = False
+        Me.Btn_SearchSettings.Visible = False
         '
         'Cbox_SearchSettings
         '
@@ -171,17 +158,21 @@ Partial Class Form_Main
         Me.Cbox_Categories.TabIndex = 3
         Me.Cbox_Categories.Visible = False
         '
-        'UserControl_DataViewer
+        'Btn_Back
         '
-        Me.UserControl_DataViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.UserControl_DataViewer.BackColor = System.Drawing.Color.Transparent
-        Me.UserControl_DataViewer.Location = New System.Drawing.Point(86, 136)
-        Me.UserControl_DataViewer.Name = "UserControl_DataViewer"
-        Me.UserControl_DataViewer.Size = New System.Drawing.Size(836, 389)
-        Me.UserControl_DataViewer.TabIndex = 10
-        Me.UserControl_DataViewer.Visible = False
+        Me.Btn_Back.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Btn_Back.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.Btn_Back.FlatAppearance.BorderSize = 0
+        Me.Btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Back.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Back.ForeColor = System.Drawing.Color.White
+        Me.Btn_Back.Location = New System.Drawing.Point(96, 79)
+        Me.Btn_Back.Name = "Btn_Back"
+        Me.Btn_Back.Size = New System.Drawing.Size(75, 29)
+        Me.Btn_Back.TabIndex = 2
+        Me.Btn_Back.Text = "Back"
+        Me.Btn_Back.UseVisualStyleBackColor = False
+        Me.Btn_Back.Visible = False
         '
         'UserControl_BookShowcase_2
         '
@@ -201,7 +192,19 @@ Partial Class Form_Main
         Me.UserControl_BookShowcase_1.Size = New System.Drawing.Size(775, 160)
         Me.UserControl_BookShowcase_1.TabIndex = 11
         '
-        'Form_Student
+        'UserControl_DataViewer
+        '
+        Me.UserControl_DataViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.UserControl_DataViewer.BackColor = System.Drawing.Color.Transparent
+        Me.UserControl_DataViewer.Location = New System.Drawing.Point(86, 136)
+        Me.UserControl_DataViewer.Name = "UserControl_DataViewer"
+        Me.UserControl_DataViewer.Size = New System.Drawing.Size(836, 389)
+        Me.UserControl_DataViewer.TabIndex = 10
+        Me.UserControl_DataViewer.Visible = False
+        '
+        'Form_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -209,21 +212,21 @@ Partial Class Form_Main
         Me.BackgroundImage = Global.PCHS_Library_Management_System.My.Resources.Resources.Background_7
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1008, 561)
-        Me.Controls.Add(Me.UserControl_DataViewer)
         Me.Controls.Add(Me.Cbox_Categories)
         Me.Controls.Add(Me.Cbox_SearchSettings)
-        Me.Controls.Add(Me.Btn_CheckOut)
         Me.Controls.Add(Me.Btn_SearchSettings)
         Me.Controls.Add(Me.Btn_Search)
         Me.Controls.Add(Me.Lbl_BookShowcase_2)
         Me.Controls.Add(Me.UserControl_BookShowcase_2)
         Me.Controls.Add(Me.Lbl_BookShowcase_1)
+        Me.Controls.Add(Me.Btn_Back)
         Me.Controls.Add(Me.Btn_Admin)
         Me.Controls.Add(Me.Txtbox_Searchbar)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.UserControl_BookShowcase_1)
+        Me.Controls.Add(Me.UserControl_DataViewer)
         Me.DoubleBuffered = True
-        Me.Name = "Form_Student"
+        Me.Name = "Form_Main"
         Me.Text = "PCHS Library Manager"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -240,9 +243,9 @@ Partial Class Form_Main
     Friend WithEvents UserControl_BookShowcase_2 As UC_BookShelf
     Friend WithEvents Btn_Search As Button
     Friend WithEvents Btn_SearchSettings As Button
-    Friend WithEvents Btn_CheckOut As Button
     Friend WithEvents Cbox_SearchSettings As ComboBox
     Friend WithEvents Cbox_Categories As ComboBox
     Friend WithEvents UserControl_DataViewer As UC_DataViewer
     Friend WithEvents UserControl_BookShowcase_1 As UC_BookShelf
+    Friend WithEvents Btn_Back As Button
 End Class

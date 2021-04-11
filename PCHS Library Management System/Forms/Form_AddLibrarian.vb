@@ -1,69 +1,108 @@
-﻿Public Class Form_AddLibrarian
-    Private selectedindex As Integer = 0
-    Private selecteditems
-    Private selectedimgs
+﻿Imports System.IO
 
-    Public Sub Start(mode, listitems, imgs)
-        Me.selecteditems = listitems
-        Me.selectedimgs = imgs
+Public Class Form_AddLibrarian
+    Public listviewItem As New ListViewItem
+    Public listimage As Image
 
-        Select Case mode
-            Case "Add"
-                Lbl_mode.Text = "ADD LIBRARIAN"
-                Btn_UpdateStaff.Hide()
-                Btn_AddStaff.Show()
-            Case "Update"
-                Lbl_mode.Text = "EDIT LIBRARIAN  1/" & selecteditems.count
-                Btn_AddStaff.Hide()
-                Btn_UpdateStaff.Show()
-                Load_Data(selectedindex)
-        End Select
+    Private Sub AddLibrarian()
+        Try
+            openCon()
+            cmd.Parameters.Clear()
+            command("INSERT INTO tbl_librarians (`username`, `password`, `fname`, `lname`, `address`, `email`,
+                    `contactnum`, `type`, `libimg`) 
+
+                    VALUES (@username, @password, @fname, @lname, @address, @email, @contactnum, @type, @libimg); 
+                    SELECT @@identity")
+
+            cmd.Parameters.AddWithValue("@username", Txtbox_Username.Text)
+            cmd.Parameters.AddWithValue("@password", Txtbox_Password.Text)
+            cmd.Parameters.AddWithValue("@fname", Txtbox_Fname.Text)
+            cmd.Parameters.AddWithValue("@lname", Txtbox_Lname.Text)
+            cmd.Parameters.AddWithValue("@address", Txtbox_HomeAdd.Text)
+            cmd.Parameters.AddWithValue("@email", Txtbox_EmailAdd.Text)
+            cmd.Parameters.AddWithValue("@contactnum", Txtbox_ContactNum.Text)
+            cmd.Parameters.AddWithValue("@type", Cbox_Type.SelectedItem)
+
+            Dim ms As New MemoryStream
+            Panel_Image.BackgroundImage.Save(ms, Panel_Image.BackgroundImage.RawFormat)
+            Dim imagedata As Byte() = ms.GetBuffer()
+            cmd.Parameters.AddWithValue("@libimg", imagedata)
+
+            Dim temp As Integer = cmd.ExecuteScalar
+
+            listviewItem.SubItems(0).Text = Txtbox_Username.Text
+            listviewItem.SubItems.Add(Txtbox_Fname.Text & " " & Txtbox_Lname.Text)
+            listviewItem.SubItems.Add(Txtbox_HomeAdd.Text)
+            listviewItem.SubItems.Add(Txtbox_EmailAdd.Text)
+            listviewItem.SubItems.Add(Txtbox_ContactNum.Text)
+            listviewItem.SubItems.Add(Cbox_Type.SelectedItem)
+            listviewItem.SubItems.Add(temp)
+            listimage = Panel_Image.BackgroundImage
+
+            closeCon()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+        Me.DialogResult = DialogResult.OK
+        Me.Close()
     End Sub
 
-    Private Sub Load_Data(index As Integer)
-        Panel_Image.BackgroundImage = selectedimgs(index)
+    Private Function ErrorChecker()
+        Dim textbox As TextBox() = {Txtbox_Username, Txtbox_Fname, Txtbox_Lname, Txtbox_EmailAdd, Txtbox_HomeAdd, Txtbox_ContactNum}
+        Dim boxname As String() = {"User Name", "First Name", "Last Name", "Email Address", "Home Address", "Contact Number"}
 
-        Dim fullname As String = selecteditems(index).SubItems(0).Text
+        Dim pass As Boolean = True
+        Dim errormsg As String = ""
 
-        Dim first_last_name() As String = Split(fullname, ",")
+        For i As Integer = 0 To textbox.Length - 1
+            Dim errors As String = boxname(i) & " "
 
-        Txtbox_Fname.Text = first_last_name(1)
-        Txtbox_Lname.Text = first_last_name(0)
-        Txtbox_EmailAdd.Text = selecteditems(index).SubItems(3).Text
-        Txtbox_HomeAdd.Text = selecteditems(index).SubItems(4).Text
-        Txtbox_ContactNum.Text = selecteditems(index).SubItems(5).Text
+            If textbox(i).Text = "" Then
+                errors += " Is Empty. "
+                pass = False
+            End If
 
-        Select Case selecteditems(selectedindex).SubItems(1).Text
-            Case "Male"
-                Cbox_Gender.SelectedIndex = 0
-            Case "Female"
-                Cbox_Gender.SelectedIndex = 1
-            Case "Other"
-                Cbox_Gender.SelectedIndex = 2
-        End Select
+            If errors <> boxname(i) & " " Then
+                If i <> 0 Then
+                    errormsg += vbCrLf & vbCrLf
+                End If
+                errormsg += errors
+            End If
+        Next
 
-        Select Case selecteditems(selectedindex).SubItems(2).Text
-            Case "Librarian"
-                Cbox_Type.SelectedIndex = 0
-            Case "Student Assistant"
-                Cbox_Type.SelectedIndex = 1
-        End Select
-    End Sub
+        If pass = False Then
+            Msg.SetContent("ERROR!", errormsg)
+            Msg.ShowDialog()
+        End If
+
+        Return pass
+    End Function
+
+
+
+
+
+
 
 
     Private Sub ImageCover_Label_Click(sender As Object, e As EventArgs) Handles Lbl_ChangeImage.Click
-        Dim fd As OpenFileDialog = New OpenFileDialog()
-        Dim strFileName As String
+        Try
+            Dim fd As OpenFileDialog = New OpenFileDialog()
 
-        fd.Title = "Open File Dialog"
-        fd.InitialDirectory = "C:\"
-        fd.Filter = "All files (*.*)|*.*|All files (*.*)|*.*"
-        fd.FilterIndex = 2
-        fd.RestoreDirectory = True
+            fd.Title = "Open File Dialog"
+            fd.InitialDirectory = "Desktop"
+            fd.Filter = "All Files|*.*|Image Files|*.jpg;*.gif;*.png;*.bmp"
+            fd.FilterIndex = 2
+            fd.RestoreDirectory = True
 
-        If fd.ShowDialog() = DialogResult.OK Then
-            strFileName = fd.FileName
-        End If
+            If fd.ShowDialog() = DialogResult.OK Then
+                Panel_Image.BackgroundImage = Image.FromFile(fd.FileName)
+            End If
+        Catch ex As Exception
+            Msg.SetContent("", "File is not a valid Image")
+            Msg.ShowDialog()
+        End Try
     End Sub
 
     'GUI DESIGN FUNCTIONS ==========================================================================================
@@ -76,22 +115,16 @@
     End Sub
 
     Private Sub Btn_AddBook_Click(sender As Object, e As EventArgs) Handles Btn_AddStaff.Click
-        Me.Close()
-    End Sub
-
-    Private Sub Btn_UpdateStaff_Click(sender As Object, e As EventArgs) Handles Btn_UpdateStaff.Click
-        If selectedindex = selecteditems.count - 1 Then
-            'Insert Update Function
-            Me.Close()
-        Else
-            'Insert Update Function
-            selectedindex += 1
-            Lbl_mode.Text = "EDIT LIBRARIAN  " & (selectedindex + 1) & "/" & selecteditems.count
-            Load_Data(selectedindex)
+        If ErrorChecker() = True Then
+            AddLibrarian()
         End If
     End Sub
 
     Private Sub Button_Cancel(sender As Object, e As EventArgs) Handles Btn_Cancel.Click
         Me.Close()
+    End Sub
+
+    Private Sub Form_AddLibrarian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Cbox_Type.SelectedIndex = 0
     End Sub
 End Class

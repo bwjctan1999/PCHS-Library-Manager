@@ -4,7 +4,7 @@ Imports Microsoft.VisualBasic.ApplicationServices
 
 Public Class UC_BookShelf
     Private books As New List(Of UC_Book)
-    Private mode As String
+    Private Mode As String
 
     Private Sub UC_BookShelf_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler Me.Layout, AddressOf Adjust_Location
@@ -49,4 +49,8 @@ Public Class UC_BookShelf
     Public Sub Set_Panel_Color(color)
         Me.BackColor = color
     End Sub
+
+    Public Function GetBooks()
+        Return books
+    End Function
 End Class

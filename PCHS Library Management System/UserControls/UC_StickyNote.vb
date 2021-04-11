@@ -1,11 +1,13 @@
 ﻿Public Class UC_StickyNote
+    Public ShowMore As Boolean = False
+    Public Parentform As UC_SNHolder
 
     Private Sub UC_StickyNote_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Panel_Body.Height = Panel_Body.Height + TaskBar.Height
         Panel_Body.Location = New Point(3, 22)
     End Sub
 
-    Private ShowMore As Boolean = False
+
     Private Sub Btn_More_Click(sender As Object, e As EventArgs) Handles Btn_More.MouseDown
         Select Case ShowMore
             Case True
@@ -19,8 +21,13 @@
         End Select
     End Sub
 
+    Public Sub More()
+
+    End Sub
+
     Private Sub Btn_Close_Click(sender As Object, e As EventArgs) Handles Btn_Close.Click
         Me.Parent.Controls.Remove(Me)
+        Parentform.stickynotes.Remove(Me)
     End Sub
 
 
@@ -322,6 +329,19 @@
         RTBox.SelectionIndent = 10
         RTBox.BulletIndent = 5
         RTBox.SelectionBullet = True
+    End Sub
+
+
+    Public Sub SetRTF(rtf)
+        RTBox.Rtf = rtf
+    End Sub
+
+    Public Function GetRTF()
+        Return RTBox.Rtf
+    End Function
+
+    Public Sub Set_ParentForm(parent)
+        Me.Parentform = parent
     End Sub
 End Class
 

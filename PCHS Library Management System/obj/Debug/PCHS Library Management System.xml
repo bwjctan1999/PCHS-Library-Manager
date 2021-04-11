@@ -97,6 +97,11 @@ PCHS Library Management System
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_IMAGE_NOT_AVAILABLE">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PCHS_Library_Management_System.My.Resources.Resources.cd4a096b2096ebb4f460c171cf0f913e">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
