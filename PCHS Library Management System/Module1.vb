@@ -13,7 +13,9 @@ Module Module1
     Public parameter As New MySqlParameter
 
     Sub openCon()
-        con.ConnectionString = "server=localhost;username=root;password=jacques1999;database=pchslibrary;Convert Zero Datetime=True"
+
+        con.ConnectionString = "server=localhost;username=pchs;password=pangantucan;database=pchslibrary;Convert Zero Datetime=True"
+
         con.Open()
     End Sub
 
