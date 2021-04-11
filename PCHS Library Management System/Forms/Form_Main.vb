@@ -143,7 +143,7 @@ Public Class Form_Main
             UserControl_DataViewer.Set_Mode("Main")
         Catch ex As Exception
             Msg.SetContent("MySQL CONNECTION ACCESS ERROR", "If you are prototyping please follow the instructions given in the link below." & vbCrLf & vbCrLf &
-                           "benztan.com" & vbCrLf & vbCrLf &
+                           "https://github.com/bwjctan1999/PCHS-Library-Manager/tree/main/MySQL%20INSTRUCTIONS/Instructions/MYSQL%20ACCESS%20ERROR" & vbCrLf & vbCrLf &
                            "All errors following this can be fixed through the instructions in the link, please ignore them")
             Msg.ShowDialog()
             MsgBox(ex.ToString)
