@@ -12,16 +12,54 @@ PCHS is a Filipino Catholic Jesuit Mission School. It aims to become a leading A
 
 <space>
   
-DESIGN PROTOTYPES:<br/>
+STATUS: 85% Done <br/>
 
 <space>
 
-LOGIN 1:<br/>
-![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Login%20Prototype%201.jpg?raw=true)
+MAIN:<br/>
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Main.jpg?raw=true)
 
 <space>
 
-LOGIN 2:<br/>
-![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Login%20Prototype%202.jpg?raw=true)
+SEARCH:<br/>
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Search.jpg?raw=true)
 
+<space>
 
+VIEW BOOK:<br/>
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/ViewBook.jpg?raw=true)
+
+<space>
+
+LOGIN:<br/>
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Login.jpg?raw=true)
+
+<space>
+
+DASHBOARD:<br/>
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Dashboard.jpg?raw=true)
+
+<space>
+
+BOOK SHOWCASE:<br/>
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Bookshowcase.jpg?raw=true)
+
+<space>
+
+CHECK OUT:<br/>
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Checkout.jpg?raw=true)
+
+<space>
+
+INVENTORY:<br/>
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/Inventory.jpg?raw=true)
+
+<space>
+
+ADD BOOK:<br/>
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/AddBook.jpg?raw=true)
+
+<space>
+
+ADD LIBRARIAN:<br/>
+![alt text](https://github.com/bwjctan1999/PCHS-Library-Manager/blob/main/Previews/AddLibrarian.jpg?raw=true)
