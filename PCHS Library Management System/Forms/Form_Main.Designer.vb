@@ -22,6 +22,7 @@ Partial Class Form_Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Main))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Txtbox_Searchbar = New System.Windows.Forms.TextBox()
         Me.Btn_Admin = New System.Windows.Forms.Button()
@@ -226,6 +227,7 @@ Partial Class Form_Main
         Me.Controls.Add(Me.UserControl_BookShowcase_1)
         Me.Controls.Add(Me.UserControl_DataViewer)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_Main"
         Me.Text = "PCHS Library Manager"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

@@ -18,7 +18,6 @@ E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\b
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\PCHS Library Management System.exe
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\PCHS Library Management System.pdb
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\PCHS Library Management System.xml
-E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.vbprojAssemblyReference.cache
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS_Library_Management_System.Resources.resources
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.vbproj.GenerateResource.cache
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\obj\Debug\PCHS Library Management System.vbproj.CoreCompileInputs.cache
@@ -56,7 +55,6 @@ E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\b
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\K4os.Compression.LZ4.xml
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\K4os.Compression.LZ4.Streams.xml
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\K4os.Hash.xxHash.xml
-E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\MySql.Data.xml
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\Renci.SshNet.xml
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\System.Buffers.xml
 E:\Benz\Projects\PCHS Library Management System\PCHS Library Management System\bin\Debug\System.Memory.xml
