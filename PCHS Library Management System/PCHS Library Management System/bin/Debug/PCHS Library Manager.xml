@@ -1,0 +1,301 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PCHS Library Manager
+</name>
+</assembly>
+<members>
+<member name="T:PCHS_Library_Management_System.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources._160957889_1011381092726597_1040702949177513212_n">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources._506_5064686_light_clipart_blue_blue_circle_hd_png_download">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.a_guide_to_qr_codes_and_how_to_scan_qr_codes_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Background_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Background_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Background_3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Background_5">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Background_6">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Background_7">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Background_8">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Background_9">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_4">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_5">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.BOOK_IMAGE_NOT_AVAILABLE">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.cd4a096b2096ebb4f460c171cf0f913e">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon___">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Accounts">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_AddNote">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_AddStaff">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Authors">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Borrow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Borrowerss">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Borrowersss">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Bullet">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Check_Out">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_CheckOut">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_DashBoard">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_DatabaseWarning">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Down">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Image">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Inventory">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Library">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_More">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Publishers">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_QR">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Refresh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Refresh2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Search">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Search2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Settings">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Settings3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Staff">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Subjects">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_Supplier">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icon_X">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icons_Addbook">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icons_Books">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.Icons_Settings2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.PCHS_Logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.PCHS_Logo_Name">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.profavat">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PCHS_Library_Management_System.My.Resources.Resources.searchbar">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
