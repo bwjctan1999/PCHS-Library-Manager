@@ -80,6 +80,7 @@ Public Class Form_Login
 
                     emailer.SetSendtoInfo(email, message)
                     emailer.SendEmail()
+                    Lbl_Email.Text = email & ","
 
                     Panel_Login.Hide()
                     Panel_ForgotPass.Show()

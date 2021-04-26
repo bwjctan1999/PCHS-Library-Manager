@@ -32,7 +32,7 @@ Partial Class Form_Login
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel_ForgotPass = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Lbl_Email = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Btn_Okay = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -102,9 +102,9 @@ Partial Class Form_Login
         Me.Lbl_ForgetPass.ForeColor = System.Drawing.Color.White
         Me.Lbl_ForgetPass.Location = New System.Drawing.Point(47, 225)
         Me.Lbl_ForgetPass.Name = "Lbl_ForgetPass"
-        Me.Lbl_ForgetPass.Size = New System.Drawing.Size(122, 17)
+        Me.Lbl_ForgetPass.Size = New System.Drawing.Size(123, 17)
         Me.Lbl_ForgetPass.TabIndex = 4
-        Me.Lbl_ForgetPass.Text = "Forget Password?"
+        Me.Lbl_ForgetPass.Text = "Forgot Password?"
         '
         'Btn_Login
         '
@@ -149,7 +149,7 @@ Partial Class Form_Login
         '
         Me.Panel_ForgotPass.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel_ForgotPass.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Panel_ForgotPass.Controls.Add(Me.Label4)
+        Me.Panel_ForgotPass.Controls.Add(Me.Lbl_Email)
         Me.Panel_ForgotPass.Controls.Add(Me.Panel1)
         Me.Panel_ForgotPass.Controls.Add(Me.Label6)
         Me.Panel_ForgotPass.Controls.Add(Me.Label3)
@@ -160,17 +160,17 @@ Partial Class Form_Login
         Me.Panel_ForgotPass.TabIndex = 7
         Me.Panel_ForgotPass.Visible = False
         '
-        'Label4
+        'Lbl_Email
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(27, 112)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(229, 23)
-        Me.Label4.TabIndex = 8
-        Me.Label4.Text = "benzwaltertan@gmail.com," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Lbl_Email.AutoSize = True
+        Me.Lbl_Email.BackColor = System.Drawing.Color.Transparent
+        Me.Lbl_Email.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Email.ForeColor = System.Drawing.Color.White
+        Me.Lbl_Email.Location = New System.Drawing.Point(27, 112)
+        Me.Lbl_Email.Name = "Lbl_Email"
+        Me.Lbl_Email.Size = New System.Drawing.Size(229, 23)
+        Me.Lbl_Email.TabIndex = 8
+        Me.Lbl_Email.Text = "benzwaltertan@gmail.com," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Panel1
         '
@@ -271,7 +271,7 @@ Partial Class Form_Login
     Friend WithEvents Panel_ForgotPass As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Lbl_Email As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Btn_Okay As Button
     Friend WithEvents Label6 As Label
